@@ -61,7 +61,6 @@ public class Acciones : MonoBehaviour
     public Button ciencia;
     public Button bailar;
     public Button cantar;
-    public Button valor;
 
     public Button botonTirar;
     public Text resultado;
@@ -324,251 +323,160 @@ public class Acciones : MonoBehaviour
     void AccionSaltar()
     {
         string desc = "Vinculada al atributo FUERZA. Simboliza la acción de saltar vertical o longitudinal una cierta distancia para poder superar un obstáculo, alcanzar algo en lo alto o caer sin hacerse daño.";
-        if ("SALTAR" == textaccVent1.text) { AbrirMenuAccion("SALTAR", desc, bonoVent1); }
-        else if ("SALTAR" == textaccVent2.text) { AbrirMenuAccion("SALTAR", desc, bonoVent2); }
-        else if ("SALTAR" == textaccVent3.text) { AbrirMenuAccion("SALTAR", desc, bonoVent3); }
-        else if ("SALTAR" == textaccVent4.text) { AbrirMenuAccion("SALTAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("SALTAR", desc, bonoFuerza); }
+        Ventajaono(desc, "SALTAR");
     }
 
     void AccionIntimidar()
     {
         string desc = "Vinculada al atributo FUERZA. Simboliza la acción de hacer que alguien sienta miedo o temor para extorsionar o asustar.";
-        if ("INTIMIDAR" == textaccVent1.text) { AbrirMenuAccion("INTIMIDAR", desc, bonoVent1); }
-        else if ("INTIMIDAR" == textaccVent2.text) { AbrirMenuAccion("INTIMIDAR", desc, bonoVent2); }
-        else if ("INTIMIDAR" == textaccVent3.text) { AbrirMenuAccion("INTIMIDAR", desc, bonoVent3); }
-        else if ("INTIMIDAR" == textaccVent4.text) { AbrirMenuAccion("INTIMIDAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("INTIMIDAR", desc, bonoFuerza); }
+        Ventajaono(desc, "INTIMIDAR");
     }
 
     void AccionNadar()
     {
         string desc = "Vinculada al atributo RESISTENCIA. Simboliza la acción de moverse dentro del agua, incluyendo también el buceo.";
-        if ("NADAR" == textaccVent1.text) { AbrirMenuAccion("NADAR", desc, bonoVent1); }
-        else if ("NADAR" == textaccVent2.text) { AbrirMenuAccion("NADAR", desc, bonoVent2); }
-        else if ("NADAR" == textaccVent3.text) { AbrirMenuAccion("NADAR", desc, bonoVent3); }
-        else if ("NADAR" == textaccVent4.text) { AbrirMenuAccion("NADAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("NADAR", desc, bonoResistencia); }
+        Ventajaono(desc, "NADAR");
     }
 
     void AccionMedicina()
     {
         string desc = "Vinculada al atributo RESISTENCIA. Simboliza la acción de usar los propios conocimientos sobre la medicina y antropología para poder reconocer dolencias, síntomas y lesiones o para curar a alguien.";
-        if ("MEDICINA" == textaccVent1.text) { AbrirMenuAccion("MEDICINA", desc, bonoVent1); }
-        else if ("MEDICINA" == textaccVent2.text) { AbrirMenuAccion("MEDICINA", desc, bonoVent2); }
-        else if ("MEDICINA" == textaccVent3.text) { AbrirMenuAccion("MEDICINA", desc, bonoVent3); }
-        else if ("MEDICINA" == textaccVent4.text) { AbrirMenuAccion("MEDICINA", desc, bonoVent4); }
-        else { AbrirMenuAccion("MEDICINA", desc, bonoResistencia); }
+        Ventajaono(desc, "MEDICINA");
     }
 
     void AccionTrepar()
     {
         string desc = "Vinculada al atributo AGILIDAD. Simboliza la acción de subir o bajar por una superficie vertical ya sea una pared, un acantilado, un árbol…";
-        if ("TREPAR" == textaccVent1.text) { AbrirMenuAccion("TREPAR", desc, bonoVent1); }
-        else if ("TREPAR" == textaccVent2.text) { AbrirMenuAccion("TREPAR", desc, bonoVent2); }
-        else if ("TREPAR" == textaccVent3.text) { AbrirMenuAccion("TREPAR", desc, bonoVent3); }
-        else if ("TREPAR" == textaccVent4.text) { AbrirMenuAccion("TREPAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("TREPAR", desc, bonoAgilidad); }
+        Ventajaono(desc, "TREPAR");
     }
 
     void AccionRobar()
     {
         string desc = "Vinculada al atributo AGILIDAD. Simboliza la acción de quitar a una persona algo que le pertenece de forma que no se dé cuenta.";
-        if ("ROBAR" == textaccVent1.text) { AbrirMenuAccion("ROBAR", desc, bonoVent1); }
-        else if ("ROBAR" == textaccVent2.text) { AbrirMenuAccion("ROBAR", desc, bonoVent2); }
-        else if ("ROBAR" == textaccVent3.text) { AbrirMenuAccion("ROBAR", desc, bonoVent3); }
-        else if ("ROBAR" == textaccVent4.text) { AbrirMenuAccion("ROBAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("ROBAR", desc, bonoAgilidad); }
+        Ventajaono(desc, "ROBAR");
     }
 
     void AccionSigilar()
     {
         string desc = "Vinculada al atributo AGILIDAD. Simboliza la acción de mantenerse oculto o moverse sin ser detectado.";
-        if ("SIGILAR" == textaccVent1.text) { AbrirMenuAccion("SIGILAR", desc, bonoVent1); }
-        else if ("SIGILAR" == textaccVent2.text) { AbrirMenuAccion("SIGILAR", desc, bonoVent2); }
-        else if ("SIGILAR" == textaccVent3.text) { AbrirMenuAccion("SIGILAR", desc, bonoVent3); }
-        else if ("SIGILAR" == textaccVent4.text) { AbrirMenuAccion("SIGILAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("SIGILAR", desc, bonoAgilidad); }
+        Ventajaono(desc, "SIGILAR");
     }
 
     void AccionDisfrazar()
     {
         string desc = "Vinculada al atributo AGILIDAD. Simboliza la acción de modificar de alguna forma la apariencia de algo o alguien usando ropa, máscaras y/o maquillaje con el fin de ocultar su verdadera identidad.";
-        if ("DISFRAZAR" == textaccVent1.text) { AbrirMenuAccion("DISFRAZAR", desc, bonoVent1); }
-        else if ("DISFRAZAR" == textaccVent2.text) { AbrirMenuAccion("DISFRAZAR", desc, bonoVent2); }
-        else if ("DISFRAZAR" == textaccVent3.text) { AbrirMenuAccion("DISFRAZAR", desc, bonoVent3); }
-        else if ("DISFRAZAR" == textaccVent4.text) { AbrirMenuAccion("DISFRAZAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("DISFRAZAR", desc, bonoAgilidad); }
+        Ventajaono(desc, "DISFRAZAR");
     }
 
     void AccionBailar()
     {
         string desc = "Vinculada al atributo AGILIDAD. Simboliza la acción de mover el cuerpo al ritmo de la música.";
-        if ("BAILAR" == textaccVent1.text) { AbrirMenuAccion("BAILAR", desc, bonoVent1); }
-        else if ("BAILAR" == textaccVent2.text) { AbrirMenuAccion("BAILAR", desc, bonoVent2); }
-        else if ("BAILAR" == textaccVent3.text) { AbrirMenuAccion("BAILAR", desc, bonoVent3); }
-        else if ("BAILAR" == textaccVent4.text) { AbrirMenuAccion("BAILAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("BAILAR", desc, bonoAgilidad); }
+        Ventajaono(desc, "BAILAR");
     }
 
     void AccionCorrer()
     {
         string desc = "Vinculada al atributo VELOCIDAD. Simboliza la acción de correr o esprintar una cierta distancia o durante cierto tiempo ya sea durante una persecución o una competición.";
-        if ("CORRER" == textaccVent1.text) { AbrirMenuAccion("CORRER", desc, bonoVent1); }
-        else if ("CORRER" == textaccVent2.text) { AbrirMenuAccion("CORRER", desc, bonoVent2); }
-        else if ("CORRER" == textaccVent3.text) { AbrirMenuAccion("CORRER", desc, bonoVent3); }
-        else if ("CORRER" == textaccVent4.text) { AbrirMenuAccion("CORRER", desc, bonoVent4); }
-        else { AbrirMenuAccion("CORRER", desc, bonoVelocidad); }
+        Ventajaono(desc, "CORRER");
     }
 
     void AccionMagicologia()
     {
         string desc = "Vinculada al atributo PODER. Simboliza la acción de usar los propios conocimientos de la magia para detectar rastros de su uso o reconocer magias entre otras acciones que se relacionen con la magia y su historia.";
-        if ("MAGICOLOGÍA" == textaccVent1.text) { AbrirMenuAccion("MAGICOLOGÍA", desc, bonoVent1); }
-        else if ("MAGICOLOGÍA" == textaccVent2.text) { AbrirMenuAccion("MAGICOLOGÍA", desc, bonoVent2); }
-        else if ("MAGICOLOGÍA" == textaccVent3.text) { AbrirMenuAccion("MAGICOLOGÍA", desc, bonoVent3); }
-        else if ("MAGICOLOGÍA" == textaccVent4.text) { AbrirMenuAccion("MAGICOLOGÍA", desc, bonoVent4); }
-        else { AbrirMenuAccion("MAGICOLOGÍA", desc, bonoPoder); }
+        Ventajaono(desc, "MAGICOLOGÍA");
     }
 
     void AccionPercibir()
     {
         string desc = "Vinculada al atributo SENTIDOS. Simboliza la acción de mirar a algo, vigilar, inspeccionar con la mirada o buscar algo por el entorno. Todo lo que sea usar la visión para algo en específico entra dentro de esta acción.";
-        if ("PERCIBIR" == textaccVent1.text) { AbrirMenuAccion("PERCIBIR", desc, bonoVent1); }
-        else if ("PERCIBIR" == textaccVent2.text) { AbrirMenuAccion("PERCIBIR", desc, bonoVent2); }
-        else if ("PERCIBIR" == textaccVent3.text) { AbrirMenuAccion("PERCIBIR", desc, bonoVent3); }
-        else if ("PERCIBIR" == textaccVent4.text) { AbrirMenuAccion("PERCIBIR", desc, bonoVent4); }
-        else { AbrirMenuAccion("PERCIBIR", desc, bonoSentidos); }
+        Ventajaono(desc, "PERCIBIR");
     }
 
     void AccionEscuchar()
     {
         string desc = "Vinculada al atributo SENTIDOS. Simboliza la acción de usar el oído para tratar de oír algo, ya sean sonidos sospechosos, conversaciones…";
-        if ("ESCUCHAR" == textaccVent1.text) { AbrirMenuAccion("ESCUCHAR", desc, bonoVent1); }
-        else if ("ESCUCHAR" == textaccVent2.text) { AbrirMenuAccion("ESCUCHAR", desc, bonoVent2); }
-        else if ("ESCUCHAR" == textaccVent3.text) { AbrirMenuAccion("ESCUCHAR", desc, bonoVent3); }
-        else if ("ESCUCHAR" == textaccVent4.text) { AbrirMenuAccion("ESCUCHAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("ESCUCHAR", desc, bonoSentidos); }
+        Ventajaono(desc, "ESCUCHAR");
     }
 
     void AccionDegustar()
     {
         string desc = "Vinculada al atributo SENTIDOS. Simboliza la acción de usar el sentido del gusto para poder detectar posibles trazas de ciertos elementos en comidas, bebidas o para identificar objetos.";
-        if ("DEGUSTAR" == textaccVent1.text) { AbrirMenuAccion("DEGUSTAR", desc, bonoVent1); }
-        else if ("DEGUSTAR" == textaccVent2.text) { AbrirMenuAccion("DEGUSTAR", desc, bonoVent2); }
-        else if ("DEGUSTAR" == textaccVent3.text) { AbrirMenuAccion("DEGUSTAR", desc, bonoVent3); }
-        else if ("DEGUSTAR" == textaccVent4.text) { AbrirMenuAccion("DEGUSTAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("DEGUSTAR", desc, bonoSentidos); }
+        Ventajaono(desc, "DEGUSTAR");
     }
 
     void AccionOler()
     {
         string desc = "Vinculada al atributo SENTIDOS. Simboliza la acción de usar el olfato para poder detectar rastros de olores y así poder identificar trazas de ciertos elementos en cualquier cosa.";
-        if ("OLER" == textaccVent1.text) { AbrirMenuAccion("OLER", desc, bonoVent1); }
-        else if ("OLER" == textaccVent2.text) { AbrirMenuAccion("OLER", desc, bonoVent2); }
-        else if ("OLER" == textaccVent3.text) { AbrirMenuAccion("OLER", desc, bonoVent3); }
-        else if ("OLER" == textaccVent4.text) { AbrirMenuAccion("OLER", desc, bonoVent4); }
-        else { AbrirMenuAccion("OLER", desc, bonoSentidos); }
+        Ventajaono(desc, "OLER");
     }
 
     void AccionRecordar()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de traer a la memoria propia algo percibido, aprendido o conocido, o retener algo en la mente.";
-        if ("RECORDAR" == textaccVent1.text) { AbrirMenuAccion("RECORDAR", desc, bonoVent1); }
-        else if ("RECORDAR" == textaccVent2.text) { AbrirMenuAccion("RECORDAR", desc, bonoVent2); }
-        else if ("RECORDAR" == textaccVent3.text) { AbrirMenuAccion("RECORDAR", desc, bonoVent3); }
-        else if ("RECORDAR" == textaccVent4.text) { AbrirMenuAccion("RECORDAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("RECORDAR", desc, bonoMemoria); }
+        Ventajaono(desc, "RECORDAR");
     }
 
     void AccionHistoria()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de usar los propios conocimientos sobre la historia del mundo para recordar acontecimientos del pasado o verificar la autenticidad y valor de un objeto.";
-        if ("HISTORIA" == textaccVent1.text) { AbrirMenuAccion("HISTORIA", desc, bonoVent1); }
-        else if ("HISTORIA" == textaccVent2.text) { AbrirMenuAccion("HISTORIA", desc, bonoVent2); }
-        else if ("HISTORIA" == textaccVent3.text) { AbrirMenuAccion("HISTORIA", desc, bonoVent3); }
-        else if ("HISTORIA" == textaccVent4.text) { AbrirMenuAccion("HISTORIA", desc, bonoVent4); }
-        else { AbrirMenuAccion("HISTORIA", desc, bonoMemoria); }
+        Ventajaono(desc, "HISTORIA");
     }
 
     void AccionLegislacion()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de usar los propios conocimientos de las leyes para poder defender derechos o aprovechar huecos legales.";
-        if ("LEGISLACIÓN" == textaccVent1.text) { AbrirMenuAccion("LEGISLACIÓN", desc, bonoVent1); }
-        else if ("LEGISLACIÓN" == textaccVent2.text) { AbrirMenuAccion("LEGISLACIÓN", desc, bonoVent2); }
-        else if ("LEGISLACIÓN" == textaccVent3.text) { AbrirMenuAccion("LEGISLACIÓN", desc, bonoVent3); }
-        else if ("LEGISLACIÓN" == textaccVent4.text) { AbrirMenuAccion("LEGISLACIÓN", desc, bonoVent4); }
-        else { AbrirMenuAccion("LEGISLACIÓN", desc, bonoMemoria); }
+        Ventajaono(desc, "LEGISLACIÓN");
     }
 
     void AccionZoologia()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de usar los propios conocimientos sobre zoología para identificar animales ya sea viéndolos directamente o por rastros dejados por estos como pisadas, excrementos, etcétera.";
-        if ("ZOOLOGÍA" == textaccVent1.text) { AbrirMenuAccion("ZOOLOGÍA", desc, bonoVent1); }
-        else if ("ZOOLOGÍA" == textaccVent2.text) { AbrirMenuAccion("ZOOLOGÍA", desc, bonoVent2); }
-        else if ("ZOOLOGÍA" == textaccVent3.text) { AbrirMenuAccion("ZOOLOGÍA", desc, bonoVent3); }
-        else if ("ZOOLOGÍA" == textaccVent4.text) { AbrirMenuAccion("ZOOLOGÍA", desc, bonoVent4); }
-        else { AbrirMenuAccion("ZOOLOGÍA", desc, bonoMemoria); }
+        Ventajaono(desc, "ZOOLOGÍA");
     }
 
     void AccionBotanica()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de usar los propios conocimientos sobre botánica para identificar todo tipo de plantas y vegetación según su follaje, tipo de tierra en la que crecen, frutos, tallo, clima en el que se encuentran, etcétera.";
-        if ("BOTÁNICA" == textaccVent1.text) { AbrirMenuAccion("BOTÁNICA", desc, bonoVent1); }
-        else if ("BOTÁNICA" == textaccVent2.text) { AbrirMenuAccion("BOTÁNICA", desc, bonoVent2); }
-        else if ("BOTÁNICA" == textaccVent3.text) { AbrirMenuAccion("BOTÁNICA", desc, bonoVent3); }
-        else if ("BOTÁNICA" == textaccVent4.text) { AbrirMenuAccion("BOTÁNICA", desc, bonoVent4); }
-        else { AbrirMenuAccion("BOTÁNICA", desc, bonoMemoria); }
+        Ventajaono(desc, "BOTÁNICA");
     }
 
     void AccionCiencia()
     {
         string desc = "Vinculada al atributo MEMORIA. Simboliza la acción de usar los propios conocimientos sobre cualquier otra ciencia no especificada anteriormente como física, química, astronomía, biología… Para detectar o crear algún químico, aprovechar fenómenos de la física, guiarse por las estrellas, etcétera.";
-        if ("CIENCIA" == textaccVent1.text) { AbrirMenuAccion("CIENCIA", desc, bonoVent1); }
-        else if ("CIENCIA" == textaccVent2.text) { AbrirMenuAccion("CIENCIA", desc, bonoVent2); }
-        else if ("CIENCIA" == textaccVent3.text) { AbrirMenuAccion("CIENCIA", desc, bonoVent3); }
-        else if ("CIENCIA" == textaccVent4.text) { AbrirMenuAccion("CIENCIA", desc, bonoVent4); }
-        else { AbrirMenuAccion("CIENCIA", desc, bonoMemoria); }
+        Ventajaono(desc, "CIENCIA");
     }
 
     void AccionPersuadir()
     {
         string desc = "Vinculada al atributo PERSONALIDAD. Simboliza la acción de conversar con alguien para conseguir con razones y argumentos que actúe o piense de un modo determinado. Tranquilizar, encandilar o seducir son consideradas como técnicas de persuasión.";
-        if ("PERSUADIR" == textaccVent1.text) { AbrirMenuAccion("PERSUADIR", desc, bonoVent1); }
-        else if ("PERSUADIR" == textaccVent2.text) { AbrirMenuAccion("PERSUADIR", desc, bonoVent2); }
-        else if ("PERSUADIR" == textaccVent3.text) { AbrirMenuAccion("PERSUADIR", desc, bonoVent3); }
-        else if ("PERSUADIR" == textaccVent4.text) { AbrirMenuAccion("PERSUADIR", desc, bonoVent4); }
-        else { AbrirMenuAccion("PERSUADIR", desc, bonoPersonalidad); }
+        Ventajaono(desc, "PERSUADIR");
     }
 
     void AccionNegociar()
     {
         string desc = "Vinculada al atributo PERSONALIDAD. Simboliza la acción de hablar de un asunto para llegar a un acuerdo o solución.";
-        if ("NEGOCIAR" == textaccVent1.text) { AbrirMenuAccion("NEGOCIAR", desc, bonoVent1); }
-        else if ("NEGOCIAR" == textaccVent2.text) { AbrirMenuAccion("NEGOCIAR", desc, bonoVent2); }
-        else if ("NEGOCIAR" == textaccVent3.text) { AbrirMenuAccion("NEGOCIAR", desc, bonoVent3); }
-        else if ("NEGOCIAR" == textaccVent4.text) { AbrirMenuAccion("NEGOCIAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("NEGOCIAR", desc, bonoPersonalidad); }
+        Ventajaono(desc, "NEGOCIAR");
     }
 
     void AccionMentir()
     {
         string desc = "Vinculada al atributo PERSONALIDAD. Simboliza la acción de decir deliberadamente lo contrario de lo que se sabe, se cree o se piensa que es verdad con el fin de engañar a alguien.";
-        if ("MENTIR" == textaccVent1.text) { AbrirMenuAccion("MENTIR", desc, bonoVent1); }
-        else if ("MENTIR" == textaccVent2.text) { AbrirMenuAccion("MENTIR", desc, bonoVent2); }
-        else if ("MENTIR" == textaccVent3.text) { AbrirMenuAccion("MENTIR", desc, bonoVent3); }
-        else if ("MENTIR" == textaccVent4.text) { AbrirMenuAccion("MENTIR", desc, bonoVent4); }
-        else { AbrirMenuAccion("MENTIR", desc, bonoPersonalidad); }
+        Ventajaono(desc, "MENTIR");
     }
 
     void AccionCantar()
     {
         string desc = "Vinculada al atributo PERSONALIDAD. Simboliza la acción de crear una melodía musical usando la voz o haciendo sonidos con la boca.";
-        if ("CANTAR" == textaccVent1.text) { AbrirMenuAccion("CANTAR", desc, bonoVent1); }
-        else if ("CANTAR" == textaccVent2.text) { AbrirMenuAccion("CANTAR", desc, bonoVent2); }
-        else if ("CANTAR" == textaccVent3.text) { AbrirMenuAccion("CANTAR", desc, bonoVent3); }
-        else if ("CANTAR" == textaccVent4.text) { AbrirMenuAccion("CANTAR", desc, bonoVent4); }
-        else { AbrirMenuAccion("CANTAR", desc, bonoPersonalidad); }
+        Ventajaono(desc, "CANTAR");
+    }
+
+    void Ventajaono(string desc, string action)
+    {
+        if (action == textaccVent1.text) { AbrirMenuAccion(action, desc, bonoVent1); }
+        else if (action == textaccVent2.text) { AbrirMenuAccion(action, desc, bonoVent2); }
+        else if (action == textaccVent3.text) { AbrirMenuAccion(action, desc, bonoVent3); }
+        else if (action == textaccVent4.text) { AbrirMenuAccion(action, desc, bonoVent4); }
+        else { AbrirMenuAccion(action, desc, bonoPersonalidad); }
     }
 
     void HacerTirada()
