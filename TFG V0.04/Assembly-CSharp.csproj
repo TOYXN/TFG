@@ -61,13 +61,14 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Desplegable.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\PCPA.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\BotonVolver.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Arma.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncBotonPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncionPestanas.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Arma.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />
