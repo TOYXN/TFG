@@ -56,6 +56,9 @@ public class SubidaNivel : MonoBehaviour
     public Text bonoRaza3;
 
     public Text numDados;
+    public Text nombreArma;
+    public Text tipoDano;
+    public Text dadosArmaEquipo;
     public Text dadosArma;
 
     public Personaje Personaje;
@@ -80,6 +83,9 @@ public class SubidaNivel : MonoBehaviour
         ValoresMenu.IniciarValores();
         Puntos.ActPuntos();
         numDados.text = Personaje._otros.numDados.ToString();
+        nombreArma.text = Arma.nombreArma;
+        tipoDano.text = Arma.tipoArma;
+        dadosArmaEquipo.text = "d" + Arma.dadoArma;
         dadosArma.text = "d" + Arma.dadoArma;
     }
 

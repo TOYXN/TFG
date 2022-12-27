@@ -11404,7 +11404,7 @@ RectTransform:
   m_Children:
   - {fileID: 1549803387}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -14625,7 +14625,7 @@ RectTransform:
   m_Children:
   - {fileID: 1509321600}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15241,7 +15241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &362177379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30791,7 +30791,7 @@ RectTransform:
   m_Children:
   - {fileID: 1537118118}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -33623,7 +33623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &877082273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40665,7 +40665,7 @@ RectTransform:
   m_Children:
   - {fileID: 1350002172}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -40944,7 +40944,7 @@ RectTransform:
   m_Children:
   - {fileID: 211619737}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -55405,6 +55405,7 @@ GameObject:
   - component: {fileID: 1405892540}
   - component: {fileID: 1405892539}
   - component: {fileID: 1405892541}
+  - component: {fileID: 1405892542}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -55461,6 +55462,37 @@ MonoBehaviour:
   nombreArma: 
   dadoArma: 0
   tipoArma: 
+--- !u!114 &1405892542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405892538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458908a0f7a615140addd0991b532113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ayuda: {fileID: 1285245021}
+  BotonPaladio: {fileID: 442398334}
+  BotonPlatino: {fileID: 1549803388}
+  BotonOro: {fileID: 1509321601}
+  BotonPlata: {fileID: 1537118119}
+  NumPaladio: {fileID: 1354128084}
+  NumPlatino: {fileID: 1878007670}
+  NumOro: {fileID: 512567887}
+  NumPlata: {fileID: 864909017}
+  menuAyuda: {fileID: 380860385}
+  CerrarMenuAyuda: {fileID: 2051192722}
+  menuMoneda: {fileID: 1997806977}
+  TituloMon: {fileID: 840110123}
+  DescMon: {fileID: 1069339769}
+  MonAct: {fileID: 1460662829}
+  MonVariar: {fileID: 1164022510}
+  BotonSumar: {fileID: 143710163}
+  BotonRestar: {fileID: 5752425}
+  CerrarMenuMon: {fileID: 17084049}
 --- !u!1 &1406385052
 GameObject:
   m_ObjectHideFlags: 0
@@ -59438,6 +59470,9 @@ MonoBehaviour:
   numRaza3: {fileID: 1278229240}
   bonoRaza3: {fileID: 1978184266}
   numDados: {fileID: 1477112945}
+  nombreArma: {fileID: 1178975061}
+  tipoDano: {fileID: 1771835231}
+  dadosArmaEquipo: {fileID: 186762316}
   dadosArma: {fileID: 1821425824}
   Personaje: {fileID: 1405892539}
   Arma: {fileID: 1405892541}
@@ -73197,7 +73232,7 @@ RectTransform:
   m_Children:
   - {fileID: 442398333}
   m_Father: {fileID: 2127884910}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -85959,12 +85994,12 @@ RectTransform:
   - {fileID: 1165939626}
   - {fileID: 640351527}
   - {fileID: 893354398}
+  - {fileID: 1047440733}
   - {fileID: 1054047011}
   - {fileID: 1843612556}
   - {fileID: 252072783}
   - {fileID: 350626705}
   - {fileID: 791395593}
-  - {fileID: 1047440733}
   m_Father: {fileID: 306791380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

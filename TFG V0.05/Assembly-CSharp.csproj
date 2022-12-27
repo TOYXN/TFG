@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C8A2B5ED-9522-8106-F404-D2D63F2E82C4}</ProjectGuid>
+    <ProjectGuid>{CAC15BE8-7335-B4EE-1867-91FC9A7A28F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,12 +63,13 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\BotonVolver.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Arma.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncBotonPers.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncionPestanas.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />
