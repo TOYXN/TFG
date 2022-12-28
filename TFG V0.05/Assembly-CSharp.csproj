@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Personaje.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncBotonCamps.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\CombatAttacks.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\TiradasValores.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\BotonExp.cs" />
@@ -69,7 +70,8 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Inventario.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Caracteristicas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />
