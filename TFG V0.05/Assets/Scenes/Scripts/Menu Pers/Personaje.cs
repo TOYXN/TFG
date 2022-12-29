@@ -261,43 +261,22 @@ public class Clase
 {
     public string nombreClase;
     public string descClase;
-    public string valorPrincipal;
-    public string valorSecundario;
-    public string valorno1;
-    public string valorno2;
-    public string valorno3;
-    public string valorno4;
-    public string valorno5;
-    public string valorno6;
+    public string valorClase;
 
     public Clase() { }
 
-    public Clase(string nombreClase, string descClase, string valorPrincipal, string valorSecundario, string valorno1, string valorno2, string valorno3, string valorno4, string valorno5, string valorno6)
+    public Clase(string nombreClase, string descClase, string valorClase)
     {
         this.nombreClase = nombreClase;
         this.descClase = descClase;
-        this.valorPrincipal = valorPrincipal;
-        this.valorSecundario = valorSecundario;
-        this.valorno1 = valorno1;
-        this.valorno2 = valorno2;
-        this.valorno3 = valorno3;
-        this.valorno4 = valorno4;
-        this.valorno5 = valorno5;
-        this.valorno6 = valorno6;
+        this.valorClase = valorClase;
     }
 
     public string GetElemClase(string elem)
     {
         string res = " ";
         if (elem == "nombre") { res = nombreClase; }
-        else if (elem == "valor1") { res = valorPrincipal; }
-        else if (elem == "valor2") { res = valorSecundario; }
-        else if (elem == "valorno1") { res = valorno1; }
-        else if (elem == "valorno2") { res = valorno2; }
-        else if (elem == "valorno3") { res = valorno3; }
-        else if (elem == "valorno4") { res = valorno4; }
-        else if (elem == "valorno5") { res = valorno5; }
-        else if (elem == "valorno6") { res = valorno6; }
+        else if (elem == "valor") { res = valorClase; }
         else if (elem == "descripcion") { res = descClase; }
         return res;
     }
@@ -332,7 +311,7 @@ public class Personaje : MonoBehaviour
         accVent2 = "SALTAR";
         accVent3 = "BOTÁNICA";
         accVent4 = "SIGILAR";
-        _clase = new Clase("Cazador", " ", "AGILIDAD", "SENTIDOS", "FUERZA", "RESISTENCIA", "VELOCIDAD", "PODER", "MEMORIA", "PERSONALIDAD");
+        _clase = new Clase("Cazador", " ", "AGILIDAD");
         _raza = new Raza("Humano", " ", "VELOCIDAD", "AGILIDAD", "PERSONALIDAD");     
         _cuerpo = new ValoresCuerpo(8, 8, 8, 8);
         _alma = new ValoresAlma(8, 8, 8, 8);

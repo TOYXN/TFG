@@ -6,42 +6,6 @@ using UnityEngine.UI;
 public class SubidaNivel : MonoBehaviour
 {
     public GameObject menuSubNiv1;
-    public Text nombreClase1;
-    public Button valorClase1;
-    public Text numClase1;
-    public Text bonoClase1;
-    public Text nombreClase2;
-    public Button valorClase2;
-    public Text numClase2;
-    public Text bonoClase2;
-
-    public GameObject menuSubNiv2;
-    public Text nombrenoclase1;
-    public Button valornoclase1;
-    public Text numnoclase1;
-    public Text bononoclase1;
-    public Text nombrenoclase2;
-    public Button valornoclase2;
-    public Text numnoclase2;
-    public Text bononoclase2;
-    public Text nombrenoclase3;
-    public Button valornoclase3;
-    public Text numnoclase3;
-    public Text bononoclase3;
-    public Text nombrenoclase4;
-    public Button valornoclase4;
-    public Text numnoclase4;
-    public Text bononoclase4;
-    public Text nombrenoclase5;
-    public Button valornoclase5;
-    public Text numnoclase5;
-    public Text bononoclase5;
-    public Text nombrenoclase6;
-    public Button valornoclase6;
-    public Text numnoclase6;
-    public Text bononoclase6;
-
-    public GameObject menuSubNiv3;
     public Text nombreRaza1;
     public Button valorRaza1;
     public Text numRaza1;
@@ -54,6 +18,41 @@ public class SubidaNivel : MonoBehaviour
     public Button valorRaza3;
     public Text numRaza3;
     public Text bonoRaza3;
+
+    public GameObject menuSubNiv2;
+    public GameObject BotonesValores;
+    public Button valorCorporal;
+    public Button valorAlma;
+
+    public GameObject valoresCuerpo;
+    public Button valornoclase1;
+    public Text numnoclase1;
+    public Text bononoclase1;
+    public Button valornoclase2;
+    public Text numnoclase2;
+    public Text bononoclase2;
+    public Button valornoclase3;
+    public Text numnoclase3;
+    public Text bononoclase3;
+    public Button valornoclase4;
+    public Text numnoclase4;
+    public Text bononoclase4;
+    public Button volverCorporal;
+
+    public GameObject valoresAlma;
+    public Button valornoclase5;
+    public Text numnoclase5;
+    public Text bononoclase5;
+    public Button valornoclase6;
+    public Text numnoclase6;
+    public Text bononoclase6;
+    public Button valornoclase7;
+    public Text numnoclase7;
+    public Text bononoclase7;
+    public Button valornoclase8;
+    public Text numnoclase8;
+    public Text bononoclase8;
+    public Button volverAlma;
 
     public Text numDados;
     public Text nombreArma;
@@ -69,17 +68,8 @@ public class SubidaNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        valorClase1.onClick.AddListener(Bypass1);
-        valorClase2.onClick.AddListener(Bypass2);
-        valornoclase1.onClick.AddListener(Bypass3);
-        valornoclase2.onClick.AddListener(Bypass4);
-        valornoclase3.onClick.AddListener(Bypass5);
-        valornoclase4.onClick.AddListener(Bypass6);
-        valornoclase5.onClick.AddListener(Bypass7);
-        valornoclase6.onClick.AddListener(Bypass8);
-        valorRaza1.onClick.AddListener(Bypass9);
-        valorRaza2.onClick.AddListener(Bypass10);
-        valorRaza3.onClick.AddListener(Bypass11);
+        IniciarBotonesMenuClase();
+        IniciarBotonesMenuResto();
         ValoresMenu.IniciarValores();
         Puntos.ActPuntos();
         numDados.text = Personaje._otros.numDados.ToString();
@@ -89,178 +79,111 @@ public class SubidaNivel : MonoBehaviour
         dadosArma.text = "d" + Arma.dadoArma;
     }
 
+    void IniciarBotonesMenuClase()
+    {
+        valorRaza1.onClick.AddListener(Bypass1);
+        valorRaza2.onClick.AddListener(Bypass2);
+        valorRaza3.onClick.AddListener(Bypass3);
+    }
+
+    void IniciarBotonesMenuResto()
+    {
+        valornoclase1.onClick.AddListener(Bypass4);
+        valornoclase2.onClick.AddListener(Bypass5);
+        valornoclase3.onClick.AddListener(Bypass6);
+        valornoclase4.onClick.AddListener(Bypass7);
+        valornoclase5.onClick.AddListener(Bypass8);
+        valornoclase6.onClick.AddListener(Bypass9);
+        valornoclase7.onClick.AddListener(Bypass10);
+        valornoclase8.onClick.AddListener(Bypass11);
+        valorCorporal.onClick.AddListener(AbrirValoresCuerpo);
+        valorAlma.onClick.AddListener(AbrirValoresAlma);
+        volverCorporal.onClick.AddListener(CerrarValoresCuerpo);
+        volverAlma.onClick.AddListener(CerrarValoresAlma);
+    }
+
     void Bypass1()
     {
-        Personaje.ActualizarValor(nombreClase1.text, 2);
-        ActMenuValores(nombreClase1.text);
+        Personaje.ActualizarValor(nombreRaza1.text, 1);
+        ActMenuValores(nombreRaza1.text);
         SubirNivel2();
     }
 
     void Bypass2()
     {
-        Personaje.ActualizarValor(nombreClase2.text, 2);
-        ActMenuValores(nombreClase2.text);
+        Personaje.ActualizarValor(nombreRaza2.text, 1);
+        ActMenuValores(nombreRaza2.text);
         SubirNivel2();
     }
 
     void Bypass3()
     {
-        Personaje.ActualizarValor(nombrenoclase1.text, 1);
-        ActMenuValores(nombrenoclase1.text);
-        SubirNivel3();
+        Personaje.ActualizarValor(nombreRaza3.text, 1);
+        ActMenuValores(nombreRaza3.text);
+        SubirNivel2();
     }
 
     void Bypass4()
     {
-        Personaje.ActualizarValor(nombrenoclase2.text, 1);
-        ActMenuValores(nombrenoclase2.text);
+        Personaje.ActualizarValor("FUERZA", 1);
+        ActMenuValores("FUERZA");
         SubirNivel3();
     }
 
     void Bypass5()
     {
-        Personaje.ActualizarValor(nombrenoclase3.text, 1);
-        ActMenuValores(nombrenoclase3.text);
+        Personaje.ActualizarValor("RESISTENCIA", 1);
+        ActMenuValores("RESISTENCIA");
         SubirNivel3();
     }
 
     void Bypass6()
     {
-        Personaje.ActualizarValor(nombrenoclase4.text, 1);
-        ActMenuValores(nombrenoclase4.text);
+        Personaje.ActualizarValor("AGILIDAD", 1);
+        ActMenuValores("AGILIDAD");
         SubirNivel3();
     }
 
     void Bypass7()
     {
-        Personaje.ActualizarValor(nombrenoclase5.text, 1);
-        ActMenuValores(nombrenoclase5.text);
+        Personaje.ActualizarValor("VELOCIDAD", 1);
+        ActMenuValores("VELOCIDAD");
         SubirNivel3();
     }
 
     void Bypass8()
     {
-        Personaje.ActualizarValor(nombrenoclase6.text, 1);
-        ActMenuValores(nombrenoclase6.text);
+        Personaje.ActualizarValor("PODER", 1);
+        ActMenuValores("PODER");
         SubirNivel3();
     }
 
     void Bypass9()
     {
-        Personaje.ActualizarValor(nombreRaza1.text, 1);
-        ActMenuValores(nombreRaza1.text);
-        SubirNivel4();
+        Personaje.ActualizarValor("SENTIDOS", 1);
+        ActMenuValores("SENTIDOS");
+        SubirNivel3();
     }
 
     void Bypass10()
     {
-        Personaje.ActualizarValor(nombreRaza2.text, 1);
-        ActMenuValores(nombreRaza2.text);
-        SubirNivel4();
+        Personaje.ActualizarValor("MEMORIA", 1);
+        ActMenuValores("MEMORIA");
+        SubirNivel3();
     }
 
     void Bypass11()
     {
-        Personaje.ActualizarValor(nombreRaza3.text, 1);
-        ActMenuValores(nombreRaza3.text);
-        SubirNivel4();
+        Personaje.ActualizarValor("PERSONALIDAD", 1);
+        ActMenuValores("PERSONALIDAD");
+        SubirNivel3();
     }
 
     public void SubirNivel()
     {
-        //Cambiar nombres, numeros y bonos de cada valor
-        nombreClase1.text = Personaje.ElemClase("valor1");
-        int valorAct1 = Personaje.Valor(Personaje.ElemClase("valor1"));
-        int bonoAct1 = Personaje.BonoValor(Personaje.ElemClase("valor1"));
-        int valorSumado1 = valorAct1 + 2;
-        int bonoSumado1;
-        if (valorSumado1 >= 8) { bonoSumado1 = (valorSumado1 - 8) / 2; }
-        else { bonoSumado1 = (valorSumado1 - 9) / 2; }
-        numClase1.text = Personaje.Valor(Personaje.ElemClase("valor1")) + " > " + valorSumado1;
-        bonoClase1.text = bonoAct1 + " > " + bonoSumado1;
+        Personaje.ActualizarValor(Personaje._clase.valorClase, 2);
+        ActMenuValores(Personaje._clase.valorClase);
 
-        nombreClase2.text = Personaje.ElemClase("valor2");
-        int valorAct2 = Personaje.Valor(Personaje.ElemClase("valor2"));
-        int bonoAct2 = Personaje.BonoValor(Personaje.ElemClase("valor2"));
-        int valorSumado2 = valorAct2 + 2;
-        int bonoSumado2;
-        if (valorSumado2 >= 8) { bonoSumado2 = (valorSumado2 - 8) / 2; }
-        else { bonoSumado2 = (valorSumado2 - 9) / 2; }
-        numClase2.text = Personaje.Valor(Personaje.ElemClase("valor2")) + " > " + valorSumado2;
-        bonoClase2.text = bonoAct2 + " > " + bonoSumado2;
-        menuSubNiv1.SetActive(true);
-
-    }
-
-    public void SubirNivel2()
-    {
-        //Cambiar nombres, numeros y bonos de cada valor 
-        nombrenoclase1.text = Personaje.ElemClase("valorno1");
-        int novalorAct1 = Personaje.Valor(Personaje.ElemClase("valorno1"));
-        int nobonoAct1 = Personaje.BonoValor(Personaje.ElemClase("valorno1"));
-        int novalorSumado1 = novalorAct1 + 1;
-        int nobonoSumado1;
-        if (novalorSumado1 >= 8) { nobonoSumado1 = (novalorSumado1 - 8) / 2; }
-        else { nobonoSumado1 = (novalorSumado1 - 9) / 2; }
-        numnoclase1.text = Personaje.Valor(Personaje.ElemClase("valorno1")) + " > " + novalorSumado1;
-        bononoclase1.text = nobonoAct1 + " > " + nobonoSumado1;
-
-        nombrenoclase2.text = Personaje.ElemClase("valorno2");
-        int novalorAct2 = Personaje.Valor(Personaje.ElemClase("valorno2"));
-        int nobonoAct2 = Personaje.BonoValor(Personaje.ElemClase("valorno2"));
-        int novalorSumado2 = novalorAct2 + 1;
-        int nobonoSumado2;
-        if (novalorSumado2 >= 8) { nobonoSumado2 = (novalorSumado2 - 8) / 2; }
-        else { nobonoSumado2 = (novalorSumado2 - 9) / 2; }
-        numnoclase2.text = Personaje.Valor(Personaje.ElemClase("valorno2")) + " > " + novalorSumado2;
-        bononoclase2.text = nobonoAct2 + " > " + nobonoSumado2;
-
-        nombrenoclase3.text = Personaje.ElemClase("valorno3");
-        int novalorAct3 = Personaje.Valor(Personaje.ElemClase("valorno3"));
-        int nobonoAct3 = Personaje.BonoValor(Personaje.ElemClase("valorno3"));
-        int novalorSumado3 = novalorAct3 + 1;
-        int nobonoSumado3;
-        if (novalorSumado3 >= 8) { nobonoSumado3 = (novalorSumado3 - 8) / 2; }
-        else { nobonoSumado3 = (novalorSumado3 - 9) / 2; }
-        numnoclase3.text = Personaje.Valor(Personaje.ElemClase("valorno3")) + " > " + novalorSumado3;
-        bononoclase3.text = nobonoAct3 + " > " + nobonoSumado3;
-
-        nombrenoclase4.text = Personaje.ElemClase("valorno4");
-        int novalorAct4 = Personaje.Valor(Personaje.ElemClase("valorno4"));
-        int nobonoAct4 = Personaje.BonoValor(Personaje.ElemClase("valorno4"));
-        int novalorSumado4 = novalorAct4 + 1;
-        int nobonoSumado4;
-        if (novalorSumado4 >= 8) { nobonoSumado4 = (novalorSumado4 - 8) / 2; }
-        else { nobonoSumado4 = (novalorSumado4 - 9) / 2; }
-        numnoclase4.text = Personaje.Valor(Personaje.ElemClase("valorno4")) + " > " + novalorSumado4;
-        bononoclase4.text = nobonoAct4 + " > " + nobonoSumado4;
-
-        nombrenoclase5.text = Personaje.ElemClase("valorno5");
-        int novalorAct5 = Personaje.Valor(Personaje.ElemClase("valorno5"));
-        int nobonoAct5 = Personaje.BonoValor(Personaje.ElemClase("valorno5"));
-        int novalorSumado5 = novalorAct5 + 1;
-        int nobonoSumado5;
-        if (novalorSumado5 >= 8) { nobonoSumado5 = (novalorSumado5 - 8) / 2; }
-        else { nobonoSumado5 = (novalorSumado5 - 9) / 2; }
-        numnoclase5.text = Personaje.Valor(Personaje.ElemClase("valorno5")) + " > " + novalorSumado5;
-        bononoclase5.text = nobonoAct5 + " > " + nobonoSumado5;
-
-        nombrenoclase6.text = Personaje.ElemClase("valorno6");
-        int novalorAct6 = Personaje.Valor(Personaje.ElemClase("valorno6"));
-        int nobonoAct6 = Personaje.BonoValor(Personaje.ElemClase("valorno6"));
-        int novalorSumado6 = novalorAct6 + 1;
-        int nobonoSumado6;
-        if (novalorSumado6 >= 8) { nobonoSumado6 = (novalorSumado6 - 8) / 2; }
-        else { nobonoSumado6 = (novalorSumado6 - 9) / 2; }
-        numnoclase6.text = Personaje.Valor(Personaje.ElemClase("valorno6")) + " > " + novalorSumado6;
-        bononoclase6.text = nobonoAct6 + " > " + nobonoSumado6;
-
-        menuSubNiv1.SetActive(false);
-        menuSubNiv2.SetActive(true);
-    }
-
-    public void SubirNivel3()
-    {
         //Cambiar nombres, numeros y bonos de cada valor 
         nombreRaza1.text = Personaje.ElemRaza("valor1");
         int valorAct1 = Personaje.Valor(Personaje.ElemRaza("valor1"));
@@ -292,14 +215,121 @@ public class SubidaNivel : MonoBehaviour
         numRaza3.text = Personaje.Valor(Personaje.ElemRaza("valor3")) + " > " + valorSumado3;
         bonoRaza3.text = bonoAct3 + " > " + bonoSumado3;
 
-        menuSubNiv2.SetActive(false);
-        menuSubNiv3.SetActive(true);
+        menuSubNiv1.SetActive(true);
     }
-    public void SubirNivel4()
+
+    public void SubirNivel2()
+    {
+        //Cambiar nombres, numeros y bonos de cada valor 
+        int novalorAct1 = Personaje.Valor("FUERZA");
+        int nobonoAct1 = Personaje.BonoValor("FUERZA");
+        int novalorSumado1 = novalorAct1 + 1;
+        int nobonoSumado1;
+        if (novalorSumado1 >= 8) { nobonoSumado1 = (novalorSumado1 - 8) / 2; }
+        else { nobonoSumado1 = (novalorSumado1 - 9) / 2; }
+        numnoclase1.text = Personaje.Valor("FUERZA") + " > " + novalorSumado1;
+        bononoclase1.text = nobonoAct1 + " > " + nobonoSumado1;
+
+        int novalorAct2 = Personaje.Valor("RESISTENCIA");
+        int nobonoAct2 = Personaje.BonoValor("RESISTENCIA");
+        int novalorSumado2 = novalorAct2 + 1;
+        int nobonoSumado2;
+        if (novalorSumado2 >= 8) { nobonoSumado2 = (novalorSumado2 - 8) / 2; }
+        else { nobonoSumado2 = (novalorSumado2 - 9) / 2; }
+        numnoclase2.text = Personaje.Valor("RESISTENCIA") + " > " + novalorSumado2;
+        bononoclase2.text = nobonoAct2 + " > " + nobonoSumado2;
+
+        int novalorAct3 = Personaje.Valor("AGILIDAD");
+        int nobonoAct3 = Personaje.BonoValor("AGILIDAD");
+        int novalorSumado3 = novalorAct3 + 1;
+        int nobonoSumado3;
+        if (novalorSumado3 >= 8) { nobonoSumado3 = (novalorSumado3 - 8) / 2; }
+        else { nobonoSumado3 = (novalorSumado3 - 9) / 2; }
+        numnoclase3.text = Personaje.Valor("AGILIDAD") + " > " + novalorSumado3;
+        bononoclase3.text = nobonoAct3 + " > " + nobonoSumado3;
+
+        int novalorAct4 = Personaje.Valor("VELOCIDAD");
+        int nobonoAct4 = Personaje.BonoValor("VELOCIDAD");
+        int novalorSumado4 = novalorAct4 + 1;
+        int nobonoSumado4;
+        if (novalorSumado4 >= 8) { nobonoSumado4 = (novalorSumado4 - 8) / 2; }
+        else { nobonoSumado4 = (novalorSumado4 - 9) / 2; }
+        numnoclase4.text = Personaje.Valor("VELOCIDAD") + " > " + novalorSumado4;
+        bononoclase4.text = nobonoAct4 + " > " + nobonoSumado4;
+
+        int novalorAct5 = Personaje.Valor("PODER");
+        int nobonoAct5 = Personaje.BonoValor("PODER");
+        int novalorSumado5 = novalorAct5 + 1;
+        int nobonoSumado5;
+        if (novalorSumado5 >= 8) { nobonoSumado5 = (novalorSumado5 - 8) / 2; }
+        else { nobonoSumado5 = (novalorSumado5 - 9) / 2; }
+        numnoclase5.text = Personaje.Valor("PODER") + " > " + novalorSumado5;
+        bononoclase5.text = nobonoAct5 + " > " + nobonoSumado5;
+
+        int novalorAct6 = Personaje.Valor("SENTIDOS");
+        int nobonoAct6 = Personaje.BonoValor("SENTIDOS");
+        int novalorSumado6 = novalorAct6 + 1;
+        int nobonoSumado6;
+        if (novalorSumado6 >= 8) { nobonoSumado6 = (novalorSumado6 - 8) / 2; }
+        else { nobonoSumado6 = (novalorSumado6 - 9) / 2; }
+        numnoclase6.text = Personaje.Valor("SENTIDOS") + " > " + novalorSumado6;
+        bononoclase6.text = nobonoAct6 + " > " + nobonoSumado6;
+
+        int novalorAct7 = Personaje.Valor("MEMORIA");
+        int nobonoAct7 = Personaje.BonoValor("MEMORIA");
+        int novalorSumado7 = novalorAct7 + 1;
+        int nobonoSumado7;
+        if (novalorSumado7 >= 8) { nobonoSumado7 = (novalorSumado7 - 8) / 2; }
+        else { nobonoSumado7 = (novalorSumado7 - 9) / 2; }
+        numnoclase7.text = Personaje.Valor("MEMORIA") + " > " + novalorSumado7;
+        bononoclase7.text = nobonoAct7 + " > " + nobonoSumado7;
+
+        int novalorAct8 = Personaje.Valor("PERSONALIDAD");
+        int nobonoAct8 = Personaje.BonoValor("PERSONALIDAD");
+        int novalorSumado8 = novalorAct8 + 1;
+        int nobonoSumado8;
+        if (novalorSumado8 >= 8) { nobonoSumado8 = (novalorSumado8 - 8) / 2; }
+        else { nobonoSumado8 = (novalorSumado8 - 9) / 2; }
+        numnoclase8.text = Personaje.Valor("PERSONALIDAD") + " > " + novalorSumado8;
+        bononoclase8.text = nobonoAct8 + " > " + nobonoSumado8;
+
+        menuSubNiv1.SetActive(false);
+        menuSubNiv2.SetActive(true);
+    }
+
+    
+    public void SubirNivel3()
     {
         numDados.text = Personaje._otros.numDados.ToString();
-        menuSubNiv3.SetActive(false);
+        menuSubNiv2.SetActive(false);
+        valoresCuerpo.SetActive(false);
+        BotonesValores.SetActive(true);
+        valoresAlma.SetActive(false);
         Puntos.ActPuntos();
+    }
+
+    void AbrirValoresCuerpo()
+    {
+        BotonesValores.SetActive(false);
+        valoresCuerpo.SetActive(true);
+    }
+
+    void AbrirValoresAlma()
+    {
+        BotonesValores.SetActive(false);
+        valoresAlma.SetActive(true);
+    }
+
+    void CerrarValoresCuerpo()
+    {
+        valoresCuerpo.SetActive(false);
+        BotonesValores.SetActive(true);
+    }
+
+    void CerrarValoresAlma()
+    {
+        valoresAlma.SetActive(false);
+        BotonesValores.SetActive(true);
     }
 
     void ActMenuValores(string valor)

@@ -48,8 +48,8 @@ public class BotonExp : MonoBehaviour
         if (expActPersonaje >= expNivPersonaje)
         {
             expNivPersonaje = (expNivPersonaje * 2) + (expNivPersonaje / 2);
-            subirNivel.SubirNivel();
             Personaje.SubirNivel();
+            subirNivel.SubirNivel();
             NivelPers.text = "Nivel: " + Personaje.nivel;
         }
         expActual.text = expActPersonaje.ToString();

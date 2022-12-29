@@ -308,7 +308,7 @@ public class CombatAttacks : MonoBehaviour
 
     void usarHechizo()
     {
-        BotonDesplegable.text = "HABILIDADES Y HECHIZOS";
+        BotonDesplegable.text = "HECHIZOS";
         MenuHechizos.SetActive(true);
         MenuAcciones.SetActive(false);
     }
