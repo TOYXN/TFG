@@ -64,6 +64,7 @@ public class SubidaNivel : MonoBehaviour
     public Arma Arma;
     public ValoresMenu ValoresMenu;
     public PCPA Puntos;
+    public DesbloqHechiz DesbloqHechiz;
 
     // Start is called before the first frame update
     void Start()
@@ -77,6 +78,7 @@ public class SubidaNivel : MonoBehaviour
         tipoDano.text = Arma.tipoArma;
         dadosArmaEquipo.text = "d" + Arma.dadoArma;
         dadosArma.text = "d" + Arma.dadoArma;
+        DesbloqHechiz.DesblHechiz();
     }
 
     void IniciarBotonesMenuClase()
@@ -306,6 +308,7 @@ public class SubidaNivel : MonoBehaviour
         BotonesValores.SetActive(true);
         valoresAlma.SetActive(false);
         Puntos.ActPuntos();
+        DesbloqHechiz.DesblHechiz();
     }
 
     void AbrirValoresCuerpo()

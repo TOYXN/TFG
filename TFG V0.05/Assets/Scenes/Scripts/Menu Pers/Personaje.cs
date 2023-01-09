@@ -282,6 +282,24 @@ public class Clase
     }
 }
 
+public class Hechizo
+{
+    public string nombreHechizo;
+    public string descHechizo;
+    public int costeHechizo;
+    public int dadoHechizo;
+
+    public Hechizo() { }
+
+    public Hechizo(string nombreHechizo, string descHechizo, int costeHechizo, int dadoHechizo)
+    {
+        this.nombreHechizo = nombreHechizo;
+        this.descHechizo = descHechizo;
+        this.costeHechizo = costeHechizo;
+        this.dadoHechizo = dadoHechizo;
+    }
+}
+
 
 public class Personaje : MonoBehaviour
 {
@@ -289,10 +307,13 @@ public class Personaje : MonoBehaviour
     public int nivel;
     public int exp;
     public int expProxNivel;
+    public int hechizosGuard;
     public string accVent1;
     public string accVent2;
     public string accVent3;
     public string accVent4;
+
+    public Hechizo[] listaHechizos;
 
     public Clase _clase;
     public Raza _raza;
@@ -307,6 +328,7 @@ public class Personaje : MonoBehaviour
         nivel = 1;
         exp = 0;
         expProxNivel = 100;
+        hechizosGuard = 0;
         accVent1 = "PERCIBIR";
         accVent2 = "SALTAR";
         accVent3 = "BOTÁNICA";
