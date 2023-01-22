@@ -288,17 +288,19 @@ public class Hechizo
 {
     public string nombreHechizo;
     public string descHechizo;
+    public string tipoHechizo;
     public int costeHechizo;
     public int dadoHechizo;
 
     public Hechizo() { }
 
-    public Hechizo(string nombreHechizo, string descHechizo, int costeHechizo, int dadoHechizo)
+    public Hechizo(string nombreHechizo, string descHechizo, int costeHechizo, int dadoHechizo, string tipoHechizo)
     {
         this.nombreHechizo = nombreHechizo;
         this.descHechizo = descHechizo;
         this.costeHechizo = costeHechizo;
         this.dadoHechizo = dadoHechizo;
+        this.tipoHechizo = tipoHechizo;
     }
 }
 
@@ -309,14 +311,19 @@ public class Personaje : MonoBehaviour
     public int nivel;
     public int exp;
     public int expProxNivel;
-    public int hechizosGuard;
+    
     public string accVent1;
     public string accVent2;
     public string accVent3;
     public string accVent4;
 
+    public bool cargado;
+    public int valorCargado;
+
+    public bool oculto;
+
     public Hechizo[] listaHechizos;
-    public int numHechiz;
+    public int hechizosGuard;
 
     public Clase _clase;
     public Raza _raza;
@@ -332,7 +339,6 @@ public class Personaje : MonoBehaviour
         exp = 0;
         expProxNivel = 100;
         hechizosGuard = 0;
-        numHechiz = 0;
         accVent1 = "PERCIBIR";
         accVent2 = "SALTAR";
         accVent3 = "BOTÁNICA";
@@ -347,61 +353,68 @@ public class Personaje : MonoBehaviour
         _otros.numDados = 1 + (nivel / 2);
         _otros.apt = 2 + (_cuerpo.bono_velocidad / 2);
         _otros.estado = "ESTABLE";
+        oculto = false;
+        cargado = false;
+        valorCargado = 0;
     }
 
     void EmpezarHechizClase()
     {
         string nombre1 = "Bala";
         string desc1 = "Concentra una pequeña parte de su alma en un punto y la dispara a alta velocidad para infringir daño a un enemigo.";
+        string tipo1 = "Magia";
         int coste1 = 6;
         int dado1 = 6;
-        Hechizo hech1 = new Hechizo(nombre1, desc1, coste1, dado1);
-        //_clase.listaHechizosClase[0].nombreHechizo = "Bala";
-        //_clase.listaHechizosClase[0].descHechizo = "Concentra una pequeña parte de su alma en un punto y la dispara a alta velocidad para infringir daño a un enemigo.";
-        //_clase.listaHechizosClase[0].costeHechizo = 6;
-        //_clase.listaHechizosClase[0].dadoHechizo = 6;
+        Hechizo hech1 = new Hechizo(nombre1, desc1, coste1, dado1, tipo1);
 
         string nombre2 = "Carga";
         string desc2 = "Concentra su alma para que su siguiente ataque con el arma haga daño adicional.";
+        string tipo2 = "Carga";
         int coste2 = 6;
         int dado2 = 6;
-        Hechizo hech2 = new Hechizo(nombre2, desc2, coste2, dado2);
+        Hechizo hech2 = new Hechizo(nombre2, desc2, coste2, dado2, tipo2);
 
-        string nombre3 = "Terataque";
-        string desc3 = "Se concentra en cuerpo y alma para atacar 4 veces consecutivas muy rápido a un enemigo.";
+        string nombre3 = "Biataque";
+        string desc3 = "Se concentra en cuerpo y alma para atacar 2 veces consecutivas muy rápido a un enemigo.";
+        string tipo3 = "Bi";
         int coste3 = 16;
         int dado3 = 0;
-        Hechizo hech3 = new Hechizo(nombre3, desc3, coste3, dado3);
+        Hechizo hech3 = new Hechizo(nombre3, desc3, coste3, dado3, tipo3);
 
         string nombre4 = "Acercamiento";
         string desc4 = "Permite al usuario atacar a la vez que se enfrenta a un enemigo.";
+        string tipo4 = "Ataque";
         int coste4 = 8;
         int dado4 = 0;
-        Hechizo hech4 = new Hechizo(nombre4, desc4, coste4, dado4);
+        Hechizo hech4 = new Hechizo(nombre4, desc4, coste4, dado4, tipo4);
 
         string nombre5 = "Aligerar";
         string desc5 = "Mejora la Agilidad y Velocidad de un objetivo por 2 puntos. Este efecto dura para todo el combate o hasta 3 turnos de acciones fuera de combate. Se puede acumular.";
+        string tipo5 = "Pasivo";
         int coste5 = 14;
         int dado5 = 0;
-        Hechizo hech5 = new Hechizo(nombre5, desc5, coste5, dado5);
+        Hechizo hech5 = new Hechizo(nombre5, desc5, coste5, dado5, tipo5);
 
         string nombre6 = "Enfurecer";
         string desc6 = "Mejora la Fuerza y Resistencia de un objetivo por 2 puntos. Este efecto dura para todo el combate o hasta 3 turnos de acciones fuera de combate. Se puede acumular.";
+        string tipo6 = "Pasivo";
         int coste6 = 14;
         int dado6 = 0;
-        Hechizo hech6 = new Hechizo(nombre6, desc6, coste6, dado6);
+        Hechizo hech6 = new Hechizo(nombre6, desc6, coste6, dado6, tipo6);
 
         string nombre7 = "Entorpecer";
         string desc7 = "Reduce la Agilidad y Velocidad de un objetivo por 2 puntos. Este efecto dura para todo el combate o hasta 3 turnos de acciones fuera de combate. Se puede acumular.";
+        string tipo7 = "Pasivo";
         int coste7 = 14;
         int dado7 = 0;
-        Hechizo hech7 = new Hechizo(nombre7, desc7, coste7, dado7);
+        Hechizo hech7 = new Hechizo(nombre7, desc7, coste7, dado7, tipo7);
 
         string nombre8 = "Mimetizar";
         string desc8 = "Manipula su alma de tal forma que se vuelve imperceptible a la vista. Los enemigos no podrán atacarte hasta que se pierde el efecto. El próximo ataque siempre hará daño doble.";
+        string tipo8 = "Pasivo";
         int coste8 = 20;
         int dado8 = 0;
-        Hechizo hech8 = new Hechizo(nombre8, desc8, coste8, dado8);
+        Hechizo hech8 = new Hechizo(nombre8, desc8, coste8, dado8, tipo8);
 
         _clase.listaHechizosClase = new Hechizo[] { hech1, hech2, hech3, hech4, hech5, hech6, hech7, hech8 };
     }

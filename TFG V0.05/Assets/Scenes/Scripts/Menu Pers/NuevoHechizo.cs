@@ -174,15 +174,20 @@ public class NuevoHechizo : MonoBehaviour
 
     void SelecNuevoHech()
     {
-        int num = Personaje.numHechiz;
+        int num = Personaje.hechizosGuard;
         Debug.Log(num);
         Personaje.listaHechizos[num] = Personaje._clase.listaHechizosClase[index];
-        Personaje.numHechiz++;
+        Personaje.hechizosGuard++;
         MenuHech.SetActive(false);
         MenuSel.SetActive(false);
         botonHechAct.SetActive(false);
         botonDesbloqAct.SetActive(false);
         FuncHechizos.ActHechiz(num);
+    }
+
+    public void ActHechiz(int n)
+    {
+        FuncHechizos.ActHechiz(n);
     }
 
     void EmpezarSelecc(GameObject botonAct)

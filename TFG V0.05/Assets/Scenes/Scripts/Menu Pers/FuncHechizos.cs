@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,17 +41,339 @@ public class FuncHechizos : MonoBehaviour
     public Button usarHech7;
     public Button usarHech8;
 
+    public GameObject menuHech;
+    public Text nomHechMenu;
+    public Text descHechMenu;
+    public Text costeHechMenu;
+    public Text dadosHechMenu;
+    public Text PAPersMenu;
+    public Button usarHech;
+    public Button cerrarMenuHech;
+
+    public GameObject resultadoHech;
+    public Text resultHech;
+    public Text desgloseResultHech;
+    public Text infoResultHech;
+    public Button cerrarMenuResultHech;
+
+    public Text PAPers;
+
+    int hechSelec;
+
+
     public Personaje Personaje;
+    public Arma Arma;
     // Start is called before the first frame update
     void Start()
     {
-        
+        usarHech1.onClick.AddListener(Bypass1);
+        usarHech2.onClick.AddListener(Bypass2);
+        usarHech3.onClick.AddListener(Bypass3);
+        usarHech4.onClick.AddListener(Bypass4);
+        usarHech5.onClick.AddListener(Bypass5);
+        usarHech6.onClick.AddListener(Bypass6);
+        usarHech7.onClick.AddListener(Bypass7);
+        usarHech8.onClick.AddListener(Bypass8);
+        usarHech.onClick.AddListener(UsarHech);
+        cerrarMenuHech.onClick.AddListener(CerrarMenuHech);
+        cerrarMenuResultHech.onClick.AddListener(CerrarMenuResultHech);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Bypass1()
     {
+        hechSelec = 0;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass2()
+    {
+        hechSelec = 1;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass3()
+    {
+        hechSelec = 2;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass4()
+    {
+        hechSelec = 3;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass5()
+    {
+        hechSelec = 4;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass6()
+    {
+        hechSelec = 5;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass7()
+    {
+        hechSelec = 6;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void Bypass8()
+    {
+        hechSelec = 7;
+        AbrirMenuHechizo(Personaje.listaHechizos[hechSelec].nombreHechizo, Personaje.listaHechizos[hechSelec].descHechizo,
+                         Personaje.listaHechizos[hechSelec].costeHechizo, Personaje.listaHechizos[hechSelec].dadoHechizo);
+    }
+
+    void AbrirMenuHechizo(string nomHechizo, string descHechizo, int costeHechizo, int dadoHechizo)
+    {
+        nomHechMenu.text = nomHechizo;
+        descHechMenu.text = descHechizo;
+        costeHechMenu.text = "Coste: " + costeHechizo + " PA";
+        if (dadoHechizo == 0)
+        {
+            dadosHechMenu.text = "-";
+        }
+        else
+        {
+            dadosHechMenu.text = "Dados: d" + dadoHechizo + " X" + Personaje._otros.numDados;
+        }
+        PAPersMenu.text = "PA Actuales: " + Personaje.Valor("ALMAACT") + "/" + Personaje.Valor("ALMAMAX");
+        menuHech.SetActive(true);
+    }
+
+    void UsarHech()
+    {
+        if(Personaje.listaHechizos[hechSelec].tipoHechizo == "Magia")
+        {
+            UsarMagia(Personaje.listaHechizos[hechSelec].dadoHechizo);
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Ataque")
+        {
+            UsarAtaque();
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Carga")
+        {
+            UsarCarga(Personaje.listaHechizos[hechSelec].dadoHechizo);
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Oblit")
+        {
+            UsarObliteracion();
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Bi")
+        {
+            UsarBiataque();
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Combo")
+        {
+            UsarCombo();
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Mimet")
+        {
+            UsarMimetizar(Personaje.listaHechizos[hechSelec].descHechizo);
+        }
+        else if (Personaje.listaHechizos[hechSelec].tipoHechizo == "Pasivo")
+        {
+            UsarPasivo(Personaje.listaHechizos[hechSelec].descHechizo);
+        }
+        int PAAct = Personaje.Valor("ALMAACT");
+        int valorRestar = Personaje.listaHechizos[hechSelec].costeHechizo;
+        int resultado = PAAct - valorRestar;
+        Personaje.ActualizarValor("ALMAACT", resultado);
+        PAPersMenu.text = "PA Actuales: " + Personaje.Valor("ALMAACT") + "/" + Personaje.Valor("ALMAMAX");
+        PAPers.text = Personaje.Valor("ALMAACT") + "/" + Personaje.Valor("ALMAMAX");
+        resultadoHech.SetActive(true);
+
+    }
+
+    void UsarMagia(int dado)
+    {
+        int min = 1;
+        int max = dado + 1;
+        int numDadoTirada;
+        int result = 0;
+        int bonoActual = Personaje.BonoValor("PODER");
+        for (int i = 0; i < Personaje._otros.numDados; i++)
+        {
+            numDadoTirada = Random.Range(min, max);
+            result = result + numDadoTirada;
+            desgloseResultHech.text += numDadoTirada + " (d" + dado + ") " + "+ ";
+        }
+        result = result + bonoActual;
+        resultHech.text = "Resultado: " + result;
+        desgloseResultHech.text += bonoActual + " (Bono PODER)";
+    }
+
+    void UsarAtaque()
+    {
+        int min = 1;
+        int max = Arma.dadoArma + 1;
+        int numDadoTirada;
+        int result = 0;
+        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        for (int i = 0; i < Personaje._otros.numDados; i++)
+        {
+            numDadoTirada = Random.Range(min, max);
+            result = result + numDadoTirada;
+            desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+        }
+        result = result + bonoActual;
+        if (Personaje.cargado)
+        {
+            result = result + Personaje.valorCargado;
+            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            Personaje.valorCargado = 0;
+            Personaje.cargado = false;
+        }
+        else
+        {
+            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+        }
+        resultHech.text = "Resultado: " + result;
+    }
+
+    void UsarCarga(int dado)
+    {
+        int min = 1;
+        int max = dado + 1;
+        int numDadoTirada;
+        int result = 0;
+        int bonoActual = Personaje.BonoValor("PODER");
+        for (int i = 0; i < Personaje._otros.numDados; i++)
+        {
+            numDadoTirada = Random.Range(min, max);
+            result = result + numDadoTirada;
+            desgloseResultHech.text += numDadoTirada + " (d" + dado + ") " + "+ ";
+        }
         
+        result = result + bonoActual;
+        Personaje.cargado = true;
+        Personaje.valorCargado = result;
+        resultHech.text = "Resultado: " + result;
+        desgloseResultHech.text += bonoActual + " (Bono PODER)";
+    }
+
+    void UsarObliteracion()
+    {
+        int min = 1;
+        int max = Arma.dadoArma + 1;
+        int numDadoTirada;
+        int result = 0;
+        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        for (int i = 0; i < Personaje._otros.numDados + 4; i++)
+        {
+            numDadoTirada = Random.Range(min, max);
+            result = result + numDadoTirada;
+            desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+        }
+        result = result + bonoActual;
+        if (Personaje.cargado)
+        {
+            result = result + Personaje.valorCargado;
+            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            Personaje.valorCargado = 0;
+            Personaje.cargado = false;
+        }
+        else
+        {
+            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+        }
+        resultHech.text = "Resultado: " + result;
+    }
+
+    void UsarBiataque()
+    {
+        int min = 1;
+        int max = Arma.dadoArma + 1;
+        int numDadoTirada;
+        int result = 0;
+        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        for (int a = 0; a < 2; a++)
+        {
+            for (int i = 0; i < Personaje._otros.numDados; i++)
+            {
+                numDadoTirada = Random.Range(min, max);
+                result = result + numDadoTirada;
+                desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+            }
+            result = result + bonoActual;
+
+            if (Personaje.cargado)
+            {
+                result = result + Personaje.valorCargado;
+                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
+                Personaje.valorCargado = 0;
+                Personaje.cargado = false;
+            }
+            else
+            {
+                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+            }
+            desgloseResultHech.text += "| ";
+        }
+        resultHech.text = "Resultado: " + result;
+    }
+
+    void UsarMimetizar(string descripcion)
+    {
+        infoResultHech.text = descripcion;
+        Personaje.oculto = true;
+    }
+
+    void UsarPasivo(string descripcion)
+    {
+        infoResultHech.text = descripcion;
+    }
+
+    void UsarCombo()
+    {
+        int minAtk = 1;
+        int maxAtk = Arma.dadoArma + 1;
+        int minBonus = 1;
+        int maxBonus = 7;
+        int minTimes = Personaje._otros.numDados;
+        int maxTimes = 9;
+        int numDadoAtaque;
+        int numDadoBono;
+        int result = 0;
+        int bonoPoder = Personaje.BonoValor("PODER");
+        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        numDadoAtaque = Random.Range(minTimes, maxTimes);
+        for (int a = 0; a < numDadoAtaque; a++)
+        {
+            for (int i = 0; i < Personaje._otros.numDados; i++)
+            {
+                numDadoAtaque = Random.Range(minAtk, maxAtk);
+                numDadoBono = Random.Range(minBonus, maxBonus);
+                result = result + numDadoAtaque + numDadoBono;
+                desgloseResultHech.text += numDadoAtaque + " (" + Arma.dadoArma + ")" + " + " + numDadoBono + " (Daño Adicional) ";
+            }
+            result = result + bonoActual;
+
+            if (Personaje.cargado)
+            {
+                result = result + Personaje.valorCargado;
+                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
+                Personaje.valorCargado = 0;
+                Personaje.cargado = false;
+            }
+            else
+            {
+                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+            }
+            desgloseResultHech.text += "| ";
+        }
+        resultHech.text = "Resultado: " + result;
     }
 
     public void ActHechiz(int num)
@@ -127,5 +449,18 @@ public class FuncHechizos : MonoBehaviour
         {
             dadosPoner.text = "d" + dados + " X" + Personaje._otros.numDados;
         }
+    }
+
+    void CerrarMenuHech()
+    {
+        menuHech.SetActive(false);
+    }
+
+    void CerrarMenuResultHech()
+    {
+        resultHech.text = " ";
+        desgloseResultHech.text = " ";
+        infoResultHech.text = " ";
+        resultadoHech.SetActive(false);
     }
 }

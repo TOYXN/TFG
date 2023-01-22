@@ -89,9 +89,21 @@ public class CombatAttacks : MonoBehaviour
             desgloseTirada.text += numDadoTirada + " (" + dadoArma.text + ") " + "+ ";
         }
         result = result + bonoActual;
+        
+        if (Personaje.cargado)
+        {
+            result = result + Personaje.valorCargado;
+            desgloseTirada.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            Personaje.valorCargado = 0;
+            Personaje.cargado = false;
+        }
+        else
+        {
+            desgloseTirada.text += bonoActual + " (Bono " + tipoArma.text + ") ";
+        }
         resultadoAtaqueArma = result;
         resultadoTirada.text = "Resultado: " + result;
-        desgloseTirada.text += bonoActual + " (Bono " + tipoArma.text + ") ";
+        
         Debug.Log(result);
         MenuAtaqueArmaRes.SetActive(true);
     }
@@ -193,10 +205,11 @@ public class CombatAttacks : MonoBehaviour
             {
                 resultadoFinalEsquiva.text = "¡El enemigo contraataca!";
             }
-            else if (esquivaAtacante == "Milagro")
+            else if (esquivaAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
                 resultadoFinalEsquiva.text = "Infringes " + dmgTotal + " de daño";
+                Personaje.oculto = false;
             }
             else
             {
@@ -251,10 +264,11 @@ public class CombatAttacks : MonoBehaviour
             {
                 resultadoFinalBloqueo.text = "¡El enemigo contraataca!";
             }
-            else if (bloqueoAtacante == "Milagro")
+            else if (bloqueoAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
                 resultadoFinalBloqueo.text = "Infringes " + dmgTotal + " de daño";
+                Personaje.oculto = false;
             }
             else
             {

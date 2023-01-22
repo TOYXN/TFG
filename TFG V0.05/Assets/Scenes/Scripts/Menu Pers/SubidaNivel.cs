@@ -66,6 +66,7 @@ public class SubidaNivel : MonoBehaviour
     public PCPA Puntos;
     public DesbloqHechiz DesbloqHechiz;
     public NuevoHechizo NuevoHechizo;
+    public FuncHechizos FuncHechizos;
 
     // Start is called before the first frame update
     void Start()
@@ -311,6 +312,10 @@ public class SubidaNivel : MonoBehaviour
         valoresAlma.SetActive(false);
         Puntos.ActPuntos();
         DesbloqHechiz.DesblHechiz();
+        for (int i = 0; i < Personaje.hechizosGuard; i++)
+        {
+            FuncHechizos.ActHechiz(i);
+        }
     }
 
     void AbrirValoresCuerpo()
