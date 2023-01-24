@@ -208,7 +208,7 @@ public class CombatAttacks : MonoBehaviour
             else if (esquivaAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalEsquiva.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalEsquiva.text = "¡Golpe Crítico! Infringes " + dmgTotal + " de daño";
                 Personaje.oculto = false;
             }
             else
@@ -267,7 +267,7 @@ public class CombatAttacks : MonoBehaviour
             else if (bloqueoAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalBloqueo.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalBloqueo.text = "¡Golpe Crítico! Infringes " + dmgTotal + " de daño";
                 Personaje.oculto = false;
             }
             else
@@ -306,6 +306,7 @@ public class CombatAttacks : MonoBehaviour
     void CerrarResu()
     {
         MenuAtaqueArmaRes.SetActive(false);
+        desgloseTirada.text = " ";
     }
 
     void CerrarEsquiva()

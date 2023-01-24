@@ -411,7 +411,7 @@ public class Personaje : MonoBehaviour
 
         string nombre8 = "Mimetizar";
         string desc8 = "Manipula su alma de tal forma que se vuelve imperceptible a la vista. Los enemigos no podrán atacarte hasta que se pierde el efecto. El próximo ataque siempre hará daño doble.";
-        string tipo8 = "Pasivo";
+        string tipo8 = "Mimet";
         int coste8 = 20;
         int dado8 = 0;
         Hechizo hech8 = new Hechizo(nombre8, desc8, coste8, dado8, tipo8);

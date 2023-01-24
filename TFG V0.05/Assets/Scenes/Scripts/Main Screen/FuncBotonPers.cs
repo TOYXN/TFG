@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FuncBotonPers : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class FuncBotonPers : MonoBehaviour
     public Button botonElimNo2;
     public Button botonElimNo3;
     public Button botonElimNo4;
+
+    public Button botonPersonaje1;
+    public Button botonPersonaje2;
+    public Button botonPersonaje3;
+    public Button botonPersonaje4;
 
     public GameObject elemBoton1;
     public GameObject elemBoton2;
@@ -62,6 +68,11 @@ public class FuncBotonPers : MonoBehaviour
         botonElimNo2.onClick.AddListener(Bypass14);
         botonElimNo3.onClick.AddListener(Bypass15);
         botonElimNo4.onClick.AddListener(Bypass16);
+
+        botonPersonaje1.onClick.AddListener(CargarPersonaje1);
+        botonPersonaje2.onClick.AddListener(CargarPersonaje2);
+        botonPersonaje3.onClick.AddListener(CargarPersonaje3);
+        botonPersonaje4.onClick.AddListener(CargarPersonaje4);
     }
    
     void Bypass1()
@@ -142,6 +153,26 @@ public class FuncBotonPers : MonoBehaviour
     void Bypass16()
     {
         NoElimPers(menuElim4, personaje4);
+    }
+
+    void CargarPersonaje1()
+    {
+        SceneManager.LoadScene("Character");
+    }
+
+    void CargarPersonaje2()
+    {
+        SceneManager.LoadScene("Character");
+    }
+
+    void CargarPersonaje3()
+    {
+        SceneManager.LoadScene("Character");
+    }
+
+    void CargarPersonaje4()
+    {
+        SceneManager.LoadScene("Character");
     }
 
     void CrearPers(GameObject botonCrear, GameObject pers)
