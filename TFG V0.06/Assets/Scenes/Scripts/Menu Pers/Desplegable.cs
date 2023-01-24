@@ -54,7 +54,7 @@ public class Desplegable : MonoBehaviour
 
     void Bypass3()
     {
-        MostrarMenu(menuHab,"HECHIZOS");
+        MostrarMenu(menuHab,"HABILIDADES");
     }
 
     void Bypass4()
