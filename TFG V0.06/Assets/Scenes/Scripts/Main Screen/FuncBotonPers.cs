@@ -179,6 +179,7 @@ public class FuncBotonPers : MonoBehaviour
     {
         botonCrear.SetActive(false);
         pers.SetActive(true);
+        SceneManager.LoadScene("Creation");
     }
 
     void MenuElimPers(GameObject pers, GameObject menuElim)

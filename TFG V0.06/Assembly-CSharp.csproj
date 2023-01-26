@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Personaje.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\DesbloqHechiz.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\CombatAttacks.cs" />
@@ -71,8 +72,10 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso1.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2_4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />
