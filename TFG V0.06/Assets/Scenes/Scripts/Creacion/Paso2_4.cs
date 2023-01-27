@@ -128,7 +128,19 @@ public class Paso2_4 : MonoBehaviour
         cerrarMenuValor.onClick.AddListener(CerrarSegundoMenu);
         seleccionar.onClick.AddListener(AsignarValor);
         confirmar.onClick.AddListener(ConfirmarAsignacion);
-        reiniciar.onClick.AddListener(ReiniciarAsignacion);
+        reiniciar.onClick.AddListener(ReiniciarAsignacion);      
+    }
+
+    public void ReiniciarPersonaje()
+    {
+        Personaje.ActualizarValor("FUERZA", -Personaje.Valor("FUERZA"));
+        Personaje.ActualizarValor("RESISTENCIA", -Personaje.Valor("RESISTENCIA"));
+        Personaje.ActualizarValor("AGILIDAD", -Personaje.Valor("AGILIDAD"));
+        Personaje.ActualizarValor("VELOCIDAD", -Personaje.Valor("VELOCIDAD"));
+        Personaje.ActualizarValor("PODER", -Personaje.Valor("PODER"));
+        Personaje.ActualizarValor("SENTIDOS", -Personaje.Valor("SENTIDOS"));
+        Personaje.ActualizarValor("MEMORIA", -Personaje.Valor("MEMORIA"));
+        Personaje.ActualizarValor("PERSONALIDAD", -Personaje.Valor("PERSONALIDAD"));
     }
 
     void Bypass1()
@@ -202,7 +214,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza cómo de fuerte es tu personaje. La habilidad de manipular objetos pesados, golpear con potencia o ejecutar acciones que requieran del uso de la fuerza dependen de este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = fuerzaGO;
         MenuValor.SetActive(true);
     }
@@ -212,7 +224,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la vitalidad y resistencia física de tu personaje. Sus puntos de cuerpo (PC) o vida, por defecto, al igual que sus fortalezas físicas como poder correr durante mucho tiempo o resistiendo venenos se vinculan a este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = resistenciaGO;
         MenuValor.SetActive(true);
     }
@@ -222,7 +234,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la facilidad que tiene el personaje de esquivar, hacer acrobacias o movimientos complicados en general. También simboliza la destreza con las manos para hacer cualquier uso de estas, ya sea utilizar una herramienta correctamente o robar algo sin alertar.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = agilidadGO;
         MenuValor.SetActive(true);
     }
@@ -232,7 +244,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la rapidez que tiene el personaje para moverse, tomar decisiones o hacer cualquier otro tipo de acción. Las Acciones Por Turno (APT) del personaje dependen se este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = velocidadGO;
         MenuValor.SetActive(true);
     }
@@ -242,7 +254,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la voluntad del alma que tiene el personaje, la facilidad para ejecutar hechizos, su densidad y su potencia así como el vínculo de sí mismo con el planeta. Los Puntos Almáticos (PA) o por defecto, puntos mágicos o maná estan vinculados a este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = poderGO;
         MenuValor.SetActive(true);
     }
@@ -252,7 +264,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la perspicacia, intuición y capacidades sensoriales del personaje. La capacidad auditiva, ocular, gustativa, olfativa y del tacto del personaje son representadas en este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = sentidosGO;
         MenuValor.SetActive(true);
     }
@@ -262,7 +274,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza la capacidad de obtener conocimiento o de recordar del personaje. Todas las acciones que dependan del saber, al igual que el número de hechizos conocidos del personaje estan vinculadas a este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = memoriaGO;
         MenuValor.SetActive(true);
     }
@@ -272,7 +284,7 @@ public class Paso2_4 : MonoBehaviour
         valorSelec = valor;
         nombValor.text = valor;
         descValor.text = "Simboliza el carisma del personaje y su labia. La capacidad de encandilar una conversación o de destacar entre el resto esta vinculada a este valor.";
-        pregunta.text = "¿Colocar " + num + "  como valor base de " + valor + "?";
+        pregunta.text = "¿Colocar " + num + " como valor base de " + valor + "?";
         valorSelecBoton = personalidadGO;
         MenuValor.SetActive(true);
     }
@@ -371,6 +383,7 @@ public class Paso2_4 : MonoBehaviour
         personalidadGO.SetActive(true);
         ProcesoPost.SetActive(false);
         ProcesoSelecc.SetActive(true);
+        ReiniciarPersonaje();
     }
 
     void Siguiente1()
@@ -380,7 +393,7 @@ public class Paso2_4 : MonoBehaviour
 
     void Siguiente2()
     {
-        imagenPaso3.color = new Vector4(255, 255, 255, 100);
+        imagenPaso3.color = new Vector4(0, 255, 0, 100);
         Menu3_1.SetActive(true);
     }
 
@@ -411,6 +424,7 @@ public class Paso2_4 : MonoBehaviour
         ProcesoPost.SetActive(false);
         MenuSelecValor.SetActive(false);
         Menu2_4.SetActive(false);
+        ReiniciarPersonaje();
     }
 
     void Atras2()

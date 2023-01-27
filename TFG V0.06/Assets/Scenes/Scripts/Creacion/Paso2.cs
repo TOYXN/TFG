@@ -27,6 +27,8 @@ public class Paso2 : MonoBehaviour
     public Text num7;
     public Text num8;
 
+    public Paso2_4 PasoAsig;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,7 @@ public class Paso2 : MonoBehaviour
     void Siguiente3()
     {
         CalcularNumeros();
+        PasoAsig.ReiniciarPersonaje();
         Menu2_4.SetActive(true);
     }
     void Atras3()

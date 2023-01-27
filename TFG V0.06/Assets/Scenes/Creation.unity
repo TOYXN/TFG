@@ -14568,6 +14568,7 @@ MonoBehaviour:
   num6: {fileID: 714530896}
   num7: {fileID: 259429487}
   num8: {fileID: 477153572}
+  PasoAsig: {fileID: 761729039}
 --- !u!114 &761729039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14615,7 +14616,7 @@ MonoBehaviour:
   num7GO: {fileID: 799190206}
   num8GO: {fileID: 1966274249}
   MenuSelecValor: {fileID: 1304125963}
-  numValorAct: {fileID: 0}
+  numValorAct: {fileID: 1549679767}
   fuerza: {fileID: 1067093142}
   resistencia: {fileID: 1677346592}
   agilidad: {fileID: 1451798748}
