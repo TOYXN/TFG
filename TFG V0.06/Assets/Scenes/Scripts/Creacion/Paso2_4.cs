@@ -92,6 +92,8 @@ public class Paso2_4 : MonoBehaviour
 
     public GameObject ProcesoSelecc;
     public GameObject ProcesoPost;
+    public GameObject Confirmacion;
+
 
     int num;
     int numValoresSelec;
@@ -357,7 +359,7 @@ public class Paso2_4 : MonoBehaviour
     }
         void ConfirmarAsignacion()
     {
-        ProcesoPost.SetActive(false);
+        Confirmacion.SetActive(false);
         continuar2_4GO.SetActive(true);
     }
 
@@ -381,6 +383,7 @@ public class Paso2_4 : MonoBehaviour
         sentidosGO.SetActive(true);
         memoriaGO.SetActive(true);
         personalidadGO.SetActive(true);
+        Confirmacion.SetActive(true);
         ProcesoPost.SetActive(false);
         ProcesoSelecc.SetActive(true);
         ReiniciarPersonaje();
@@ -421,6 +424,7 @@ public class Paso2_4 : MonoBehaviour
         continuar2_4GO.SetActive(false);
         MenuValor.SetActive(false);
         ProcesoSelecc.SetActive(true);
+        Confirmacion.SetActive(true);
         ProcesoPost.SetActive(false);
         MenuSelecValor.SetActive(false);
         Menu2_4.SetActive(false);
