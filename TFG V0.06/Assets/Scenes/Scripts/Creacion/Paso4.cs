@@ -28,6 +28,16 @@ public class Paso4 : MonoBehaviour
     public GameObject MenuClaseSelec;
     public GameObject MenuDescClase;
     public GameObject TextoFinal;
+    public Personaje Personaje;
+
+    int valorFuerza;
+    int valorResist;
+    int valorAgilid;
+    int valorVeloci;
+    int valorPoder;
+    int valorSentid;
+    int valorMemoria;
+    int valorPerson;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +72,7 @@ public class Paso4 : MonoBehaviour
 
     void Siguiente3()
     {
+        guardarValoresPers();
         Menu4_4.SetActive(true);
     }
     void Atras3()
@@ -82,5 +93,18 @@ public class Paso4 : MonoBehaviour
         MenuDescClase.SetActive(false);
         TextoFinal.SetActive(false);
         continuar4GO.SetActive(false);
+        Personaje.ActualizarValores(valorFuerza, valorResist, valorAgilid, valorVeloci, valorPoder, valorSentid, valorMemoria, valorPerson);
+    }
+
+    void guardarValoresPers()
+    {
+        valorFuerza = Personaje.Valor("FUERZA");
+        valorResist = Personaje.Valor("RESISTENCIA");
+        valorAgilid = Personaje.Valor("AGILIDAD");
+        valorVeloci = Personaje.Valor("VELOCIDAD");
+        valorPoder = Personaje.Valor("PODER");
+        valorSentid = Personaje.Valor("SENTIDOS");
+        valorMemoria = Personaje.Valor("MEMORIA");
+        valorPerson = Personaje.Valor("PERSONALIDAD");
     }
 }

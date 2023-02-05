@@ -265,6 +265,8 @@ public class Clase
 
     public Hechizo[] listaHechizosClase;
 
+    public Arma[] listaArmasClase;
+
     public Clase() { }
 
     public Clase(string nombreClase, string descClase, string valorClase)
