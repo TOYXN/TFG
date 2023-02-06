@@ -24,10 +24,4 @@ public class Arma
         dadoArma = dado;
         tipoArma = tipo;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

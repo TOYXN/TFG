@@ -13403,7 +13403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &606453696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17005,6 +17005,8 @@ GameObject:
   - component: {fileID: 761729041}
   - component: {fileID: 761729042}
   - component: {fileID: 761729043}
+  - component: {fileID: 761729044}
+  - component: {fileID: 761729045}
   m_Layer: 0
   m_Name: Funcionamiento
   m_TagString: Untagged
@@ -17352,6 +17354,75 @@ MonoBehaviour:
   TextoFinal: {fileID: 1013474750}
   TextoFinalGO: {fileID: 1013474748}
   ContinuarGO: {fileID: 825810564}
+  Personaje: {fileID: 805967314}
+--- !u!114 &761729044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761729035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0858b33a703994294f8c4da9645820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu5_1: {fileID: 295097845}
+  Menu5_2: {fileID: 199134640}
+  Menu5_3: {fileID: 1600404272}
+  Menu5_4: {fileID: 908983709}
+  Menu6_1: {fileID: 2092391301}
+  imagenPaso5: {fileID: 550504433}
+  imagenPaso6: {fileID: 1541925367}
+  continuar1: {fileID: 585975463}
+  atras1: {fileID: 832645488}
+  continuar2: {fileID: 610139584}
+  atras2: {fileID: 1231697560}
+  continuar3: {fileID: 608774453}
+  atras3: {fileID: 1590530190}
+  continuar4: {fileID: 57375659}
+  atras4: {fileID: 732399292}
+  continuar4GO: {fileID: 57375657}
+  Arma1: {fileID: 210796741}
+  Arma2: {fileID: 1003139032}
+  Arma3: {fileID: 1534363797}
+  Arma4: {fileID: 457134203}
+  Arma5: {fileID: 321768438}
+  Arma6: {fileID: 393088976}
+  MenuSeleccion: {fileID: 606453695}
+  MenuArmaSelec: {fileID: 241534242}
+  TextoFinal: {fileID: 1971362629}
+  Personaje: {fileID: 805967314}
+--- !u!114 &761729045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761729035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5c9bf31be40784e84299a4da3f4a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuSeleccion: {fileID: 606453695}
+  Arma1Boton: {fileID: 528021746}
+  Arma2Boton: {fileID: 169456364}
+  Arma3Boton: {fileID: 855794307}
+  Arma4Boton: {fileID: 1591012490}
+  Arma5Boton: {fileID: 1201507273}
+  Arma6Boton: {fileID: 1705210184}
+  MenuArmaSelec: {fileID: 241534242}
+  NombreArma: {fileID: 2129720604}
+  DescArma: {fileID: 1503510104}
+  NombreOpcionalArma: {fileID: 2132939342}
+  DadoArma: {fileID: 996140552}
+  TipoArma: {fileID: 708339072}
+  BotonSeleccionarArma: {fileID: 1853395221}
+  CerrarMenuArma: {fileID: 804259121}
+  TextoFinal: {fileID: 1971362631}
+  TextoFinalGO: {fileID: 1971362629}
+  ContinuarGO: {fileID: 57375657}
   Personaje: {fileID: 805967314}
 --- !u!1 &767703083
 GameObject:
@@ -21840,7 +21911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -185, y: -410}
+  m_AnchoredPosition: {x: -185, y: -460}
   m_SizeDelta: {x: -470, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &931830674
@@ -27186,7 +27257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 140, y: -400}
+  m_AnchoredPosition: {x: 140, y: -450}
   m_SizeDelta: {x: -380, y: 120}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1131322629
@@ -29888,8 +29959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: -20, y: 100}
+  m_AnchoredPosition: {x: 0, y: -120}
+  m_SizeDelta: {x: -20, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1237250741
 MonoBehaviour:
@@ -46834,7 +46905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1971362630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47459,7 +47530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -270}
   m_SizeDelta: {x: -20, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1991004095

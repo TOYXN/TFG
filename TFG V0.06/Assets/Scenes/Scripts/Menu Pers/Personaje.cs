@@ -324,6 +324,7 @@ public class Personaje : MonoBehaviour
 
     public bool oculto;
 
+    public Arma ArmaEquipada;
     public Hechizo[] listaHechizos;
     public int hechizosGuard;
 
@@ -346,6 +347,7 @@ public class Personaje : MonoBehaviour
         accVent3 = "BOTÁNICA";
         accVent4 = "SIGILAR";
         _clase = new Clase("Cazador", " ", "AGILIDAD");
+        ArmaEquipada = new Arma("Daga", "Arma ligera de corto alcance para cortes y puñaladas. Puede ser lanzada como ataque.", 6, "AGILIDAD");
         listaHechizos = new Hechizo[8];
         EmpezarHechizClase();
         _raza = new Raza("Humano", " ", "VELOCIDAD", "AGILIDAD", "PERSONALIDAD");     

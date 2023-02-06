@@ -73,12 +73,20 @@ public class SelValorHuman : MonoBehaviour
     void AbrirValoresCuerpo()
     {
         ParteBotones.SetActive(false);
+        Valor1GO.SetActive(true);
+        Valor2GO.SetActive(true);
+        Valor3GO.SetActive(true);
+        Valor4GO.SetActive(true);
         ParteCuerpo.SetActive(true);
     }
 
     void AbrirValoresAlma()
     {
         ParteBotones.SetActive(false);
+        Valor5GO.SetActive(true);
+        Valor6GO.SetActive(true);
+        Valor7GO.SetActive(true);
+        Valor8GO.SetActive(true);
         ParteAlma.SetActive(true);
     }
 
@@ -151,19 +159,19 @@ public class SelValorHuman : MonoBehaviour
         if (numselec == 0)
         {
             Personaje._raza.valorPrincipal = valor;
-            Personaje.ActualizarValor(valor, Personaje.Valor(valor) + 2);
+            Personaje.ActualizarValor(valor, 2);
             descPaso.text = "Selecciona cual Valor quieres añadir +1";
             CalcularValoresSelec();
         }
         else if (numselec == 1)
         {
             Personaje._raza.valorSecundario = valor;
-            Personaje.ActualizarValor(valor, Personaje.Valor(valor) + 1);
+            Personaje.ActualizarValor(valor, 1);
         }
         else
         {
             Personaje._raza.valorTerciario = valor;
-            Personaje.ActualizarValor(valor, Personaje.Valor(valor) + 1);
+            Personaje.ActualizarValor(valor, 1);
             SeleccionRaza();
         }
         objetoValor.SetActive(false);
