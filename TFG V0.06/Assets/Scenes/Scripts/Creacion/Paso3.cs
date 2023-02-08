@@ -50,6 +50,7 @@ public class Paso3 : MonoBehaviour
     public Text bonoValor2;
 
     public Text ExplicacionPaso;
+    public Text descPaso;
     public GameObject ExplicacionPasoGO;
     public Personaje Personaje;
     public SelValorHuman funcionHumano;
@@ -107,6 +108,7 @@ public class Paso3 : MonoBehaviour
 
     void guardarValoresPers()
     {
+        descPaso.text = "Selecciona cual Valor quieres añadir +2";
         valorFuerza = Personaje.Valor("FUERZA");
         valorResist = Personaje.Valor("RESISTENCIA");
         valorAgilid = Personaje.Valor("AGILIDAD");

@@ -54,9 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Personaje.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5_4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\DesbloqHechiz.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\CombatAttacks.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\TiradasValores.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Caracteristicas.cs" />
@@ -76,12 +78,13 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2_4.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso1.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5_4.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6_3.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso7.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />

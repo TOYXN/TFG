@@ -57,7 +57,7 @@ public class SelValorHuman : MonoBehaviour
     public GameObject MenuRazaSelec;
     public GameObject menuRazas;
     public GameObject continuar3GO;
-
+    public Button anterior;
 
     public Personaje Personaje;
     // Start is called before the first frame update
@@ -68,25 +68,35 @@ public class SelValorHuman : MonoBehaviour
         IniciarBotonesValores();
         VolverCuerpo.onClick.AddListener(CerrarValoresCuerpo);
         VolverAlma.onClick.AddListener(CerrarValoresAlma);
+        anterior.onClick.AddListener(Reiniciar);
+    }
+
+    void Reiniciar()
+    {
+        Valor1GO.SetActive(true);
+        Valor2GO.SetActive(true);
+        Valor3GO.SetActive(true);
+        Valor4GO.SetActive(true);
+        Valor5GO.SetActive(true);
+        Valor6GO.SetActive(true);
+        Valor7GO.SetActive(true);
+        Valor8GO.SetActive(true);
+        MenuValores.SetActive(false);
+        ParteBotones.SetActive(true);
+        ParteCuerpo.SetActive(false);
+        ParteAlma.SetActive(false);
+        numselec = 0;
     }
 
     void AbrirValoresCuerpo()
     {
         ParteBotones.SetActive(false);
-        Valor1GO.SetActive(true);
-        Valor2GO.SetActive(true);
-        Valor3GO.SetActive(true);
-        Valor4GO.SetActive(true);
         ParteCuerpo.SetActive(true);
     }
 
     void AbrirValoresAlma()
     {
         ParteBotones.SetActive(false);
-        Valor5GO.SetActive(true);
-        Valor6GO.SetActive(true);
-        Valor7GO.SetActive(true);
-        Valor8GO.SetActive(true);
         ParteAlma.SetActive(true);
     }
 
@@ -180,6 +190,8 @@ public class SelValorHuman : MonoBehaviour
 
     void SeleccionRaza()
     {
+        CerrarValoresCuerpo();
+        CerrarValoresAlma();
         Personaje._raza.nombreRaza = NombreRaza.text;
         Personaje._raza.descRaza = DescRaza.text;
         MenuRazaSelec.SetActive(false);
@@ -188,6 +200,7 @@ public class SelValorHuman : MonoBehaviour
         MenuValores.SetActive(false);
         ExplicacionPasoGO.SetActive(true);
         continuar3GO.SetActive(true);
+        numselec = 0;
     }
 
     public void SelecValores()

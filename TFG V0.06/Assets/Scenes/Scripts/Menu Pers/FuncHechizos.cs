@@ -62,7 +62,6 @@ public class FuncHechizos : MonoBehaviour
 
 
     public Personaje Personaje;
-    public Arma Arma;
     // Start is called before the first frame update
     void Start()
     {
@@ -217,27 +216,27 @@ public class FuncHechizos : MonoBehaviour
     void UsarAtaque()
     {
         int min = 1;
-        int max = Arma.dadoArma + 1;
+        int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
             numDadoTirada = Random.Range(min, max);
             result = result + numDadoTirada;
-            desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+            desgloseResultHech.text += numDadoTirada + " (" + Personaje.ArmaEquipada.dadoArma + ") " + "+ ";
         }
         result = result + bonoActual;
         if (Personaje.cargado)
         {
             result = result + Personaje.valorCargado;
-            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
             Personaje.valorCargado = 0;
             Personaje.cargado = false;
         }
         else
         {
-            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+            desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
         }
         resultHech.text = "Resultado: " + result;
     }
@@ -266,27 +265,27 @@ public class FuncHechizos : MonoBehaviour
     void UsarObliteracion()
     {
         int min = 1;
-        int max = Arma.dadoArma + 1;
+        int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados + 4; i++)
         {
             numDadoTirada = Random.Range(min, max);
             result = result + numDadoTirada;
-            desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+            desgloseResultHech.text += numDadoTirada + " (" + Personaje.ArmaEquipada.dadoArma + ") " + "+ ";
         }
         result = result + bonoActual;
         if (Personaje.cargado)
         {
             result = result + Personaje.valorCargado;
-            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
             Personaje.valorCargado = 0;
             Personaje.cargado = false;
         }
         else
         {
-            desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+            desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
         }
         resultHech.text = "Resultado: " + result;
     }
@@ -294,30 +293,30 @@ public class FuncHechizos : MonoBehaviour
     void UsarBiataque()
     {
         int min = 1;
-        int max = Arma.dadoArma + 1;
+        int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int a = 0; a < 2; a++)
         {
             for (int i = 0; i < Personaje._otros.numDados; i++)
             {
                 numDadoTirada = Random.Range(min, max);
                 result = result + numDadoTirada;
-                desgloseResultHech.text += numDadoTirada + " (" + Arma.dadoArma + ") " + "+ ";
+                desgloseResultHech.text += numDadoTirada + " (" + Personaje.ArmaEquipada.dadoArma + ") " + "+ ";
             }
             result = result + bonoActual;
 
             if (Personaje.cargado)
             {
                 result = result + Personaje.valorCargado;
-                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
+                desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
                 Personaje.valorCargado = 0;
                 Personaje.cargado = false;
             }
             else
             {
-                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+                desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
             }
             desgloseResultHech.text += "| ";
         }
@@ -338,7 +337,7 @@ public class FuncHechizos : MonoBehaviour
     void UsarCombo()
     {
         int minAtk = 1;
-        int maxAtk = Arma.dadoArma + 1;
+        int maxAtk = Personaje.ArmaEquipada.dadoArma + 1;
         int minBonus = 1;
         int maxBonus = 7;
         int minTimes = Personaje._otros.numDados;
@@ -347,7 +346,7 @@ public class FuncHechizos : MonoBehaviour
         int numDadoBono;
         int result = 0;
         int bonoPoder = Personaje.BonoValor("PODER");
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         numDadoAtaque = Random.Range(minTimes, maxTimes);
         for (int a = 0; a < numDadoAtaque; a++)
         {
@@ -356,20 +355,20 @@ public class FuncHechizos : MonoBehaviour
                 numDadoAtaque = Random.Range(minAtk, maxAtk);
                 numDadoBono = Random.Range(minBonus, maxBonus);
                 result = result + numDadoAtaque + numDadoBono;
-                desgloseResultHech.text += numDadoAtaque + " (" + Arma.dadoArma + ")" + " + " + numDadoBono + " (Daño Adicional) ";
+                desgloseResultHech.text += numDadoAtaque + " (" + Personaje.ArmaEquipada.dadoArma + ")" + " + " + numDadoBono + " (Daño Adicional) ";
             }
             result = result + bonoActual;
 
             if (Personaje.cargado)
             {
                 result = result + Personaje.valorCargado;
-                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
+                desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado) ";
                 Personaje.valorCargado = 0;
                 Personaje.cargado = false;
             }
             else
             {
-                desgloseResultHech.text += bonoActual + " (Bono " + Arma.tipoArma + ") ";
+                desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
             }
             desgloseResultHech.text += "| ";
         }

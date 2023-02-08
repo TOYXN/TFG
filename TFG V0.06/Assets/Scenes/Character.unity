@@ -57663,7 +57663,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1405892540}
   - component: {fileID: 1405892539}
-  - component: {fileID: 1405892541}
   - component: {fileID: 1405892542}
   - component: {fileID: 1405892543}
   - component: {fileID: 1405892544}
@@ -57712,21 +57711,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1405892541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405892538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d308a7e1bbe364fbfff106123c733a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombreArma: 
-  dadoArma: 0
-  tipoArma: 
 --- !u!114 &1405892542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62087,7 +62071,6 @@ MonoBehaviour:
   dadosArmaEquipo: {fileID: 186762316}
   dadosArma: {fileID: 1821425824}
   Personaje: {fileID: 1405892539}
-  Arma: {fileID: 1405892541}
   ValoresMenu: {fileID: 1514392954}
   Puntos: {fileID: 1514392955}
   DesbloqHechiz: {fileID: 1514392960}
@@ -62287,7 +62270,6 @@ MonoBehaviour:
   botonCerrarEsquiva: {fileID: 96655378}
   botonCerrarBloqueo: {fileID: 939311890}
   BotonDesplegable: {fileID: 1552977325}
-  Arma: {fileID: 1405892541}
   Personaje: {fileID: 1405892539}
 --- !u!114 &1514392958
 MonoBehaviour:
@@ -62443,7 +62425,6 @@ MonoBehaviour:
   cerrarMenuResultHech: {fileID: 1125764315}
   PAPers: {fileID: 2124231132}
   Personaje: {fileID: 1405892539}
-  Arma: {fileID: 1405892541}
 --- !u!114 &1514392962
 MonoBehaviour:
   m_ObjectHideFlags: 0

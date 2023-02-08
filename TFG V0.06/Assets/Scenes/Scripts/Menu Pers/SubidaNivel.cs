@@ -61,7 +61,6 @@ public class SubidaNivel : MonoBehaviour
     public Text dadosArma;
 
     public Personaje Personaje;
-    public Arma Arma;
     public ValoresMenu ValoresMenu;
     public PCPA Puntos;
     public DesbloqHechiz DesbloqHechiz;
@@ -76,10 +75,10 @@ public class SubidaNivel : MonoBehaviour
         ValoresMenu.IniciarValores();
         Puntos.ActPuntos();
         numDados.text = Personaje._otros.numDados.ToString();
-        nombreArma.text = Arma.nombreArma;
-        tipoDano.text = Arma.tipoArma;
-        dadosArmaEquipo.text = "d" + Arma.dadoArma;
-        dadosArma.text = "d" + Arma.dadoArma;
+        nombreArma.text = Personaje.ArmaEquipada.nombreArma;
+        tipoDano.text = Personaje.ArmaEquipada.tipoArma;
+        dadosArmaEquipo.text = "d" + Personaje.ArmaEquipada.dadoArma;
+        dadosArma.text = "d" + Personaje.ArmaEquipada.dadoArma;
         DesbloqHechiz.DesblHechiz();
         NuevoHechizo.IniciarMenuSelecc();
     }

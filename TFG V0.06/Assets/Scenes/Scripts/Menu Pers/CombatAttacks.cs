@@ -44,7 +44,6 @@ public class CombatAttacks : MonoBehaviour
     int resultadoAtaqueArma;
 
     public Text BotonDesplegable;
-    public Arma Arma;
     public Personaje Personaje;
     // Start is called before the first frame update
     void Start()
@@ -69,19 +68,19 @@ public class CombatAttacks : MonoBehaviour
 
     void atacarArma()
     {
-        nombreArma.text = Arma.nombreArma;
-        tipoArma.text = Arma.tipoArma;
-        dadoArma.text = "d" + Arma.dadoArma;
+        nombreArma.text = Personaje.ArmaEquipada.nombreArma;
+        tipoArma.text = Personaje.ArmaEquipada.tipoArma;
+        dadoArma.text = "d" + Personaje.ArmaEquipada.dadoArma;
         numDados.text = Personaje._otros.numDados.ToString();
         MenuAtaqueArma.SetActive(true);
     }
     void Atacar()
     {
         int min = 1;
-        int max = Arma.dadoArma + 1;
+        int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
             numDadoTirada = Random.Range(min, max);
@@ -93,7 +92,7 @@ public class CombatAttacks : MonoBehaviour
         if (Personaje.cargado)
         {
             result = result + Personaje.valorCargado;
-            desgloseTirada.text += bonoActual + " (Bono " + Arma.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
+            desgloseTirada.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") + " + Personaje.valorCargado + " (Ataque cargado)";
             Personaje.valorCargado = 0;
             Personaje.cargado = false;
         }
@@ -144,7 +143,7 @@ public class CombatAttacks : MonoBehaviour
         int min = 1;
         int max = 21;
         int numDadoTirada = Random.Range(min, max);
-        int bonoActual = Personaje.BonoValor(Arma.tipoArma);
+        int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         int result;
         if (numDadoTirada == 1)
         {
