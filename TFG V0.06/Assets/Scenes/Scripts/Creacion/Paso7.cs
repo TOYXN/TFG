@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Paso7 : MonoBehaviour
+public class Paso7 : MonoBehaviour, IDataPersistance
 {
     public GameObject Menu7_1;
     public GameObject Menu7_2;
@@ -24,7 +24,17 @@ public class Paso7 : MonoBehaviour
     public InputField Input;
 
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         continuar1.onClick.AddListener(Siguiente1);
@@ -56,7 +66,7 @@ public class Paso7 : MonoBehaviour
 
     void Siguiente3()
     {
-        Personaje.name = nombreEntrado.text;
+        Personaje.nombre = nombreEntrado.text;
         SceneManager.LoadScene("Main Screen");
     }
     void Atras3()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Paso6_3 : MonoBehaviour
+public class Paso6_3 : MonoBehaviour, IDataPersistance
 {
     public GameObject ProcesoAsig;
     public GameObject acc1;
@@ -79,7 +79,17 @@ public class Paso6_3 : MonoBehaviour
     public GameObject ContinuarGO;
     public Personaje Personaje;
     GameObject botonAct;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         numAcc = 0;
@@ -333,9 +343,9 @@ public class Paso6_3 : MonoBehaviour
     void AsignarAcciones()
     {
         Personaje.accVent1 = NombAccVent1.text;
-        Personaje.accVent1 = NombAccVent1.text;
-        Personaje.accVent1 = NombAccVent1.text;
-        Personaje.accVent1 = NombAccVent1.text;
+        Personaje.accVent2 = NombAccVent2.text;
+        Personaje.accVent3 = NombAccVent3.text;
+        Personaje.accVent4 = NombAccVent4.text;
         ContinuarGO.SetActive(true);
         pregunta.SetActive(false);
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Paso4_4 : MonoBehaviour
+public class Paso4_4 : MonoBehaviour, IDataPersistance
 {
     public GameObject MenuSeleccion;
     public Button Aniquilador;
@@ -32,7 +32,17 @@ public class Paso4_4 : MonoBehaviour
 
     public GameObject ContinuarGO;
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         IniciarBotonesClases();

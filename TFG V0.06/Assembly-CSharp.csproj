@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Personaje.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\Data\Personaje.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5_4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\DesbloqHechiz.cs" />
@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\TiradasValores.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Caracteristicas.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso4_4.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso7.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\NuevoHechizo.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\BotonExp.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Inventario.cs" />
@@ -79,12 +80,14 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2_4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6_3.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso1.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6_3.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Creacion\Paso7.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\DataPersistanceManager.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\IDataPersistance.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\FileDataHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DescValores.txt" />

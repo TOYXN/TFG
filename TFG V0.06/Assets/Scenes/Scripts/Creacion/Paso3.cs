@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Paso3 : MonoBehaviour
+public class Paso3 : MonoBehaviour, IDataPersistance
 {
     public GameObject Menu3_1;
     public GameObject Menu3_2;
@@ -64,7 +64,16 @@ public class Paso3 : MonoBehaviour
     int valorMemoria;
     int valorPerson;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         IniciarBotones1();

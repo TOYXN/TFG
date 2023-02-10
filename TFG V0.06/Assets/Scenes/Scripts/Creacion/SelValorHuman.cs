@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SelValorHuman : MonoBehaviour
+public class SelValorHuman : MonoBehaviour, IDataPersistance
 {
     int numselec;
     public GameObject MenuValores;
@@ -60,7 +60,17 @@ public class SelValorHuman : MonoBehaviour
     public Button anterior;
 
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         ValoresCorporales.onClick.AddListener(AbrirValoresCuerpo);

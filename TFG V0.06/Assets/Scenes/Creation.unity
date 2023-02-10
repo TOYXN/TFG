@@ -17173,7 +17173,101 @@ MonoBehaviour:
   ProcesoSelecc: {fileID: 1280706043}
   ProcesoPost: {fileID: 195184715}
   Confirmacion: {fileID: 676231451}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17227,7 +17321,101 @@ MonoBehaviour:
   ExplicacionPaso: {fileID: 2121227436}
   descPaso: {fileID: 435362799}
   ExplicacionPasoGO: {fileID: 2121227434}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
   funcionHumano: {fileID: 761729041}
 --- !u!114 &761729041
 MonoBehaviour:
@@ -17290,7 +17478,101 @@ MonoBehaviour:
   menuRazas: {fileID: 1067417611}
   continuar3GO: {fileID: 333482564}
   anterior: {fileID: 994364998}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17323,7 +17605,101 @@ MonoBehaviour:
   MenuClaseSelec: {fileID: 441674258}
   MenuDescClase: {fileID: 874238631}
   TextoFinal: {fileID: 1013474748}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17359,7 +17735,101 @@ MonoBehaviour:
   TextoFinal: {fileID: 1013474750}
   TextoFinalGO: {fileID: 1013474748}
   ContinuarGO: {fileID: 825810564}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17397,7 +17867,101 @@ MonoBehaviour:
   MenuSeleccion: {fileID: 606453695}
   MenuArmaSelec: {fileID: 241534242}
   TextoFinal: {fileID: 1971362629}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17428,7 +17992,101 @@ MonoBehaviour:
   TextoFinal: {fileID: 1971362631}
   TextoFinalGO: {fileID: 1971362629}
   ContinuarGO: {fileID: 57375657}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17536,7 +18194,101 @@ MonoBehaviour:
   BotonReiniciar: {fileID: 163908798}
   botonAnterior: {fileID: 314884380}
   ContinuarGO: {fileID: 1835978359}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!114 &761729048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17562,7 +18314,101 @@ MonoBehaviour:
   continuar3GO: {fileID: 314794541}
   nombreEntrado: {fileID: 181146974}
   Input: {fileID: 160795830}
-  Personaje: {fileID: 805967314}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
 --- !u!1 &767703083
 GameObject:
   m_ObjectHideFlags: 0
@@ -19155,7 +20001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805967315}
-  - component: {fileID: 805967314}
+  - component: {fileID: 805967316}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -19163,30 +20009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &805967314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805967313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f463f25e1cdaa0b4592d4e4ca64f5711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombre: 
-  nivel: 0
-  exp: 0
-  expProxNivel: 0
-  accVent1: 
-  accVent2: 
-  accVent3: 
-  accVent4: 
-  cargado: 0
-  valorCargado: 0
-  oculto: 0
-  hechizosGuard: 0
 --- !u!4 &805967315
 Transform:
   m_ObjectHideFlags: 0
@@ -19201,6 +20023,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805967316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805967313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106570a0b6cc28c459fd55f4ddb4fa8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: personaje.pers
 --- !u!1 &809288899
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Paso5_4 : MonoBehaviour
+public class Paso5_4 : MonoBehaviour, IDataPersistance
 {
     public GameObject MenuSeleccion;
     public Button Arma1Boton;
@@ -31,7 +31,17 @@ public class Paso5_4 : MonoBehaviour
 
     int dado;
     string tipo;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         IniciarBotonesArma();
