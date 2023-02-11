@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Acciones : MonoBehaviour
+public class Acciones : MonoBehaviour, IDataPersistance
 {
     List<string> fuerza = new List<string>();
     List<string> resistencia = new List<string>();
@@ -74,7 +74,16 @@ public class Acciones : MonoBehaviour
     public Text descAccion;
     public Text bonoNum;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         ActivarAccionesVentaja();

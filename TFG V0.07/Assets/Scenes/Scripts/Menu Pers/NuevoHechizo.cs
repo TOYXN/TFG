@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NuevoHechizo : MonoBehaviour
+public class NuevoHechizo : MonoBehaviour, IDataPersistance
 {
     public Button boton1;
     public Button boton2;
@@ -69,7 +69,17 @@ public class NuevoHechizo : MonoBehaviour
 
     public Personaje Personaje;
     public FuncHechizos FuncHechizos;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         boton1.onClick.AddListener(Bypass1);

@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
+
 
 public class DataPersistanceManager : MonoBehaviour
 {
+    [Header("Debugging")]
+    [SerializeField] private bool initializeDataIfNull = false;
+
     [Header("File Storage Config")]
     [SerializeField] private string filename;
 
@@ -19,16 +24,39 @@ public class DataPersistanceManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("ERROR. Se ha encontrado mas de una instancia en la escena.");
+            Debug.Log("ERROR. Se ha encontrado mas de una instancia en la escena. Destruyendo la nueva...");
+            Destroy(this.gameObject);
+            return;
         }
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
+
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, filename);
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, filename);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+    }
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Usando OnSceneLoaded...");
         this.dataPersistancePers = FindAllDataPersistancePers();
         CargarPersonaje();
+    }
+
+    public void OnSceneUnloaded(Scene scene)
+    {
+        Debug.Log("Usando OnSceneUnloaded...");
+        GuardarPersonaje();
     }
 
     public void CrearPersonaje()
@@ -38,6 +66,11 @@ public class DataPersistanceManager : MonoBehaviour
 
     public void GuardarPersonaje()
     {
+        if(this.Personaje == null)
+        {
+            Debug.LogWarning("No se han encontrado personajes. Se necesita crear uno antes");
+            return;
+        }
         foreach (IDataPersistance dataPersistanceObj in dataPersistancePers)
         {
             dataPersistanceObj.GuardarData(Personaje);
@@ -49,10 +82,15 @@ public class DataPersistanceManager : MonoBehaviour
     {
         this.Personaje = dataHandler.Cargar();
 
+        if(this.Personaje == null && initializeDataIfNull)
+        {
+            CrearPersonaje();
+        }
+
         if(this.Personaje == null)
         {
-            Debug.Log("Personaje no encontrado. Creandolo...");
-            CrearPersonaje();
+            Debug.Log("No se han encontrado personajes. Se necesita crear uno antes");
+            return;
         }
         foreach (IDataPersistance dataPersistanceObj in dataPersistancePers)
         {
@@ -70,5 +108,10 @@ public class DataPersistanceManager : MonoBehaviour
         IEnumerable<IDataPersistance> dataPersistancePers = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistance>();
 
         return new List<IDataPersistance>(dataPersistancePers);
+    }
+
+    public bool PersonajeExiste()
+    {
+        return Personaje != null;
     }
 }

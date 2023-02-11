@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CombatAttacks : MonoBehaviour
+public class CombatAttacks : MonoBehaviour, IDataPersistance
 {
     public Button botonAtacar;
     public Button botonHechizos;
@@ -45,7 +45,17 @@ public class CombatAttacks : MonoBehaviour
 
     public Text BotonDesplegable;
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         IniciarBotones();

@@ -133,6 +133,7 @@ public class Paso5_4 : MonoBehaviour, IDataPersistance
         Personaje.ArmaEquipada.descArma = DescArma.text;
         Personaje.ArmaEquipada.dadoArma = dado;
         Personaje.ArmaEquipada.tipoArma = tipo;
+        Debug.Log(NombreOpcionalArma.text);
         if(NombreOpcionalArma.text == "")
         {
             Personaje.ArmaEquipada.nombreArma = NombreArma.text;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SubidaNivel : MonoBehaviour
+public class SubidaNivel : MonoBehaviour, IDataPersistance
 {
     public GameObject menuSubNiv1;
     public Text nombreRaza1;
@@ -67,7 +67,16 @@ public class SubidaNivel : MonoBehaviour
     public NuevoHechizo NuevoHechizo;
     public FuncHechizos FuncHechizos;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         IniciarBotonesMenuClase();

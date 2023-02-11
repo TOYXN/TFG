@@ -2403,7 +2403,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -3354,7 +3354,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -4717,7 +4717,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -13200,7 +13200,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -16624,7 +16624,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -23781,7 +23781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &573472267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34520,7 +34520,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -46656,7 +46656,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -57662,41 +57662,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405892540}
-  - component: {fileID: 1405892539}
   - component: {fileID: 1405892542}
   - component: {fileID: 1405892543}
   - component: {fileID: 1405892544}
   m_Layer: 0
-  m_Name: Personaje
+  m_Name: DatosPersonaje
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1405892539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405892538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f463f25e1cdaa0b4592d4e4ca64f5711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombre: Antonio
-  nivel: 1
-  exp: 0
-  expProxNivel: 100
-  accVent1: 
-  accVent2: 
-  accVent3: 
-  accVent4: 
-  cargado: 0
-  valorCargado: 0
-  oculto: 0
-  hechizosGuard: 0
 --- !u!4 &1405892540
 Transform:
   m_ObjectHideFlags: 0
@@ -57709,7 +57684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1405892542
 MonoBehaviour:
@@ -57742,6 +57717,154 @@ MonoBehaviour:
   BotonSumar: {fileID: 143710163}
   BotonRestar: {fileID: 5752425}
   CerrarMenuMon: {fileID: 17084049}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1405892543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57807,6 +57930,194 @@ MonoBehaviour:
   numObj: {fileID: 1244868251}
   botonEliminar: {fileID: 203654081}
   botonCerrarObj: {fileID: 1908301489}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase:
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1405892544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57819,12 +58130,200 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93bc1293ab3853f47981cd2430c0b932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idiomas: {fileID: 313321585}
-  desc: {fileID: 1693799720}
-  gustos: {fileID: 46509317}
-  aversiones: {fileID: 388486009}
-  ideales: {fileID: 1436235306}
-  vinculos: {fileID: 1598478462}
+  idiomas: {fileID: 1815742854}
+  desc: {fileID: 66329878}
+  gustos: {fileID: 2145193380}
+  aversiones: {fileID: 105869240}
+  ideales: {fileID: 1150922667}
+  vinculos: {fileID: 868820992}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 4
+      dadoHechizo: 4
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase:
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      - nombreHechizo: 
+        descHechizo: 
+        tipoHechizo: 
+        costeHechizo: 4
+        dadoHechizo: 4
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!1 &1406385052
 GameObject:
   m_ObjectHideFlags: 0
@@ -58945,7 +59444,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -61941,7 +62440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1514392950
 MonoBehaviour:
@@ -61989,7 +62488,154 @@ MonoBehaviour:
   expMetida: {fileID: 2019132302}
   NivelPers: {fileID: 1066093981}
   menuEXP: {fileID: 1032379739}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   subirNivel: {fileID: 1514392953}
 --- !u!114 &1514392952
 MonoBehaviour:
@@ -62007,7 +62653,154 @@ MonoBehaviour:
   Raza: {fileID: 153909250}
   Clase: {fileID: 1330472877}
   Nivel: {fileID: 1066093981}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62070,7 +62863,154 @@ MonoBehaviour:
   tipoDano: {fileID: 1771835231}
   dadosArmaEquipo: {fileID: 186762316}
   dadosArma: {fileID: 1821425824}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   ValoresMenu: {fileID: 1514392954}
   Puntos: {fileID: 1514392955}
   DesbloqHechiz: {fileID: 1514392960}
@@ -62132,7 +63072,154 @@ MonoBehaviour:
   menuAPT: {fileID: 1223672844}
   botonAPT: {fileID: 154533631}
   cerrarAPT: {fileID: 1706707326}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   Acciones: {fileID: 1514392956}
 --- !u!114 &1514392955
 MonoBehaviour:
@@ -62171,7 +63258,154 @@ MonoBehaviour:
   botonCerrarDescanso: {fileID: 650635841}
   botonDescansar: {fileID: 135041551}
   horasDescanso: {fileID: 1435722755}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62221,7 +63455,154 @@ MonoBehaviour:
   resultado: {fileID: 640457398}
   DesgloseResultado: {fileID: 1239770851}
   cerrarMenu: {fileID: 1565824015}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   menuAcciones: {fileID: 1066567278}
   tituloAccion: {fileID: 742773111}
   descAccion: {fileID: 1652289455}
@@ -62270,7 +63651,154 @@ MonoBehaviour:
   botonCerrarEsquiva: {fileID: 96655378}
   botonCerrarBloqueo: {fileID: 939311890}
   BotonDesplegable: {fileID: 1552977325}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62310,7 +63838,154 @@ MonoBehaviour:
   botonMemoria: {fileID: 75096115}
   botonPersonalidad: {fileID: 1105412033}
   ObjetoMenuResultado: {fileID: 1487614776}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   resultadoTirada: {fileID: 1913807432}
   desgloseTirada: {fileID: 1470510297}
   cerrarMenu: {fileID: 1842605082}
@@ -62336,7 +64011,154 @@ MonoBehaviour:
   desgloseTiradaBloqueo: {fileID: 251826400}
   botonCerrarEsquiva: {fileID: 1421579104}
   botonCerrarBloqueo: {fileID: 75708855}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62365,7 +64187,154 @@ MonoBehaviour:
   botonNuevoHechizo6: {fileID: 867472742}
   botonNuevoHechizo7: {fileID: 415001457}
   botonNuevoHechizo8: {fileID: 1064390569}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62424,7 +64393,154 @@ MonoBehaviour:
   infoResultHech: {fileID: 1314472948}
   cerrarMenuResultHech: {fileID: 1125764315}
   PAPers: {fileID: 2124231132}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &1514392962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62486,7 +64602,154 @@ MonoBehaviour:
   salirMenuHechizo: {fileID: 1171602003}
   MenuSel: {fileID: 323833085}
   MenuHech: {fileID: 758760849}
-  Personaje: {fileID: 1405892539}
+  Personaje:
+    nombre: Name
+    nivel: 1
+    exp: 0
+    expProxNivel: 100
+    accVent1: PERCIBIR
+    accVent2: SALTAR
+    accVent3: "BOT\xC1NICA"
+    accVent4: SIGILAR
+    cargado: 0
+    valorCargado: 0
+    oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
+    listaHechizos:
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    - nombreHechizo: 
+      descHechizo: 
+      tipoHechizo: 
+      costeHechizo: 0
+      dadoHechizo: 0
+    hechizosGuard: 0
+    _clase:
+      nombreClase: Cazador
+      descClase: ' '
+      valorClase: AGILIDAD
+      listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+    _raza:
+      nombreRaza: Humano
+      descRaza: ' '
+      valorPrincipal: VELOCIDAD
+      valorSecundario: AGILIDAD
+      valorTerciario: PERSONALIDAD
+    _cuerpo:
+      fuerza: 8
+      resist: 8
+      agilidad: 8
+      velocidad: 8
+      extra_vida: 0
+      bono_fuerza: 0
+      bono_resist: 0
+      bono_agilidad: 0
+      bono_velocidad: 0
+      cuerpo_act: 20
+      cuerpo_max: 20
+      cuerpo_hora: 2
+    _alma:
+      poder: 8
+      sentidos: 8
+      memoria: 8
+      persona: 8
+      extra_mana: 0
+      bono_poder: 0
+      bono_sentidos: 0
+      bono_memoria: 0
+      bono_persona: 0
+      alma_act: 30
+      alma_max: 30
+      alma_hora: 3
+    _otros:
+      apt: 2
+      numDados: 1
+      estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   FuncHechizos: {fileID: 1514392961}
 --- !u!1 &1515113263
 GameObject:
@@ -63900,7 +66163,7 @@ RectTransform:
   - {fileID: 182363922}
   - {fileID: 597519998}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66339,7 +68602,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -69584,7 +71847,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -74321,7 +76584,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -80237,6 +82500,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945033582}
   m_CullTransparentMesh: 1
+--- !u!1001 &1945791284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8825894836262598096, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_Name
+      value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598098, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825894836262598101, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
+      propertyPath: initializeDataIfNull
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f481ea8d06252734d902fc5c8ae7257f, type: 3}
 --- !u!1 &1946675962
 GameObject:
   m_ObjectHideFlags: 0
@@ -84986,7 +87310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071840491
 GameObject:
@@ -89032,7 +91356,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0

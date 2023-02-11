@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FuncHechizos : MonoBehaviour
+public class FuncHechizos : MonoBehaviour, IDataPersistance
 {
     public Text nomHech1;
     public Text nomHech2;
@@ -62,7 +62,17 @@ public class FuncHechizos : MonoBehaviour
 
 
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         usarHech1.onClick.AddListener(Bypass1);
@@ -76,6 +86,44 @@ public class FuncHechizos : MonoBehaviour
         usarHech.onClick.AddListener(UsarHech);
         cerrarMenuHech.onClick.AddListener(CerrarMenuHech);
         cerrarMenuResultHech.onClick.AddListener(CerrarMenuResultHech);
+        IniciarHechPers();
+    }
+
+    void IniciarHechPers()
+    {
+        int numHechPers = Personaje.hechizosGuard;
+        if (numHechPers >= 1)
+        {
+            MeterNuevoHechizo(nomHech1, Personaje.listaHechizos[0].nombreHechizo, costeHech1, Personaje.listaHechizos[0].costeHechizo, dadosHech1, Personaje.listaHechizos[0].dadoHechizo);
+            if (numHechPers >= 2)
+            {
+                MeterNuevoHechizo(nomHech2, Personaje.listaHechizos[1].nombreHechizo, costeHech2, Personaje.listaHechizos[1].costeHechizo, dadosHech2, Personaje.listaHechizos[1].dadoHechizo);
+                if (numHechPers >= 3)
+                {
+                    MeterNuevoHechizo(nomHech3, Personaje.listaHechizos[2].nombreHechizo, costeHech3, Personaje.listaHechizos[2].costeHechizo, dadosHech3, Personaje.listaHechizos[2].dadoHechizo);
+                    if (numHechPers >= 4)
+                    {
+                        MeterNuevoHechizo(nomHech4, Personaje.listaHechizos[3].nombreHechizo, costeHech4, Personaje.listaHechizos[3].costeHechizo, dadosHech4, Personaje.listaHechizos[3].dadoHechizo);
+                        if (numHechPers >= 5)
+                        {
+                            MeterNuevoHechizo(nomHech5, Personaje.listaHechizos[4].nombreHechizo, costeHech5, Personaje.listaHechizos[4].costeHechizo, dadosHech5, Personaje.listaHechizos[4].dadoHechizo);
+                            if (numHechPers >= 6)
+                            {
+                                MeterNuevoHechizo(nomHech6, Personaje.listaHechizos[5].nombreHechizo, costeHech6, Personaje.listaHechizos[5].costeHechizo, dadosHech6, Personaje.listaHechizos[5].dadoHechizo);
+                                if (numHechPers >= 7)
+                                {
+                                    MeterNuevoHechizo(nomHech7, Personaje.listaHechizos[6].nombreHechizo, costeHech7, Personaje.listaHechizos[6].costeHechizo, dadosHech7, Personaje.listaHechizos[6].dadoHechizo);
+                                    if (numHechPers >= 8)
+                                    {
+                                        MeterNuevoHechizo(nomHech8, Personaje.listaHechizos[7].nombreHechizo, costeHech8, Personaje.listaHechizos[7].costeHechizo, dadosHech8, Personaje.listaHechizos[7].dadoHechizo);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     void Bypass1()

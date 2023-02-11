@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EsquivaBloqueo : MonoBehaviour
+public class EsquivaBloqueo : MonoBehaviour, IDataPersistance
 {
     public Button botonEsquivarAtaque;
     public Button botonBloquearAtaque;
@@ -17,7 +17,17 @@ public class EsquivaBloqueo : MonoBehaviour
     public Button botonCerrarBloqueo;
 
     public Personaje Personaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         botonEsquivarAtaque.onClick.AddListener(Esquiva);

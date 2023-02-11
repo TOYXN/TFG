@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TiradasValores : MonoBehaviour
+public class TiradasValores : MonoBehaviour, IDataPersistance
 {
     public Button botonValores;
     public GameObject MenuValores;
@@ -42,7 +42,16 @@ public class TiradasValores : MonoBehaviour
     public Text desgloseTirada;
     public Button cerrarMenu;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         botonValores.onClick.AddListener(AbrirMenu);

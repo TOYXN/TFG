@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PCPA : MonoBehaviour
+public class PCPA : MonoBehaviour, IDataPersistance
 {
     public Text puntosCuerpo;
     public Text puntosCuerpoHora;
@@ -36,7 +36,16 @@ public class PCPA : MonoBehaviour
 
     public Personaje Personaje;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         botonCuerpo.onClick.AddListener(AbrirMenuCuerpo);

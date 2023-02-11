@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ValoresMenu : MonoBehaviour
+public class ValoresMenu : MonoBehaviour, IDataPersistance
 {
     public Text Fuerza;
     public Text Resistencia;
@@ -59,7 +59,16 @@ public class ValoresMenu : MonoBehaviour
     public Personaje Personaje;
     public Acciones Acciones;
 
-    // Start is called before the first frame update
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         botonFuerza.onClick.AddListener(Bypass1);

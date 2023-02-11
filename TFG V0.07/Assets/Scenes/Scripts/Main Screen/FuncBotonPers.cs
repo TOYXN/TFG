@@ -73,6 +73,19 @@ public class FuncBotonPers : MonoBehaviour
         botonPersonaje2.onClick.AddListener(CargarPersonaje2);
         botonPersonaje3.onClick.AddListener(CargarPersonaje3);
         botonPersonaje4.onClick.AddListener(CargarPersonaje4);
+
+        if (!DataPersistanceManager.instance.PersonajeExiste())
+        {
+            personaje1.SetActive(false);
+            personaje2.SetActive(false);
+            personaje3.SetActive(false);
+            personaje4.SetActive(false);
+
+            elemBoton1.SetActive(true);
+            elemBoton2.SetActive(true);
+            elemBoton3.SetActive(true);
+            elemBoton4.SetActive(true);
+        }
     }
    
     void Bypass1()
@@ -157,29 +170,30 @@ public class FuncBotonPers : MonoBehaviour
 
     void CargarPersonaje1()
     {
-        SceneManager.LoadScene("Character");
+        SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje2()
     {
-        SceneManager.LoadScene("Character");
+        SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje3()
     {
-        SceneManager.LoadScene("Character");
+        SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje4()
     {
-        SceneManager.LoadScene("Character");
+        SceneManager.LoadSceneAsync("Character");
     }
 
     void CrearPers(GameObject botonCrear, GameObject pers)
     {
         botonCrear.SetActive(false);
         pers.SetActive(true);
-        SceneManager.LoadScene("Creation");
+        DataPersistanceManager.instance.CrearPersonaje();
+        SceneManager.LoadSceneAsync("Creation");
     }
 
     void MenuElimPers(GameObject pers, GameObject menuElim)

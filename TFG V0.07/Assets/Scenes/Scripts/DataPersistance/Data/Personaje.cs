@@ -278,6 +278,8 @@ public class Clase
         this.nombreClase = nombreClase;
         this.descClase = descClase;
         this.valorClase = valorClase;
+        listaHechizosClase = new Hechizo[8];
+        listaArmasClase = new Arma[6];
     }
 
     public string GetElemClase(string elem)
@@ -299,7 +301,14 @@ public class Hechizo
     public int costeHechizo;
     public int dadoHechizo;
 
-    public Hechizo() { }
+    public Hechizo()
+    {
+        this.nombreHechizo = "";
+        this.descHechizo = "";
+        this.costeHechizo = 4;
+        this.dadoHechizo = 4;
+        this.tipoHechizo = "";
+    }
 
     public Hechizo(string nombreHechizo, string descHechizo, int costeHechizo, int dadoHechizo, string tipoHechizo)
     {
@@ -310,6 +319,29 @@ public class Hechizo
         this.tipoHechizo = tipoHechizo;
     }
 }
+
+[System.Serializable]
+public class Monedero
+{
+    public int Paladio;
+    public int Platino;
+    public int Oro;
+    public int Plata;
+
+    public Monedero() { }
+
+    public Monedero(int Paladio, int Platino, int Oro, int Plata)
+    {
+        this.Paladio = Paladio;
+        this.Platino = Platino;
+        this.Oro = Oro;
+        this.Plata = Plata;
+    }
+}
+
+
+
+
 
 [System.Serializable]
 public class Personaje
@@ -339,6 +371,15 @@ public class Personaje
     public ValoresCuerpo _cuerpo;
     public ValoresAlma _alma;
     public OtrosValores _otros;
+    public Monedero _monedero;
+    public string[] listaInventario;
+
+    public string idiomas;
+    public string desc;
+    public string gustos;
+    public string aversiones;
+    public string ideales;
+    public string vinculos;
 
     public Personaje()
     {
@@ -352,18 +393,26 @@ public class Personaje
         this.accVent3 = "BOTÁNICA";
         this.accVent4 = "SIGILAR";
         this._clase = new Clase("Cazador", " ", "AGILIDAD");
-        this.ArmaEquipada = new Arma("Daga", "Arma ligera de corto alcance para cortes y puñaladas. Puede ser lanzada como ataque.", 6, "AGILIDAD");
+        this.ArmaEquipada = new Arma("Espadon", "Arma ligera de corto alcance para cortes y puñaladas. Puede ser lanzada como ataque.", 12, "FUERZA");
         this.listaHechizos = new Hechizo[8];
         this._raza = new Raza("Humano", " ", "VELOCIDAD", "AGILIDAD", "PERSONALIDAD");
         this._cuerpo = new ValoresCuerpo(8, 8, 8, 8);
         this._alma = new ValoresAlma(8, 8, 8, 8);
         this._otros = new OtrosValores();
+        this._monedero = new Monedero(0, 0, 0, 0);
         this._otros.numDados = 1 + (nivel / 2);
         this._otros.apt = 2 + (_cuerpo.bono_velocidad / 2);
         this._otros.estado = "ESTABLE";
         this.oculto = false;
         this.cargado = false;
         this.valorCargado = 0;
+        this.listaInventario = new string[10];
+        this.idiomas = "";
+        this.desc = "";
+        this.gustos = "";
+        this.aversiones = "";
+        this.ideales = "";
+        this.vinculos = "";
     }
 
     public void ActualizarValores(int fuerza, int resist, int agilidad, int velocidad, int poder, int sentidos, int memoria, int persona)

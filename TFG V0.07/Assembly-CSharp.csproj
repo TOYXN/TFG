@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C57BC4F2-8B6E-5B41-49E5-63F789A80A13}</ProjectGuid>
+    <ProjectGuid>{D22435A7-2311-1B30-F0BB-9A9B8F105FF9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,7 +57,7 @@
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5_4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\DesbloqHechiz.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Menu Pers\Monedero.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Menu Pers\MonederoFunc.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso5.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\CombatAttacks.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\TiradasValores.cs" />
@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Desplegable.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\SelValorHuman.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\PCPA.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\DataPersistanceManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso3.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\BotonVolver.cs" />
@@ -81,12 +82,11 @@
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2_4.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6_3.cs" />
+    <Compile Include="Assets\Scenes\Scripts\DataPersistance\IDataPersistance.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Acciones.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso1.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\InfoGenPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\SubidaNivel.cs" />
-    <Compile Include="Assets\Scenes\Scripts\DataPersistance\DataPersistanceManager.cs" />
-    <Compile Include="Assets\Scenes\Scripts\DataPersistance\IDataPersistance.cs" />
     <Compile Include="Assets\Scenes\Scripts\DataPersistance\FileDataHandler.cs" />
   </ItemGroup>
   <ItemGroup>

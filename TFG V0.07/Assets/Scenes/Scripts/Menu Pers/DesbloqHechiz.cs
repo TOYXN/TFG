@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DesbloqHechiz : MonoBehaviour
+public class DesbloqHechiz : MonoBehaviour, IDataPersistance
 {
     public GameObject bannerBloqueo1;
     public GameObject bannerBloqueo2;
@@ -26,65 +26,82 @@ public class DesbloqHechiz : MonoBehaviour
 
     public Personaje Personaje;
 
+    void Start()
+    {
+
+    }
+    
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     public void DesblHechiz()
     {
+        
         int memoPers = Personaje.Valor("MEMORIA");
+        Debug.Log(memoPers);
         int hechiActPers = Personaje.hechizosGuard;
         if(memoPers >= 6)
         {
+            bannerBloqueo1.SetActive(false);
             if (hechiActPers == 0)
             {
                 botonNuevoHechizo1.SetActive(true);
-                bannerBloqueo1.SetActive(false);
             }
             if (memoPers >= 8)
             {
+                bannerBloqueo2.SetActive(false);
                 if (hechiActPers <= 1)
                 {
                     botonNuevoHechizo2.SetActive(true);
-                    bannerBloqueo2.SetActive(false);
                 }
                 if (memoPers >= 10)
                 {
+                    bannerBloqueo3.SetActive(false);
                     if (hechiActPers <= 2)
                     {
                         botonNuevoHechizo3.SetActive(true);
-                        bannerBloqueo3.SetActive(false);
                     }
                     if (memoPers >= 12)
                     {
+                        bannerBloqueo4.SetActive(false);
                         if (hechiActPers <= 3)
                         {
-                            botonNuevoHechizo4.SetActive(true);
-                            bannerBloqueo4.SetActive(false);
+                            botonNuevoHechizo4.SetActive(true); 
                         }
                         if (memoPers >= 14)
                         {
+                            bannerBloqueo5.SetActive(false);
                             if (hechiActPers <= 4)
                             {
-                                botonNuevoHechizo5.SetActive(true);
-                                bannerBloqueo5.SetActive(false);
+                                botonNuevoHechizo5.SetActive(true); 
                             }
                             if (memoPers >= 16)
                             {
+                                bannerBloqueo6.SetActive(false);
                                 if (hechiActPers <= 5)
                                 {
                                     botonNuevoHechizo6.SetActive(true);
-                                    bannerBloqueo6.SetActive(false);
                                 }
                                 if (memoPers >= 18)
                                 {
+                                    bannerBloqueo7.SetActive(false);
                                     if (hechiActPers <= 6)
                                     {
                                         botonNuevoHechizo7.SetActive(true);
-                                        bannerBloqueo7.SetActive(false);
                                     }
                                     if (memoPers >= 20)
                                     {
+                                        bannerBloqueo8.SetActive(false);
                                         if (hechiActPers <= 7)
                                         {
                                             botonNuevoHechizo8.SetActive(true);
-                                            bannerBloqueo8.SetActive(false);
                                         }
                                     }
                                 }

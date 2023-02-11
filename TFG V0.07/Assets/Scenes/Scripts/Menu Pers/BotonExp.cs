@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BotonExp : MonoBehaviour
+public class BotonExp : MonoBehaviour, IDataPersistance
 {
     public Button botonMenuEXP;
     public Button botonSumarEXP;
@@ -18,7 +18,17 @@ public class BotonExp : MonoBehaviour
     public SubidaNivel subirNivel;
     private int expActPersonaje;
     private int expNivPersonaje;
-    // Start is called before the first frame update
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
+
     void Start()
     {
         botonMenuEXP.onClick.AddListener(AbrirMenuEXP);

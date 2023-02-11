@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventario : MonoBehaviour
+public class Inventario : MonoBehaviour, IDataPersistance
 {
     public Button Ayuda;
     public GameObject menuAyuda;
@@ -69,6 +69,17 @@ public class Inventario : MonoBehaviour
     public Button botonEliminar;
     public Button botonCerrarObj;
 
+    public Personaje Personaje;
+
+    public void CargarData(Personaje pers)
+    {
+        this.Personaje = pers;
+    }
+
+    public void GuardarData(Personaje pers)
+    {
+        pers = this.Personaje;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +93,62 @@ public class Inventario : MonoBehaviour
 
         IniciarBotonesCrear();
         IniciarBotonesObjeto();
+        CargarObjPers();
+    }
+
+    void CargarObjPers()
+    {
+        if(Personaje.listaInventario[0] != "")
+        {
+            TextObj1.text = Personaje.listaInventario[0];
+            CreaObj1go.SetActive(false);
+        }
+        if (Personaje.listaInventario[1] != "")
+        {
+            TextObj2.text = Personaje.listaInventario[1];
+            CreaObj2go.SetActive(false);
+        }
+        if (Personaje.listaInventario[2] != "")
+        {
+            TextObj3.text = Personaje.listaInventario[2];
+            CreaObj3go.SetActive(false);
+        }
+        if (Personaje.listaInventario[3] != "")
+        {
+            TextObj4.text = Personaje.listaInventario[3];
+            CreaObj4go.SetActive(false);
+        }
+        if (Personaje.listaInventario[4] != "")
+        {
+            TextObj5.text = Personaje.listaInventario[4];
+            CreaObj5go.SetActive(false);
+        }
+        if (Personaje.listaInventario[5] != "")
+        {
+            TextObj6.text = Personaje.listaInventario[5];
+            CreaObj6go.SetActive(false);
+        }
+        if (Personaje.listaInventario[6] != "")
+        {
+            TextObj7.text = Personaje.listaInventario[6];
+            CreaObj7go.SetActive(false);
+        }
+        if (Personaje.listaInventario[7] != "")
+        {
+            TextObj8.text = Personaje.listaInventario[7];
+            CreaObj8go.SetActive(false);
+        }
+        if (Personaje.listaInventario[8] != "")
+        {
+            TextObj9.text = Personaje.listaInventario[8];
+            CreaObj9go.SetActive(false);
+        }
+        if (Personaje.listaInventario[9] != "")
+        {
+            TextObj10.text = Personaje.listaInventario[9];
+            CreaObj10go.SetActive(false);
+        }
+
     }
 
     void IniciarBotonesCrear()
@@ -114,31 +181,121 @@ public class Inventario : MonoBehaviour
 
     void AnadirNuevoObj()
     {
-        if (botonCambiar.text == "1") { TextObj1.text = objetoAnadir.text; CreaObj1go.SetActive(false); }
-        else if (botonCambiar.text == "2") { TextObj2.text = objetoAnadir.text; CreaObj2go.SetActive(false); }
-        else if (botonCambiar.text == "3") { TextObj3.text = objetoAnadir.text; CreaObj3go.SetActive(false); }
-        else if (botonCambiar.text == "4") { TextObj4.text = objetoAnadir.text; CreaObj4go.SetActive(false); }
-        else if (botonCambiar.text == "5") { TextObj5.text = objetoAnadir.text; CreaObj5go.SetActive(false); }
-        else if (botonCambiar.text == "6") { TextObj6.text = objetoAnadir.text; CreaObj6go.SetActive(false); }
-        else if (botonCambiar.text == "7") { TextObj7.text = objetoAnadir.text; CreaObj7go.SetActive(false); }
-        else if (botonCambiar.text == "8") { TextObj8.text = objetoAnadir.text; CreaObj8go.SetActive(false); }
-        else if (botonCambiar.text == "9") { TextObj9.text = objetoAnadir.text; CreaObj9go.SetActive(false); }
-        else if (botonCambiar.text == "10") { TextObj10.text = objetoAnadir.text; CreaObj10go.SetActive(false); }
+        if (botonCambiar.text == "1")
+        {
+            TextObj1.text = objetoAnadir.text;
+            Personaje.listaInventario[0] = objetoAnadir.text;
+            CreaObj1go.SetActive(false);
+        }
+        else if (botonCambiar.text == "2")
+        {
+            TextObj2.text = objetoAnadir.text;
+            Personaje.listaInventario[1] = objetoAnadir.text;
+            CreaObj2go.SetActive(false);
+        }
+        else if (botonCambiar.text == "3")
+        {
+            TextObj3.text = objetoAnadir.text;
+            Personaje.listaInventario[2] = objetoAnadir.text;
+            CreaObj3go.SetActive(false);
+        }
+        else if (botonCambiar.text == "4")
+        {
+            TextObj4.text = objetoAnadir.text;
+            Personaje.listaInventario[3] = objetoAnadir.text;
+            CreaObj4go.SetActive(false);
+        }
+        else if (botonCambiar.text == "5")
+        {
+            TextObj5.text = objetoAnadir.text;
+            Personaje.listaInventario[4] = objetoAnadir.text;
+            CreaObj5go.SetActive(false);
+        }
+        else if (botonCambiar.text == "6")
+        {
+            TextObj6.text = objetoAnadir.text;
+            Personaje.listaInventario[5] = objetoAnadir.text;
+            CreaObj6go.SetActive(false);
+        }
+        else if (botonCambiar.text == "7")
+        {
+            TextObj7.text = objetoAnadir.text;
+            Personaje.listaInventario[6] = objetoAnadir.text;
+            CreaObj7go.SetActive(false);
+        }
+        else if (botonCambiar.text == "8")
+        {
+            TextObj8.text = objetoAnadir.text;
+            Personaje.listaInventario[7] = objetoAnadir.text;
+            CreaObj8go.SetActive(false);
+        }
+        else if (botonCambiar.text == "9")
+        {
+            Personaje.listaInventario[8] = objetoAnadir.text;
+            TextObj9.text = objetoAnadir.text;
+            CreaObj9go.SetActive(false);
+        }
+        else if (botonCambiar.text == "10")
+        {
+            TextObj10.text = objetoAnadir.text;
+            Personaje.listaInventario[9] = objetoAnadir.text;
+            CreaObj10go.SetActive(false);
+        }
         menuNuevoObj.SetActive(false);
     }
 
     void EliminarObj()
     {
-        if (numObj.text == "1" ) { CreaObj1go.SetActive(true); }
-        else if (numObj.text == "2") { CreaObj2go.SetActive(true); }
-        else if (numObj.text == "3") { CreaObj3go.SetActive(true); }
-        else if (numObj.text == "4") { CreaObj4go.SetActive(true); }
-        else if (numObj.text == "5") { CreaObj5go.SetActive(true); }
-        else if (numObj.text == "6") { CreaObj6go.SetActive(true); }
-        else if (numObj.text == "7") { CreaObj7go.SetActive(true); }
-        else if (numObj.text == "8") { CreaObj8go.SetActive(true); }
-        else if (numObj.text == "9") { CreaObj9go.SetActive(true); }
-        else if (numObj.text == "10") { CreaObj10go.SetActive(true); }
+        if (numObj.text == "1" )
+        {
+            Personaje.listaInventario[0] = "";
+            CreaObj1go.SetActive(true);
+        }
+        else if (numObj.text == "2")
+        {
+            Personaje.listaInventario[1] = "";
+            CreaObj2go.SetActive(true);
+        }
+        else if (numObj.text == "3")
+        {
+            Personaje.listaInventario[2] = "";
+            CreaObj3go.SetActive(true);
+        }
+        else if (numObj.text == "4")
+        {
+            Personaje.listaInventario[3] = "";
+            CreaObj4go.SetActive(true);
+        }
+        else if (numObj.text == "5")
+        {
+            Personaje.listaInventario[4] = "";
+            CreaObj5go.SetActive(true);
+        }
+        else if (numObj.text == "6")
+        {
+            Personaje.listaInventario[5] = "";
+            CreaObj6go.SetActive(true);
+        }
+        else if (numObj.text == "7")
+        {
+            CreaObj7go.SetActive(true);
+            Personaje.listaInventario[6] = "";
+        }
+        else if (numObj.text == "8")
+        {
+            Personaje.listaInventario[7] = "";
+            CreaObj8go.SetActive(true);
+        }
+        else if (numObj.text == "9")
+        {
+            Personaje.listaInventario[8] = "";
+            CreaObj9go.SetActive(true);
+        }
+        else if (numObj.text == "10")
+        {
+            Personaje.listaInventario[9] = "";
+            CreaObj10go.SetActive(true);
+        }
         menuObj.SetActive(false);
     }
 
