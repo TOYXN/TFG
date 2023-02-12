@@ -346,6 +346,7 @@ public class Paso6_3 : MonoBehaviour, IDataPersistance
         Personaje.accVent2 = NombAccVent2.text;
         Personaje.accVent3 = NombAccVent3.text;
         Personaje.accVent4 = NombAccVent4.text;
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
         ContinuarGO.SetActive(true);
         pregunta.SetActive(false);
     }

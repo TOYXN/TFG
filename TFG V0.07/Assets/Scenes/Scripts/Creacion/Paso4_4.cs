@@ -217,6 +217,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
         MenuSeleccion.SetActive(false);
         TextoFinalGO.SetActive(true);
         ContinuarGO.SetActive(true);
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 
     void AsignarClase(string nomClase, string valorClase)

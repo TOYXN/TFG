@@ -17174,7 +17174,7 @@ MonoBehaviour:
   ProcesoPost: {fileID: 195184715}
   Confirmacion: {fileID: 676231451}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17185,6 +17185,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17232,6 +17238,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17268,6 +17299,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17322,7 +17375,7 @@ MonoBehaviour:
   descPaso: {fileID: 435362799}
   ExplicacionPasoGO: {fileID: 2121227434}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17333,6 +17386,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17380,6 +17439,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17416,6 +17500,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
   funcionHumano: {fileID: 761729041}
 --- !u!114 &761729041
 MonoBehaviour:
@@ -17479,7 +17585,7 @@ MonoBehaviour:
   continuar3GO: {fileID: 333482564}
   anterior: {fileID: 994364998}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17490,6 +17596,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17537,6 +17649,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17573,6 +17710,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17606,7 +17765,7 @@ MonoBehaviour:
   MenuDescClase: {fileID: 874238631}
   TextoFinal: {fileID: 1013474748}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17617,6 +17776,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17664,6 +17829,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17700,6 +17890,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17736,7 +17948,7 @@ MonoBehaviour:
   TextoFinalGO: {fileID: 1013474748}
   ContinuarGO: {fileID: 825810564}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17747,6 +17959,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17794,6 +18012,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17830,6 +18073,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17868,7 +18133,7 @@ MonoBehaviour:
   MenuArmaSelec: {fileID: 241534242}
   TextoFinal: {fileID: 1971362629}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -17879,6 +18144,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -17926,6 +18197,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -17962,6 +18258,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17993,7 +18311,7 @@ MonoBehaviour:
   TextoFinalGO: {fileID: 1971362629}
   ContinuarGO: {fileID: 57375657}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -18004,6 +18322,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -18051,6 +18375,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -18087,6 +18436,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18195,7 +18566,7 @@ MonoBehaviour:
   botonAnterior: {fileID: 314884380}
   ContinuarGO: {fileID: 1835978359}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -18206,6 +18577,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -18253,6 +18630,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -18289,6 +18691,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!114 &761729048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18315,7 +18739,7 @@ MonoBehaviour:
   nombreEntrado: {fileID: 181146974}
   Input: {fileID: 160795830}
   Personaje:
-    nombre: Name
+    nombre: 
     nivel: 1
     exp: 0
     expProxNivel: 100
@@ -18326,6 +18750,12 @@ MonoBehaviour:
     cargado: 0
     valorCargado: 0
     oculto: 0
+    ArmaEquipada:
+      nombreArma: Espadon
+      descArma: "Arma ligera de corto alcance para cortes y pu\xF1aladas. Puede ser
+        lanzada como ataque."
+      dadoArma: 12
+      tipoArma: FUERZA
     listaHechizos:
     - nombreHechizo: 
       descHechizo: 
@@ -18373,6 +18803,31 @@ MonoBehaviour:
       descClase: ' '
       valorClase: AGILIDAD
       listaHechizosClase: []
+      listaArmasClase:
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
+      - nombreArma: 
+        descArma: 
+        dadoArma: 0
+        tipoArma: 
     _raza:
       nombreRaza: Humano
       descRaza: ' '
@@ -18409,6 +18864,28 @@ MonoBehaviour:
       apt: 2
       numDados: 1
       estado: ESTABLE
+    _monedero:
+      Paladio: 0
+      Platino: 0
+      Oro: 0
+      Plata: 0
+    listaInventario:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    idiomas: 
+    desc: 
+    gustos: 
+    aversiones: 
+    ideales: 
+    vinculos: 
 --- !u!1 &767703083
 GameObject:
   m_ObjectHideFlags: 0

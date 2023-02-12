@@ -367,7 +367,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         else { bonoPersonalidad.text = bonoValor.ToString(); }
     }
         void ConfirmarAsignacion()
-    {
+    { 
         Confirmacion.SetActive(false);
         continuar2_4GO.SetActive(true);
     }
@@ -400,6 +400,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
 
     void Siguiente1()
     {
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
         Menu2_5.SetActive(true);
     }
 
@@ -438,6 +439,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         MenuSelecValor.SetActive(false);
         Menu2_4.SetActive(false);
         ReiniciarPersonaje();
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 
     void Atras2()

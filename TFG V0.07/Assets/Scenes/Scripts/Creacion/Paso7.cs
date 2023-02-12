@@ -67,6 +67,7 @@ public class Paso7 : MonoBehaviour, IDataPersistance
     void Siguiente3()
     {
         Personaje.nombre = nombreEntrado.text;
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadScene("Main Screen");
     }
     void Atras3()
@@ -77,7 +78,7 @@ public class Paso7 : MonoBehaviour, IDataPersistance
     // Update is called once per frame
     void Update()
     {
-        if(Input.text != "")
+        if(Input.text != "" && Input.text != " ")
         {
             continuar3GO.SetActive(true);
         }

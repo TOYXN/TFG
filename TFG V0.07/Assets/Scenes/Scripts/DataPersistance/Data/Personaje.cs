@@ -383,7 +383,7 @@ public class Personaje
 
     public Personaje()
     {
-        this.nombre = "Name";
+        this.nombre = " ";
         this.nivel = 1;
         this.exp = 0;
         this.expProxNivel = 100;

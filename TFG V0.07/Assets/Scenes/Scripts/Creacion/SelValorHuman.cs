@@ -211,6 +211,7 @@ public class SelValorHuman : MonoBehaviour, IDataPersistance
         ExplicacionPasoGO.SetActive(true);
         continuar3GO.SetActive(true);
         numselec = 0;
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 
     public void SelecValores()

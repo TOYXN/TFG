@@ -104,6 +104,7 @@ public class Paso4 : MonoBehaviour, IDataPersistance
         TextoFinal.SetActive(false);
         continuar4GO.SetActive(false);
         Personaje.ActualizarValores(valorFuerza, valorResist, valorAgilid, valorVeloci, valorPoder, valorSentid, valorMemoria, valorPerson);
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 
     void guardarValoresPers()

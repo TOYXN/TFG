@@ -74,38 +74,26 @@ public class FuncBotonPers : MonoBehaviour
         botonPersonaje3.onClick.AddListener(CargarPersonaje3);
         botonPersonaje4.onClick.AddListener(CargarPersonaje4);
 
-        if (!DataPersistanceManager.instance.PersonajeExiste())
-        {
-            personaje1.SetActive(false);
-            personaje2.SetActive(false);
-            personaje3.SetActive(false);
-            personaje4.SetActive(false);
-
-            elemBoton1.SetActive(true);
-            elemBoton2.SetActive(true);
-            elemBoton3.SetActive(true);
-            elemBoton4.SetActive(true);
-        }
     }
    
     void Bypass1()
     {
-        CrearPers(elemBoton1, personaje1);
+        CrearPers(elemBoton1, personaje1, "pers1");
     }
 
     void Bypass2()
     {
-        CrearPers(elemBoton2, personaje2);
+        CrearPers(elemBoton2, personaje2, "pers2");
     }
 
     void Bypass3()
     {
-        CrearPers(elemBoton3, personaje3);
+        CrearPers(elemBoton3, personaje3, "pers3");
     }
 
     void Bypass4()
     {
-        CrearPers(elemBoton4, personaje4);
+        CrearPers(elemBoton4, personaje4, "pers4");
     }
 
     void Bypass5()
@@ -130,22 +118,22 @@ public class FuncBotonPers : MonoBehaviour
 
     void Bypass9()
     {
-        ElimPers(menuElim1, elemBoton1);
+        ElimPers(menuElim1, elemBoton1, "pers1");
     }
 
     void Bypass10()
     {
-        ElimPers(menuElim2, elemBoton2);
+        ElimPers(menuElim2, elemBoton2, "pers2");
     }
 
     void Bypass11()
     {
-        ElimPers(menuElim3, elemBoton3);
+        ElimPers(menuElim3, elemBoton3, "pers3");
     }
 
     void Bypass12()
     {
-        ElimPers(menuElim4, elemBoton4);
+        ElimPers(menuElim4, elemBoton4, "pers4");
     }
 
     void Bypass13()
@@ -170,29 +158,40 @@ public class FuncBotonPers : MonoBehaviour
 
     void CargarPersonaje1()
     {
+        
+        DataPersistanceManager.instance.CambiarIdPersSelecc("pers1");
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje2()
     {
+        
+        DataPersistanceManager.instance.CambiarIdPersSelecc("pers2");
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje3()
     {
+        
+        DataPersistanceManager.instance.CambiarIdPersSelecc("pers3");
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Character");
     }
 
     void CargarPersonaje4()
     {
+        DataPersistanceManager.instance.CambiarIdPersSelecc("pers4");
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Character");
     }
 
-    void CrearPers(GameObject botonCrear, GameObject pers)
+    void CrearPers(GameObject botonCrear, GameObject pers, string idPers)
     {
-        botonCrear.SetActive(false);
-        pers.SetActive(true);
+        DataPersistanceManager.instance.CambiarIdPersSelecc(idPers);
         DataPersistanceManager.instance.CrearPersonaje();
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Creation");
     }
 
@@ -202,8 +201,9 @@ public class FuncBotonPers : MonoBehaviour
         menuElim.SetActive(true);
     }
 
-    void ElimPers(GameObject menuElim, GameObject botonCrear)
+    void ElimPers(GameObject menuElim, GameObject botonCrear, string idPers)
     {
+        DataPersistanceManager.instance.EliminarPersonaje(idPers);
         menuElim.SetActive(false);
         botonCrear.SetActive(true);
     }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.17</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.24f1</UnityVersion>
@@ -78,8 +78,10 @@
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\Arma.cs" />
     <Compile Include="Assets\Scenes\Scripts\Main Screen\FuncBotonPers.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\EsquivaBloqueo.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Main Screen\MenuSlots.cs" />
     <Compile Include="Assets\Scenes\Scripts\Menu Pers\ValoresMenu.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso2_4.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Main Screen\Slot.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6.cs" />
     <Compile Include="Assets\Scenes\Scripts\Creacion\Paso6_3.cs" />
     <Compile Include="Assets\Scenes\Scripts\DataPersistance\IDataPersistance.cs" />

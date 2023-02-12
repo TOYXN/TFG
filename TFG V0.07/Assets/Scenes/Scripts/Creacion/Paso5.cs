@@ -80,6 +80,7 @@ public class Paso5 : MonoBehaviour, IDataPersistance
     void Siguiente3()
     {
         PonerNombreArmas();
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
         Menu5_4.SetActive(true);
     }
     void Atras3()

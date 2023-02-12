@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -15,9 +15,9 @@ public class FileDataHandler
         this.dataFileName = dataFileName;
     }
 
-    public Personaje Cargar()
+    public Personaje Cargar(string idPers)
     {
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(dataDirPath, idPers, dataFileName);
         Personaje dataCargado = null;
         if (File.Exists(fullPath))
         {
@@ -43,9 +43,9 @@ public class FileDataHandler
         return dataCargado;
     }
 
-    public void Guardar(Personaje pers)
+    public void Guardar(Personaje pers, string idPers)
     {
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(dataDirPath, idPers, dataFileName);
         Debug.Log(fullPath);
         try
         {
@@ -65,5 +65,59 @@ public class FileDataHandler
         {
             Debug.LogError("Ha ocurrido un error guardando el personaje en el archivo de guardado: " + fullPath + "\n" + e);
         }
+    }
+
+    public void Eliminar(string idPers)
+    {
+        if(idPers == null)
+        {
+            return;
+        }
+
+        string fullpath = Path.Combine(dataDirPath, idPers, dataFileName);
+        try
+        {
+            if (File.Exists(fullpath))
+            {
+                Directory.Delete(Path.GetDirectoryName(fullpath), true);
+                Debug.Log("Personaje " + idPers + " eliminado");
+            }
+            else
+            {
+                Debug.LogWarning("Error al eliminar el personaje en el directorio: " + fullpath);
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Error al eliminar el personaje con ID: " + idPers + " en el directorio " + fullpath + "\n" + e);
+        }
+    }
+
+    public Dictionary<string, Personaje> CargarPerfiles()
+    {
+        Dictionary<string, Personaje> diccionarioPerfil = new Dictionary<string, Personaje>();
+
+        IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(dataDirPath).EnumerateDirectories();
+        foreach (DirectoryInfo dirInfo in dirInfos)
+        {
+            string idPerfil = dirInfo.Name;
+            string fullpath = Path.Combine(dataDirPath, idPerfil, dataFileName);
+            if (!File.Exists(fullpath))
+            {
+                Debug.LogWarning("Saltando directorio cargando los perfiles porque no contiene info: " + idPerfil);
+                continue;
+            }
+            Personaje persPerfil = Cargar(idPerfil);
+            if(persPerfil != null)
+            {
+                diccionarioPerfil.Add(idPerfil, persPerfil);
+            }
+            else
+            {
+                Debug.LogError("Ocurrió un error intentando cargar el personaje de id: " + idPerfil);
+            }
+        }
+
+        return diccionarioPerfil;
     }
 }

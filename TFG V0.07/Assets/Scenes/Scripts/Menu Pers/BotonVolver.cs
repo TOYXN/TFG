@@ -16,6 +16,7 @@ public class BotonVolver : MonoBehaviour
     // Update is called once per frame
     void Volver()
     {
+        DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadScene("Main Screen");
     }
 }

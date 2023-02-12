@@ -161,5 +161,6 @@ public class Paso5_4 : MonoBehaviour, IDataPersistance
         TextoFinal.text = "Arma seleccionada:\n" + Personaje.ArmaEquipada.nombreArma + "\n\nCálculo actual de daño:\n" + calculo;
         TextoFinalGO.SetActive(true);
         ContinuarGO.SetActive(true);
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 }

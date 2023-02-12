@@ -16,9 +16,10 @@ public class DataPersistanceManager : MonoBehaviour
 
     public static DataPersistanceManager instance { get; private set; }
 
-    private Personaje Personaje;
+    public Personaje Personaje;
     private List<IDataPersistance> dataPersistancePers;
     private FileDataHandler dataHandler;
+    private string idPersSeleccionado = "test";
 
     private void Awake()
     {
@@ -37,13 +38,11 @@ public class DataPersistanceManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -51,12 +50,6 @@ public class DataPersistanceManager : MonoBehaviour
         Debug.Log("Usando OnSceneLoaded...");
         this.dataPersistancePers = FindAllDataPersistancePers();
         CargarPersonaje();
-    }
-
-    public void OnSceneUnloaded(Scene scene)
-    {
-        Debug.Log("Usando OnSceneUnloaded...");
-        GuardarPersonaje();
     }
 
     public void CrearPersonaje()
@@ -75,12 +68,12 @@ public class DataPersistanceManager : MonoBehaviour
         {
             dataPersistanceObj.GuardarData(Personaje);
         }
-        dataHandler.Guardar(Personaje);
+        dataHandler.Guardar(Personaje, idPersSeleccionado);
     }
 
     public void CargarPersonaje()
     {
-        this.Personaje = dataHandler.Cargar();
+        this.Personaje = dataHandler.Cargar(idPersSeleccionado);
 
         if(this.Personaje == null && initializeDataIfNull)
         {
@@ -98,9 +91,27 @@ public class DataPersistanceManager : MonoBehaviour
         }
     }
 
+    public void ActualizarPersonaje(Personaje pers)
+    {
+        this.Personaje = pers;
+        GuardarPersonaje();
+        CargarPersonaje();
+    }
+
+    public void EliminarPersonaje(string persId)
+    {
+        dataHandler.Eliminar(persId);
+        this.idPersSeleccionado = "test";
+    }
+
     private void OnApplicationQuit()
     {
-        GuardarPersonaje();
+        if(idPersSeleccionado != "test")
+            GuardarPersonaje();
+        if(this.Personaje.nombre == " ")
+        {
+            EliminarPersonaje(idPersSeleccionado);
+        }
     }
 
     private List<IDataPersistance> FindAllDataPersistancePers()
@@ -113,5 +124,21 @@ public class DataPersistanceManager : MonoBehaviour
     public bool PersonajeExiste()
     {
         return Personaje != null;
+    }
+
+    public Dictionary<string, Personaje> CargarPerfilesPersonaje()
+    {
+        return dataHandler.CargarPerfiles();
+    }
+
+    public void CambiarIdPersSelecc(string IdNuevoPers)
+    {
+        this.idPersSeleccionado = IdNuevoPers;
+        CargarPersonaje();
+    }
+
+    public string IdPersAct()
+    {
+        return this.idPersSeleccionado;
     }
 }

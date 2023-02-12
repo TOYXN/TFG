@@ -178,11 +178,13 @@ public class Paso3 : MonoBehaviour, IDataPersistance
     {
         Menu4_1.SetActive(true);
         imagenPaso4.color = new Vector4(0, 255, 0, 100);
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
     void Atras3()
     {
         Menu3_3.SetActive(false);
         ReiniciarProceso();
+        //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
     }
 
     void ReiniciarProceso()
@@ -275,24 +277,32 @@ public class Paso3 : MonoBehaviour, IDataPersistance
         {
             Personaje.ActualizarValor("RESISTENCIA", 2);
             Personaje.ActualizarValor("FUERZA", 1);
+            Personaje._raza.valorPrincipal = "RESISTENCIA";
+            Personaje._raza.valorSecundario = "FUERZA";
             CalcularValores(valor1, valor2, bono1, bono2, valorSumado1, valorSumado2, bonoSumado1, bonoSumado2, "AGILIDAD", "PERSONALIDAD");
         }
         else if (NombreRaza.text == "Felino")
         {
             Personaje.ActualizarValor("AGILIDAD", 2);
             Personaje.ActualizarValor("PERSONALIDAD", 1);
+            Personaje._raza.valorPrincipal = "AGILIDAD";
+            Personaje._raza.valorSecundario = "PERSONALIDAD";
             CalcularValores(valor1, valor2, bono1, bono2, valorSumado1, valorSumado2, bonoSumado1, bonoSumado2, "FUERZA", "VELOCIDAD");
         }
         else if (NombreRaza.text == "Averio")
         {
             Personaje.ActualizarValor("SENTIDOS",  2);
             Personaje.ActualizarValor("VELOCIDAD", 1);
+            Personaje._raza.valorPrincipal = "SENTIDOS";
+            Personaje._raza.valorSecundario = "VELOCIDAD";
             CalcularValores(valor1, valor2, bono1, bono2, valorSumado1, valorSumado2, bonoSumado1, bonoSumado2, "MEMORIA", "PODER");
         }
         else if (NombreRaza.text == "Mus")
         {
             Personaje.ActualizarValor("PODER", 2);
             Personaje.ActualizarValor("MEMORIA", 1);
+            Personaje._raza.valorPrincipal = "PODER";
+            Personaje._raza.valorSecundario = "MEMORIA";
             CalcularValores(valor1, valor2, bono1, bono2, valorSumado1, valorSumado2, bonoSumado1, bonoSumado2, "RESISTENCIA", "SENTIDOS");
         }
         else if (NombreRaza.text == "Humano")
@@ -303,8 +313,6 @@ public class Paso3 : MonoBehaviour, IDataPersistance
 
     void CalcularValores(int Val1, int Val2, int Bon1, int Bon2, int ValSum1, int ValSum2, int BonoSum1, int BonoSum2, string Valor1, string Valor2)
     {
-        Personaje._raza.valorPrincipal = Valor1;
-        Personaje._raza.valorSecundario = Valor2;
         Val1 = Personaje.Valor(Valor1);
         Val2 = Personaje.Valor(Valor2);
         Bon1 = Personaje.BonoValor(Valor1);
