@@ -332,7 +332,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
 
     void usarHechizo()
     {
-        BotonDesplegable.text = "HECHIZOS";
+        BotonDesplegable.text = "HABILIDADES";
         MenuHechizos.SetActive(true);
         MenuAcciones.SetActive(false);
     }

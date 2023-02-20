@@ -1969,7 +1969,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: -40, y: -520}
+  m_SizeDelta: {x: -80, y: -520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89972278
 MonoBehaviour:
@@ -1993,7 +1993,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -2005,8 +2005,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "En este paso se te mostrar\xE1 el listado de todas las acciones existentes.
-    \nSi le das a una de esas acciones, se te mostrar\xE1 un men\xFA con una descripci\xF3n
-    de la acci\xF3n y un bot\xF3n para seleccionarla como acci\xF3n ventaja.\nCuando
+    \n\nSi le das a una de esas acciones, se te mostrar\xE1 un men\xFA con una descripci\xF3n
+    de la acci\xF3n y un bot\xF3n para seleccionarla como acci\xF3n ventaja.\n\nCuando
     hayas seleccionado las 4, se mostrar\xE1 el listado de las acciones ventaja seleccionadas,
     a lo que tendr\xE1s que decidir si confirmar la elecci\xF3n o volver a elegir,
     lo que reiniciar\xE1 la selecci\xF3n desde 0."
@@ -3072,7 +3072,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137612938
 MonoBehaviour:
@@ -3096,7 +3096,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3272,7 +3272,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: -40, y: -420}
+  m_SizeDelta: {x: -80, y: -420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142861326
 MonoBehaviour:
@@ -3296,7 +3296,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3767,7 +3767,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162257332
 MonoBehaviour:
@@ -3791,7 +3791,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -6751,7 +6751,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296022551
 MonoBehaviour:
@@ -6775,11 +6775,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 55
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -9129,7 +9129,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371270154
 MonoBehaviour:
@@ -9153,7 +9153,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -19828,7 +19828,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -20504,7 +20504,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809288901
 MonoBehaviour:
@@ -20528,7 +20528,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -20540,7 +20540,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Similar a las 2 elecciones anteriores, se te mostrar\xE1 el listado de
-    armas aptas para tu personaje.\nDandole a una arma se te mostrar\xE1 un men\xFA
+    armas aptas para tu personaje.\n\nDandole a una arma se te mostrar\xE1 un men\xFA
     con la informaci\xF3n del arma. Adem\xE1s, podr\xE1s cambiarle el nombre para
     que tu herramienta de combate te sea m\xE1s personal.\n\nRecuerda que esa arma
     ser\xE1 la \xFAnica que tengas durante la campa\xF1a, as\xED que piensalo bien
@@ -22014,7 +22014,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &866056451
 MonoBehaviour:
@@ -22038,7 +22038,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -25882,7 +25882,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021064886
 MonoBehaviour:
@@ -25906,7 +25906,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -30005,7 +30005,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: -40, y: -520}
+  m_SizeDelta: {x: -80, y: -520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192882034
 MonoBehaviour:
@@ -30029,7 +30029,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -30041,9 +30041,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Ya casi hemos terminado.\n\nAhora toca que elijas tus acciones ventaja.
-    Estas son las acciones con las que quieres que tu personaje destaque.\nSon 4,
-    y en estas tendr\xE1s una ventaja de +2  en sus tiradas que se sumar\xE1 al Bono
-    vinculado."
+    Estas son las acciones con las que quieres que tu personaje destaque.\n\nSon
+    4, y en estas tendr\xE1s una ventaja de +2  en sus tiradas que se sumar\xE1 al
+    Bono vinculado."
 --- !u!222 &1192882035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32394,7 +32394,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292607670
 MonoBehaviour:
@@ -32418,7 +32418,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -32714,10 +32714,10 @@ RectTransform:
   m_Father: {fileID: 80136727}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: -1000}
+  m_SizeDelta: {x: -80, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1308635597
 GameObject:
@@ -34591,7 +34591,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385995982
 MonoBehaviour:
@@ -34615,7 +34615,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -35186,7 +35186,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: -40, y: -420}
+  m_SizeDelta: {x: -80, y: -420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406387956
 MonoBehaviour:
@@ -35210,7 +35210,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -35698,7 +35698,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443307266
 MonoBehaviour:
@@ -35722,10 +35722,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 0
     m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -37148,7 +37148,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486326244
 MonoBehaviour:
@@ -37172,7 +37172,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -37186,7 +37186,7 @@ MonoBehaviour:
   m_Text: "Las armas que puedas usar est\xE1n determinadas por la clase de tu personaje.\n\nCada
     arma tiene vinculado un tipo de da\xF1o, que ser\xE1 el Valor que se usar\xE1
     para calcular el da\xF1o que har\xE1s por ataque. Este valor puede ser Fuerza
-    o Agilidad.\nEse da\xF1o se sumar\xE1 a una tirada del dado que est\xE9 asociado
+    o Agilidad.\n\nEse da\xF1o se sumar\xE1 a una tirada del dado que est\xE9 asociado
     a esa arma para concretar el da\xF1o total infringido.\n"
 --- !u!222 &1486326245
 CanvasRenderer:
@@ -39525,7 +39525,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: -40, y: -450}
+  m_SizeDelta: {x: -80, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598694274
 MonoBehaviour:
@@ -39549,7 +39549,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -40714,7 +40714,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 165}
-  m_SizeDelta: {x: -40, y: -1070}
+  m_SizeDelta: {x: -80, y: -1070}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1650892920
 MonoBehaviour:
@@ -40738,7 +40738,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -41111,7 +41111,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -125}
-  m_SizeDelta: {x: -40, y: -550}
+  m_SizeDelta: {x: -80, y: -550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668554323
 MonoBehaviour:
@@ -41135,7 +41135,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_FontSize: 53
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5

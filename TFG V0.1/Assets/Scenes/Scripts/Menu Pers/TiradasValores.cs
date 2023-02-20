@@ -8,6 +8,16 @@ public class TiradasValores : MonoBehaviour, IDataPersistance
     public Button botonValores;
     public GameObject MenuValores;
 
+    public GameObject BotonesValores;
+    public GameObject ValoresCuerpo;
+    public GameObject ValoresAlma;
+
+    public Button botonCuerpo;
+    public Button botonAlma;
+
+    public Button botonAtras1;
+    public Button botonAtras2;
+
     public Text Fuerza;
     public Text Resistencia;
     public Text Agilidad;
@@ -63,7 +73,38 @@ public class TiradasValores : MonoBehaviour, IDataPersistance
         botonSentidos.onClick.AddListener(UsarSentidos);
         botonMemoria.onClick.AddListener(UsarMemoria);
         botonPersonalidad.onClick.AddListener(UsarPersonalidad);
-        cerrarMenu.onClick.AddListener(CerrarMenu);
+
+        botonCuerpo.onClick.AddListener(MostrarValoresCuerpo); ;
+        botonAlma.onClick.AddListener(MostrarValoresAlma); ;
+
+        botonAtras1.onClick.AddListener(AtrasCuerpo); ;
+        botonAtras2.onClick.AddListener(AtrasAlma); ;
+
+    cerrarMenu.onClick.AddListener(CerrarMenu);
+    }
+
+    void MostrarValoresCuerpo()
+    {
+        BotonesValores.SetActive(false);
+        ValoresCuerpo.SetActive(true);
+    }
+
+    void MostrarValoresAlma()
+    {
+        BotonesValores.SetActive(false);
+        ValoresAlma.SetActive(true);
+    }
+
+    void AtrasCuerpo()
+    {
+        ValoresCuerpo.SetActive(false);
+        BotonesValores.SetActive(true);
+    }
+
+    void AtrasAlma()
+    {
+        ValoresAlma.SetActive(false);
+        BotonesValores.SetActive(true);
     }
 
     void AbrirMenu()
