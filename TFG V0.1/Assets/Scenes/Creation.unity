@@ -3676,7 +3676,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 12
@@ -4328,7 +4328,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
@@ -36492,8 +36492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -190, y: -460}
-  m_SizeDelta: {x: -480, y: 100}
+  m_AnchoredPosition: {x: -155, y: -460}
+  m_SizeDelta: {x: -410, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1469642353
 MonoBehaviour:
@@ -36542,7 +36542,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -45605,8 +45605,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 140, y: -450}
-  m_SizeDelta: {x: -380, y: 120}
+  m_AnchoredPosition: {x: 175, y: -450}
+  m_SizeDelta: {x: -450, y: 120}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1853395221
 MonoBehaviour:
@@ -52299,7 +52299,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 

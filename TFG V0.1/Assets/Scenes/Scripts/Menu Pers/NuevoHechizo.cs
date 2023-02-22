@@ -115,6 +115,39 @@ public class NuevoHechizo : MonoBehaviour, IDataPersistance
         nomHech6.text = Personaje._clase.listaHechizosClase[5].nombreHechizo;
         nomHech7.text = Personaje._clase.listaHechizosClase[6].nombreHechizo;
         nomHech8.text = Personaje._clase.listaHechizosClase[7].nombreHechizo;
+
+        if(Personaje._clase.listaHechizosClase[0].nombreHechizo == ".")
+        {
+            hech1GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[1].nombreHechizo == ".")
+        {
+            hech2GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[2].nombreHechizo == ".")
+        {
+            hech3GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[3].nombreHechizo == ".")
+        {
+            hech4GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[4].nombreHechizo == ".")
+        {
+            hech5GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[5].nombreHechizo == ".")
+        {
+            hech6GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[6].nombreHechizo == ".")
+        {
+            hech7GO.SetActive(false);
+        }
+        if (Personaje._clase.listaHechizosClase[7].nombreHechizo == ".")
+        {
+            hech8GO.SetActive(false);
+        }
     }
 
     void Bypass1()
@@ -185,8 +218,18 @@ public class NuevoHechizo : MonoBehaviour, IDataPersistance
     void SelecNuevoHech()
     {
         int num = Personaje.hechizosGuard;
+        string nombreHechizo = Personaje._clase.listaHechizosClase[index].nombreHechizo;
+        string descHechizo = Personaje._clase.listaHechizosClase[index].descHechizo;
+        string tipoHechizo = Personaje._clase.listaHechizosClase[index].tipoHechizo;
+        int costeHechizo = Personaje._clase.listaHechizosClase[index].costeHechizo;
+        int dadoHechizo = Personaje._clase.listaHechizosClase[index].dadoHechizo;
         Debug.Log(num);
-        Personaje.listaHechizos[num] = Personaje._clase.listaHechizosClase[index];
+        Personaje.listaHechizos[num].nombreHechizo = nombreHechizo;
+        Personaje.listaHechizos[num].descHechizo = descHechizo;
+        Personaje.listaHechizos[num].tipoHechizo = tipoHechizo;
+        Personaje.listaHechizos[num].costeHechizo = costeHechizo;
+        Personaje.listaHechizos[num].dadoHechizo = dadoHechizo;
+        Personaje._clase.listaHechizosClase[index].nombreHechizo = ".";
         Personaje.hechizosGuard++;
         MenuHech.SetActive(false);
         MenuSel.SetActive(false);
