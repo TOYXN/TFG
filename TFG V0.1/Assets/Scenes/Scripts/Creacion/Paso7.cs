@@ -68,6 +68,7 @@ public class Paso7 : MonoBehaviour, IDataPersistance
     {
         Personaje.nombre = nombreEntrado.text;
         DataPersistanceManager.instance.GuardarPersonaje();
+        DataPersistanceManager.instance.ChangeIsCreating(false);
         SceneManager.LoadScene("Main Screen");
     }
     void Atras3()

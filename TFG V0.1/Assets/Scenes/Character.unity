@@ -3792,7 +3792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &99679478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29060,7 +29060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4 (d6) + 1 (Bono Poder)
+  m_Text: 
 --- !u!222 &876859235
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44660,7 +44660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: 
 --- !u!222 &1314472949
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57732,7 +57732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Resultado: X'
+  m_Text: 
 --- !u!222 &1573605702
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -190,6 +190,7 @@ public class FuncBotonPers : MonoBehaviour
     void CrearPers(GameObject botonCrear, GameObject pers, string idPers)
     {
         DataPersistanceManager.instance.CambiarIdPersSelecc(idPers);
+        DataPersistanceManager.instance.ChangeIsCreating(true);
         DataPersistanceManager.instance.CrearPersonaje();
         DataPersistanceManager.instance.GuardarPersonaje();
         SceneManager.LoadSceneAsync("Creation");

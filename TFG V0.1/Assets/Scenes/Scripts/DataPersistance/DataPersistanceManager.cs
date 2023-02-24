@@ -19,7 +19,10 @@ public class DataPersistanceManager : MonoBehaviour
     public Personaje Personaje;
     private List<IDataPersistance> dataPersistancePers;
     private FileDataHandler dataHandler;
-    private string idPersSeleccionado = "test";
+    public string idPersSeleccionado = "test";
+    private string idPersGuardado = "test";
+    public bool isCreating = false;
+    public bool isPaused = false;
 
     private void Awake()
     {
@@ -75,14 +78,11 @@ public class DataPersistanceManager : MonoBehaviour
     {
         this.Personaje = dataHandler.Cargar(idPersSeleccionado);
 
-        if(this.Personaje == null && initializeDataIfNull)
-        {
-            CrearPersonaje();
-        }
 
         if(this.Personaje == null)
         {
-            Debug.Log("No se han encontrado personajes. Se necesita crear uno antes");
+            CrearPersonaje();
+            Debug.Log("No se ha encontrado el personaje. Creando uno...");
             return;
         }
         foreach (IDataPersistance dataPersistanceObj in dataPersistancePers)
@@ -112,8 +112,55 @@ public class DataPersistanceManager : MonoBehaviour
         {
             EliminarPersonaje(idPersSeleccionado);
         }
+        EliminarPersonaje("test");
     }
-
+/*
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        isFocused = hasFocus;
+        Debug.Log("Foco cambiado a " + isFocused);
+        if (!isFocused && !isPaused)
+        {
+            Debug.Log("Se supone que salgo");
+            if (idPersSeleccionado != "test")
+                GuardarPersonaje();
+            if (this.Personaje.nombre == " ")
+            {
+                EliminarPersonaje(idPersSeleccionado);
+            }
+        }
+    }
+*/
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        isPaused = pauseStatus;
+        Debug.Log("Pausa cambiado a " + isPaused);
+        if (isPaused)
+        {
+            Debug.Log("Se supone que salgo");
+            if (idPersSeleccionado != "test")
+                GuardarPersonaje();
+            if (isCreating)
+            {
+                dataHandler.Guardar(Personaje, "test");
+                EliminarPersonaje(idPersSeleccionado);
+            }
+            else
+            {
+                EliminarPersonaje("test");
+            }
+        }
+        else
+        {
+            Debug.Log("He vuelto");
+            CargarPersonaje();
+            idPersSeleccionado = idPersGuardado;
+            if (isCreating)
+            {
+                GuardarPersonaje();
+            }
+        }
+    }
     private List<IDataPersistance> FindAllDataPersistancePers()
     {
         IEnumerable<IDataPersistance> dataPersistancePers = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistance>();
@@ -134,11 +181,17 @@ public class DataPersistanceManager : MonoBehaviour
     public void CambiarIdPersSelecc(string IdNuevoPers)
     {
         this.idPersSeleccionado = IdNuevoPers;
+        this.idPersGuardado = IdNuevoPers;
         CargarPersonaje();
     }
 
     public string IdPersAct()
     {
         return this.idPersSeleccionado;
+    }
+
+    public void ChangeIsCreating(bool change)
+    {
+        isCreating = change;
     }
 }

@@ -32,6 +32,7 @@ public class Paso1 : MonoBehaviour
     {
         string persAct = DataPersistanceManager.instance.IdPersAct();
         DataPersistanceManager.instance.EliminarPersonaje(persAct);
+        DataPersistanceManager.instance.ChangeIsCreating(false);
         SceneManager.LoadScene("Main Screen");
     }
 }
