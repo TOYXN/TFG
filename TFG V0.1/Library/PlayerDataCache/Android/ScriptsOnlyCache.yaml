@@ -743,7 +743,7 @@ ScriptsOnlyBuild:
     className: PCPA
   - hash:
       serializedVersion: 2
-      Hash: e0c9c6ea77826c50aacf04ef2eb63578
+      Hash: 3268fddcbbbc86b9d00ffec6cd71e59b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataPersistanceManager

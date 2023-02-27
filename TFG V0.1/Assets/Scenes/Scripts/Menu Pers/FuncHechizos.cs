@@ -351,7 +351,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
             {
                 numDadoTirada = Random.Range(min, max);
                 result = result + numDadoTirada;
-                desgloseResultHech.text += numDadoTirada + " (" + Personaje.ArmaEquipada.dadoArma + ") " + "+ ";
+                desgloseResultHech.text += numDadoTirada + " (d" + Personaje.ArmaEquipada.dadoArma + ") " + "+ ";
             }
             result = result + bonoActual;
 
@@ -366,7 +366,10 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
             {
                 desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
             }
-            desgloseResultHech.text += "| ";
+            if (a < 1)
+            {
+                desgloseResultHech.text += "| ";
+            }    
         }
         resultHech.text = "Resultado: " + result;
     }
@@ -391,19 +394,20 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int minTimes = Personaje._otros.numDados;
         int maxTimes = 9;
         int numDadoAtaque;
+        int numVecesAtaque;
         int numDadoBono;
         int result = 0;
         int bonoPoder = Personaje.BonoValor("PODER");
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
-        numDadoAtaque = Random.Range(minTimes, maxTimes);
-        for (int a = 0; a < numDadoAtaque; a++)
+        numVecesAtaque = Random.Range(minTimes, maxTimes);
+        for (int a = 0; a < numVecesAtaque; a++)
         {
             for (int i = 0; i < Personaje._otros.numDados; i++)
             {
                 numDadoAtaque = Random.Range(minAtk, maxAtk);
                 numDadoBono = Random.Range(minBonus, maxBonus);
                 result = result + numDadoAtaque + numDadoBono;
-                desgloseResultHech.text += numDadoAtaque + " (" + Personaje.ArmaEquipada.dadoArma + ")" + " + " + numDadoBono + " (Daño Adicional) ";
+                desgloseResultHech.text += numDadoAtaque + " (d" + Personaje.ArmaEquipada.dadoArma + ")" + " + " + numDadoBono + " (Daño Adicional) ";
             }
             result = result + bonoActual;
 
@@ -418,7 +422,10 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
             {
                 desgloseResultHech.text += bonoActual + " (Bono " + Personaje.ArmaEquipada.tipoArma + ") ";
             }
-            desgloseResultHech.text += "| ";
+            if (a < numVecesAtaque - 1)
+            {
+                desgloseResultHech.text += "| ";
+            }  
         }
         resultHech.text = "Resultado: " + result;
     }
