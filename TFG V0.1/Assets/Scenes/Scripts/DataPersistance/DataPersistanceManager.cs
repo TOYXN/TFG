@@ -138,8 +138,6 @@ public class DataPersistanceManager : MonoBehaviour
         if (isPaused)
         {
             Debug.Log("Se supone que salgo");
-            if (idPersSeleccionado != "test")
-                GuardarPersonaje();
             if (isCreating)
             {
                 dataHandler.Guardar(Personaje, "test");
@@ -147,7 +145,7 @@ public class DataPersistanceManager : MonoBehaviour
             }
             else
             {
-                EliminarPersonaje("test");
+                GuardarPersonaje();
             }
         }
         else
