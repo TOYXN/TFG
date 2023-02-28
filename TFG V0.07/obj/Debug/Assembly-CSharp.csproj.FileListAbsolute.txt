@@ -1,2 +1,0 @@
-C:\Users\Usuario\Documents\GitHub\TFG\TFG V0.06\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-C:\Users\Usuario\Documents\GitHub\TFG\TFG V0.06\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
