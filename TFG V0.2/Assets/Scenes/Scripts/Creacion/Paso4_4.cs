@@ -28,6 +28,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     public Button CerrarMenuClase;
 
     public Text TextoFinal;
+    public Text TextoFinalSombra;
     public GameObject TextoFinalGO;
 
     public GameObject ContinuarGO;
@@ -226,6 +227,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
         Personaje.ActualizarValor(valorClase, 2);
         Personaje._clase.descClase = DescClase.text;
         TextoFinal.text = "Clase seleccionada: \n\n" + nomClase;
+        TextoFinalSombra.text = "Clase seleccionada: \n\n" + nomClase;
     }
 
     Arma CrearCuerpo()

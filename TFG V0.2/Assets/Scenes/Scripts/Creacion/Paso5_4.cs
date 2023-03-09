@@ -24,6 +24,7 @@ public class Paso5_4 : MonoBehaviour, IDataPersistance
     public Button CerrarMenuArma;
 
     public Text TextoFinal;
+    public Text TextoFinalSombra;
     public GameObject TextoFinalGO;
 
     public GameObject ContinuarGO;
@@ -159,6 +160,7 @@ public class Paso5_4 : MonoBehaviour, IDataPersistance
             else { calculo = "d" + dado + bono; }
         }
         TextoFinal.text = "Arma seleccionada:\n" + Personaje.ArmaEquipada.nombreArma + "\n\nCálculo actual de daño:\n" + calculo;
+        TextoFinalSombra.text = "Arma seleccionada:\n" + Personaje.ArmaEquipada.nombreArma + "\n\nCálculo actual de daño:\n" + calculo;
         TextoFinalGO.SetActive(true);
         ContinuarGO.SetActive(true);
         //DataPersistanceManager.instance.ActualizarPersonaje(Personaje);
