@@ -406,7 +406,7 @@ public class Personaje
         this.oculto = false;
         this.cargado = false;
         this.valorCargado = 0;
-        this.listaInventario = new string[10];
+        this.listaInventario = new string[8];
         this.idiomas = "";
         this.desc = "";
         this.gustos = "";

@@ -23,18 +23,18 @@ public class Acciones : MonoBehaviour, IDataPersistance
     public Text textaccVent3;
     public Text textaccVent4;
 
-    private int bonoFuerza;
-    private int bonoResistencia;
-    private int bonoAgilidad;
-    private int bonoVelocidad;
-    private int bonoPoder;
-    private int bonoSentidos;
-    private int bonoMemoria;
-    private int bonoPersonalidad;
-    private int bonoVent1;
-    private int bonoVent2;
-    private int bonoVent3;
-    private int bonoVent4;
+    public int bonoFuerza;
+    public int bonoResistencia;
+    public int bonoAgilidad;
+    public int bonoVelocidad;
+    public int bonoPoder;
+    public int bonoSentidos;
+    public int bonoMemoria;
+    public int bonoPersonalidad;
+    public int bonoVent1;
+    public int bonoVent2;
+    public int bonoVent3;
+    public int bonoVent4;
 
     public Button percibir;
     public Button escuchar;
@@ -225,6 +225,7 @@ public class Acciones : MonoBehaviour, IDataPersistance
         agilidad.Add("TREPAR");
         agilidad.Add("ROBAR");
         agilidad.Add("SIGILAR");
+        agilidad.Add("DISFRAZAR");
         agilidad.Add("BAILAR");
     }
 
@@ -485,7 +486,17 @@ public class Acciones : MonoBehaviour, IDataPersistance
         else if (action == textaccVent2.text) { AbrirMenuAccion(action, desc, bonoVent2); }
         else if (action == textaccVent3.text) { AbrirMenuAccion(action, desc, bonoVent3); }
         else if (action == textaccVent4.text) { AbrirMenuAccion(action, desc, bonoVent4); }
-        else { AbrirMenuAccion(action, desc, bonoPersonalidad); }
+        else
+        {
+            if (fuerza.Contains(action)) { AbrirMenuAccion(action, desc, bonoFuerza); }
+            else if (resistencia.Contains(action)) { AbrirMenuAccion(action, desc, bonoResistencia); }
+            else if (agilidad.Contains(action)) { AbrirMenuAccion(action, desc, bonoAgilidad); }
+            else if (velocidad.Contains(action)) { AbrirMenuAccion(action, desc, bonoVelocidad); }
+            else if (poder.Contains(action)) { AbrirMenuAccion(action, desc, bonoPoder); }
+            else if (sentidos.Contains(action)) { AbrirMenuAccion(action, desc, bonoSentidos); }
+            else if (memoria.Contains(action)) { AbrirMenuAccion(action, desc, bonoMemoria); }
+            else if (personalidad.Contains(action)) { AbrirMenuAccion(action, desc, bonoPersonalidad); }
+        }
     }
 
     void HacerTirada()
