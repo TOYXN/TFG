@@ -2291,10 +2291,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Adem\xE1s, cada clase determina cu\xE1les son las habilidades que puede
     conocer el personaje y las armas que puede utilizar en combate. As\xED pues,
-    la clase es lo que determina hasta cierto punto cual es el estilo de juego del
-    personaje.\n\nHay 8 clases en este sistema, una por cada Valor y con un rol distintivo
-    para cada una.\n\nA continuaci\xF3n se te explicar\xE1 el proceso de selecci\xF3n
-    de clase."
+    la clase es lo que determina hasta cierto punto cu\xE1l es el estilo de juego
+    del personaje.\n\nHay 8 clases en este sistema, una por cada Valor y con un rol
+    distintivo para cada una.\n\nA continuaci\xF3n se te explicar\xE1 el proceso
+    de selecci\xF3n de clase."
 --- !u!222 &92102117
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3236,8 +3236,8 @@ MonoBehaviour:
   m_Text: "A continuaci\xF3n se te mostrar\xE1 un men\xFA con todas las razas a elegir.\n\nAl
     darle a una de las razas, se te mostrar\xE1 informaci\xF3n de esa raza como caracter\xEDsticas
     f\xEDsicas, relaciones entre el resto de razas y los Valores propios que augmentan
-    la raza en particular.\nSi decides elegir esa raza, entonces tendr\xE1s que elegir
-    los Valores opcionales que quieres augmentar para finalizar la selecci\xF3n de
+    la raza en particular.\nSi decides elegir esa raza, entonces tendr\xE1s que seleccionar
+    los Valores opcionales que quieres aumentar para finalizar la selecci\xF3n de
     raza."
 --- !u!222 &137612939
 CanvasRenderer:
@@ -3577,7 +3577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3894,13 +3894,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Entonces, podr\xE1s distribuir los resultados entre los diferentes valores
-    seg\xFAn tu criterio. Podr\xE1s darle a cada n\xFAmero y te saldr\xE1 un men\xFA
-    con la lista de Valores que a\xFAn no has asignado. Si le das a un Valor, aparecer\xE1
-    un peque\xF1o men\xFA con una explicaci\xF3n del Valor seleccionado y te dar\xE1
-    la opci\xF3n de asignar el n\xFAmero seleccionado al Valor seleccionado o de
-    retroceder para pensarlo mejor. \n\nAl terminar de asignar todos los valores,
-    podr\xE1s reiniciar la asignaci\xF3n o confirmarla para continuar.\n\n"
+  m_Text: "A continuaci\xF3n, podr\xE1s distribuir los resultados entre los diferentes
+    valores seg\xFAn tu criterio. Podr\xE1s darle a cada n\xFAmero y te saldr\xE1
+    un men\xFA con la lista de Valores que a\xFAn no has asignado. Si le das a uno
+    de ellos, aparecer\xE1 un peque\xF1o men\xFA con su propia descripci\xF3n y te
+    dar\xE1 la opci\xF3n de asignarle el n\xFAmero seleccionado o de retroceder para
+    pensarlo mejor. \n\nAl terminar de asignar todos los valores, podr\xE1s reiniciar
+    la asignaci\xF3n o confirmarla para continuar.\n\n"
 --- !u!222 &162257333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4492,6 +4492,7 @@ RectTransform:
   m_Children:
   - {fileID: 1424819525}
   - {fileID: 1136345511}
+  - {fileID: 1636402781}
   - {fileID: 676231452}
   m_Father: {fileID: 80136727}
   m_RootOrder: 6
@@ -4551,7 +4552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6156,7 +6157,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "...\xA1Ponerle nombre al personaje que encarnar\xE1s durante la aventura!\n\nAdelante,
     haz los honores, y cuando escribas el nombre id\xF3neo para tu personaje, pulsa
-    Finalizar para terminar la creaci\xF3n de personaje, y disfruta de la campa\xF1a."
+    Finalizar para terminar la creaci\xF3n de personaje y disfruta de la campa\xF1a."
 --- !u!222 &260840066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6315,10 +6316,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Empecemos con los Valores.\n\nLos Valores del personaje nos sirven para
-    interpretar sus proficiencias en diferentes aspectos. Hay 8 de diferentes y se
-    pueden dividir entre los valores f\xEDsicos y los alm\xE1ticos.\n\nLos valores
-    f\xEDsicos son Fuerza, Resistencia, Agilidad y Velocidad.\n\nLos valores alm\xE1ticos
-    son Poder, Sentidos, Memoria y Personalidad.\n"
+    interpretar sus aptitudes en diferentes aspectos. Hay 8 de diferentes y se pueden
+    dividir entre los valores f\xEDsicos y los alm\xE1ticos.\n\nLos valores f\xEDsicos
+    son Fuerza, Resistencia, Agilidad y Velocidad.\n\nLos valores alm\xE1ticos son
+    Poder, Sentidos, Memoria y Personalidad.\n"
 --- !u!222 &269112211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6920,13 +6921,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Todos los Valores tienen un Bono de Valor asignado.  Estos bonos sirven
-    para modificar el n\xFAmero conseguido en cada tirada del personaje. Sumar o
-    restar los bonos respectivos a las tiradas de dados que haga el personaje nos
-    permite adecuar su habilidad a las acciones ejecutadas.\n\nLo que ocurrir\xE1
-    a continuaci\xF3n es que se tirar\xE1n 8 veces 4 dados d4. La suma de cada tirada
-    de los 4 dados d4 se mostrar\xE1 ante t\xED como los valores definitivos del
-    personaje sin asignar.\n\n"
+  m_Text: "Lo que ocurrir\xE1 a continuaci\xF3n es que se tirar\xE1n 8 veces 4 dados
+    d4. La suma de cada tirada de los 4 dados d4 se mostrar\xE1 ante t\xED como los
+    valores definitivos del personaje sin asignar.\n\nCon los Valores asignados,
+    podremos conocer los Bonos de Valor del personaje.  Estos bonos sirven para modificar
+    el n\xFAmero conseguido en cada tirada del personaje y nos permite adecuar su
+    habilidad a las acciones ejecutadas."
 --- !u!222 &296022552
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8616,7 +8616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9009,7 +9009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10488,7 +10488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10993,7 +10993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12226,7 +12226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12614,7 +12614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13348,10 +13348,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Te doy la bienvenida al creador de personaje.\n\nAqu\xED seguir\xE1s los
     pasos necesarios para dar forma al personaje que vas a encarnar en la campa\xF1a
-    que vayas a jugar.\nTodo lo que incumbe el funcionamiento b\xE1sico del nuevo
-    personaje en el sistema de rol de Almerra se decidir\xE1 en las siguientes decisiones
-    que vayas a hacer a continuaci\xF3n.\n\nEmpezaremos con la asignaci\xF3n de sus
-    Valores.\n"
+    que vayas a jugar.\n\nEmpezaremos con la asignaci\xF3n de sus Valores."
 --- !u!222 &596715604
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14549,13 +14546,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Entonces, podr\xE1s distribuir los resultados entre los diferentes valores
-    seg\xFAn tu criterio. Podr\xE1s darle a cada n\xFAmero y te saldr\xE1 un men\xFA
-    con la lista de Valores que a\xFAn no has asignado. Si le das a un Valor, aparecer\xE1
-    un peque\xF1o men\xFA con una explicaci\xF3n del Valor seleccionado y te dar\xE1
-    la opci\xF3n de asignar el n\xFAmero seleccionado al Valor seleccionado o de
-    retroceder para pensarlo mejor. \n\nAl terminar de asignar todos los valores,
-    podr\xE1s reiniciar la asignaci\xF3n o confirmarla para continuar.\n\n"
+  m_Text: "A continuaci\xF3n, podr\xE1s distribuir los resultados entre los diferentes
+    valores seg\xFAn tu criterio. Podr\xE1s darle a cada n\xFAmero y te saldr\xE1
+    un men\xFA con la lista de Valores que a\xFAn no has asignado. Si le das a uno
+    de ellos, aparecer\xE1 un peque\xF1o men\xFA con su propia descripci\xF3n y te
+    dar\xE1 la opci\xF3n de asignarle el n\xFAmero seleccionado o de retroceder para
+    pensarlo mejor. \n\nAl terminar de asignar todos los valores, podr\xE1s reiniciar
+    la asignaci\xF3n o confirmarla para continuar.\n\n"
 --- !u!222 &632052162
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15020,7 +15017,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Segundo, si a\xFAn hay cosas que no entiendes sobre el funcionamiento
-    del sistema de rol Almerra solo debes consultar el manual del sistema. Ah\xED
+    del sistema de rol Animaia solo debes consultar el manual del sistema. Ah\xED
     encontrar\xE1s toda la informaci\xF3n que necesites por si tienes dudas sobre
     algo.\n\nCon esto ya terminamos, ahora solo falta..."
 --- !u!222 &670696478
@@ -15061,9 +15058,8 @@ RectTransform:
   - {fileID: 479919615}
   - {fileID: 2041782830}
   - {fileID: 1327273797}
-  - {fileID: 1636402781}
   m_Father: {fileID: 195184716}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16869,10 +16865,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Las armas que puedas usar est\xE1n determinadas por la clase de tu personaje.\n\nCada
-    arma tiene vinculado un tipo de da\xF1o, que ser\xE1 el Valor que se usar\xE1
-    para calcular el da\xF1o que har\xE1s por ataque. Este valor puede ser Fuerza
-    o Agilidad.\n\nEse da\xF1o se sumar\xE1 a una tirada del dado que est\xE9 asociado
-    a esa arma para concretar el da\xF1o total infringido.\n"
+    arma tiene un Valor vinculado que se usar\xE1 para calcular el da\xF1o que har\xE1s
+    por ataque. Este valor puede ser Fuerza o Agilidad.\n\nEse da\xF1o se sumar\xE1
+    a una tirada del dado que est\xE9 asociado a esa arma para concretar el da\xF1o
+    total infringido.\n"
 --- !u!222 &749469853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19545,7 +19541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20521,8 +20517,8 @@ MonoBehaviour:
     armas aptas para tu personaje.\n\nDandole a una arma se te mostrar\xE1 un men\xFA
     con la informaci\xF3n del arma. Adem\xE1s, podr\xE1s cambiarle el nombre para
     que tu herramienta de combate te sea m\xE1s personal.\n\nRecuerda que esa arma
-    ser\xE1 la \xFAnica que tengas durante la campa\xF1a, as\xED que piensalo bien
-    antes de confirmar tu selecci\xF3n.\n"
+    ser\xE1 la \xFAnica que tengas durante la campa\xF1a, as\xED que pi\xE9nsalo
+    bien antes de confirmar tu selecci\xF3n.\n"
 --- !u!222 &809288902
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20974,7 +20970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21190,12 +21186,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En el mundo de Almerra conviven 5 razas predominantes, los Humanos, los
+  m_Text: "En el mundo de Animaia conviven 5 razas predominantes, los Humanos, los
     Reptilianos, los Felinos, los Averios y los Muses.\n\nTu personaje debe pertenecer
     a una de estas razas. Cada una de ellas tiene sus caracter\xEDsticas \xFAnicas,
     as\xED que ten en cuenta c\xF3mo quieres que sea tu personaje y c\xF3mo quieres
-    interpretarlo en el momento de decidir a que raza pertenece para encajar tu idea
-    de la mejor forma possible."
+    interpretarlo en el momento de decidir a que raza pertenece."
 --- !u!222 &830867523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22030,9 +22025,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Similar al paso de selecci\xF3n de raza, aqu\xED se te mostrar\xE1 una
     lista de las clases disponibles.\n\nAl darle a una de ellas, se te mostrar\xE1
-    un men\xFA con informaci\xF3n de la clase como una descripci\xF3n, las armas
-    y habilidades disponibles y el Valor vinculado.\n\nAl seleccionar la clase, se
-    te asignar\xE1 a tu personaje y su valor vinculado augmentar\xE1 por 2 puntos."
+    un men\xFA con toda su informaci\xF3n importante.\n\nAl seleccionar la clase,
+    se te asignar\xE1 a tu personaje y su valor vinculado aumentar\xE1 por 2 puntos."
 --- !u!222 &866056452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24355,7 +24349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25810,7 +25804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -26026,9 +26020,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Teniendo la raza seleccionada, sigamos con la clase del personaje. \n\nLas
     clases de personaje simbolizan los roles que encarnan los personajes dentro del
-    mundo, determinados por sus aptitudes.\n\nLa clase de un personaje, por lo tanto,
-    determina cu\xE1l es su Valor m\xE1s importante, al que est\xE1 enfocado y que
-    desarrollar\xE1 m\xE1s a medida que vaya subiendo de nivel."
+    mundo, determinados por sus aptitudes.\n\nPor lo tanto, tambi\xE9n determina
+    cu\xE1l es su Valor m\xE1s importante, al que est\xE1 enfocado y que desarrollar\xE1
+    m\xE1s a medida que vaya subiendo de nivel."
 --- !u!222 &1021064887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27966,11 +27960,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Esos ser\xE1n los valores base del personaje. A parte de esto, al seleccionar
-    la raza y clase se a\xF1adir\xE1n puntos a valores espec\xEDficos o a elegir.
-    Por lo tanto, a\xFAn no tenemos los valores definitivos.\n\nPuedes obtener m\xE1s
-    informaci\xF3n sobre los Valores en el manual del sistema.\n\nContinuemos con
-    la selecci\xF3n de raza de tu personaje."
+  m_Text: "Esos ser\xE1n los valores base del personaje, pero a\xFAn no tenemos los
+    valores definitivos.\n\nPuedes obtener m\xE1s informaci\xF3n sobre los Valores
+    en el manual del sistema.\n\nContinuemos con la selecci\xF3n de raza de tu personaje."
 --- !u!222 &1112798911
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28105,7 +28097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32803,10 +32795,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Empecemos con los Valores.\n\nLos Valores del personaje nos sirven para
-    interpretar sus proficiencias en diferentes aspectos. Hay 8 de diferentes y se
-    pueden dividir entre los valores f\xEDsicos y los alm\xE1ticos.\n\nLos valores
-    f\xEDsicos son Fuerza, Resistencia, Agilidad y Velocidad.\n\nLos valores alm\xE1ticos
-    son Poder, Sentidos, Memoria y Personalidad.\n"
+    interpretar sus aptitudes en diferentes aspectos. Hay 8 de diferentes y se pueden
+    dividir entre los valores f\xEDsicos y los alm\xE1ticos.\n\nLos valores f\xEDsicos
+    son Fuerza, Resistencia, Agilidad y Velocidad.\n\nLos valores alm\xE1ticos son
+    Poder, Sentidos, Memoria y Personalidad.\n"
 --- !u!222 &1292607671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32941,7 +32933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34431,7 +34423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34960,11 +34952,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Esos ser\xE1n los valores base del personaje. A parte de esto, al seleccionar
-    la raza y clase se a\xF1adir\xE1n puntos a valores espec\xEDficos o a elegir.
-    Por lo tanto, a\xFAn no tenemos los valores definitivos.\n\nPuedes obtener m\xE1s
-    informaci\xF3n sobre los Valores en el manual del sistema.\n\nContinuemos con
-    la selecci\xF3n de raza de tu personaje."
+  m_Text: "Esos ser\xE1n los valores base del personaje, pero a\xFAn no tenemos los
+    valores definitivos.\n\nPuedes obtener m\xE1s informaci\xF3n sobre los Valores
+    en el manual del sistema.\n\nContinuemos con la selecci\xF3n de raza de tu personaje."
 --- !u!222 &1385995983
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35522,7 +35512,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Ya solo queda un \xFAnico paso, pero antes, debo explicarte un par de
     cositas.\n\nPrimero, tu personaje est\xE1 casi creado al completo, solo le falta
-    asignar sus habilidades, objetos de su inventario y dinero que lleve y atributos,
+    asignar sus habilidades, objetos de su inventario, el dinero que lleve y atributos,
     informaci\xF3n extra del personaje para entender su comportamiento, pero todo
     eso debes hacerlo en su ficha de personaje."
 --- !u!222 &1406387957
@@ -36033,12 +36023,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En el mundo de Almerra conviven 5 razas predominantes, los Humanos, los
+  m_Text: "En el mundo de Animaia conviven 5 razas predominantes, los Humanos, los
     Reptilianos, los Felinos, los Averios y los Muses.\n\nTu personaje debe pertenecer
     a una de estas razas. Cada una de ellas tiene sus caracter\xEDsticas \xFAnicas,
     as\xED que ten en cuenta c\xF3mo quieres que sea tu personaje y c\xF3mo quieres
-    interpretarlo en el momento de decidir a que raza pertenece para encajar tu idea
-    de la mejor forma possible."
+    interpretarlo en el momento de decidir a que raza pertenece."
 --- !u!222 &1443307267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37080,7 +37069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37255,10 +37244,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Las armas que puedas usar est\xE1n determinadas por la clase de tu personaje.\n\nCada
-    arma tiene vinculado un tipo de da\xF1o, que ser\xE1 el Valor que se usar\xE1
-    para calcular el da\xF1o que har\xE1s por ataque. Este valor puede ser Fuerza
-    o Agilidad.\n\nEse da\xF1o se sumar\xE1 a una tirada del dado que est\xE9 asociado
-    a esa arma para concretar el da\xF1o total infringido.\n"
+    arma tiene un Valor vinculado que se usar\xE1 para calcular el da\xF1o que har\xE1s
+    por ataque. Este valor puede ser Fuerza o Agilidad.\n\nEse da\xF1o se sumar\xE1
+    a una tirada del dado que est\xE9 asociado a esa arma para concretar el da\xF1o
+    total infringido.\n"
 --- !u!222 &1486326245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37540,9 +37529,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Similar al paso de selecci\xF3n de raza, aqu\xED se te mostrar\xE1 una
     lista de las clases disponibles.\n\nAl darle a una de ellas, se te mostrar\xE1
-    un men\xFA con informaci\xF3n de la clase como una descripci\xF3n, las armas
-    y habilidades disponibles y el Valor vinculado.\n\nAl seleccionar la clase, se
-    te asignar\xE1 a tu personaje y su valor vinculado augmentar\xE1 por 2 puntos."
+    un men\xFA con toda su informaci\xF3n importante.\n\nAl seleccionar la clase,
+    se te asignar\xE1 a tu personaje y su valor vinculado aumentar\xE1 por 2 puntos."
 --- !u!222 &1508023775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39011,7 +38999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39886,7 +39874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40457,8 +40445,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 270641464}
-  m_Father: {fileID: 676231452}
-  m_RootOrder: 3
+  m_Father: {fileID: 195184716}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -40740,7 +40728,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "...\xA1Ponerle nombre al personaje que encarnar\xE1s durante la aventura!\n\nAdelante,
     haz los honores, y cuando escribas el nombre id\xF3neo para tu personaje, pulsa
-    Finalizar para terminar la creaci\xF3n de personaje, y disfruta de la campa\xF1a."
+    Finalizar para terminar la creaci\xF3n de personaje y disfruta de la campa\xF1a."
 --- !u!222 &1650892921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41058,10 +41046,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Te doy la bienvenida al creador de personaje.\n\nAqu\xED seguir\xE1s los
     pasos necesarios para dar forma al personaje que vas a encarnar en la campa\xF1a
-    que vayas a jugar.\nTodo lo que incumbe el funcionamiento b\xE1sico del nuevo
-    personaje en el sistema de rol de Almerra se decidir\xE1 en las siguientes decisiones
-    que vayas a hacer a continuaci\xF3n.\n\nEmpezaremos con la asignaci\xF3n de sus
-    Valores.\n"
+    que vayas a jugar.\n\nEmpezaremos con la asignaci\xF3n de sus Valores."
 --- !u!222 &1668554324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41199,7 +41184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41395,7 +41380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -42428,7 +42413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43478,8 +43463,8 @@ MonoBehaviour:
     armas aptas para tu personaje.\n\nDandole a una arma se te mostrar\xE1 un men\xFA
     con la informaci\xF3n del arma. Adem\xE1s, podr\xE1s cambiarle el nombre para
     que tu herramienta de combate te sea m\xE1s personal.\n\nRecuerda que esa arma
-    ser\xE1 la \xFAnica que tengas durante la campa\xF1a, as\xED que piensalo bien
-    antes de confirmar tu selecci\xF3n.\n"
+    ser\xE1 la \xFAnica que tengas durante la campa\xF1a, as\xED que pi\xE9nsalo
+    bien antes de confirmar tu selecci\xF3n.\n"
 --- !u!222 &1772785304
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44355,7 +44340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -45321,7 +45306,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Ya solo queda un \xFAnico paso, pero antes, debo explicarte un par de
     cositas.\n\nPrimero, tu personaje est\xE1 casi creado al completo, solo le falta
-    asignar sus habilidades, objetos de su inventario y dinero que lleve y atributos,
+    asignar sus habilidades, objetos de su inventario, el dinero que lleve y atributos,
     informaci\xF3n extra del personaje para entender su comportamiento, pero todo
     eso debes hacerlo en su ficha de personaje."
 --- !u!222 &1851602945
@@ -46476,9 +46461,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Teniendo la raza seleccionada, sigamos con la clase del personaje. \n\nLas
     clases de personaje simbolizan los roles que encarnan los personajes dentro del
-    mundo, determinados por sus aptitudes.\n\nLa clase de un personaje, por lo tanto,
-    determina cu\xE1l es su Valor m\xE1s importante, al que est\xE1 enfocado y que
-    desarrollar\xE1 m\xE1s a medida que vaya subiendo de nivel."
+    mundo, determinados por sus aptitudes.\n\nPor lo tanto, tambi\xE9n determina
+    cu\xE1l es su Valor m\xE1s importante, al que est\xE1 enfocado y que desarrollar\xE1
+    m\xE1s a medida que vaya subiendo de nivel."
 --- !u!222 &1912620880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -47598,13 +47583,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Todos los Valores tienen un Bono de Valor asignado.  Estos bonos sirven
-    para modificar el n\xFAmero conseguido en cada tirada del personaje. Sumar o
-    restar los bonos respectivos a las tiradas de dados que haga el personaje nos
-    permite adecuar su habilidad a las acciones ejecutadas.\n\nLo que ocurrir\xE1
-    a continuaci\xF3n es que se tirar\xE1n 8 veces 4 dados d4. La suma de cada tirada
-    de los 4 dados d4 se mostrar\xE1 ante t\xED como los valores definitivos del
-    personaje sin asignar.\n\n"
+  m_Text: "Lo que ocurrir\xE1 a continuaci\xF3n es que se tirar\xE1n 8 veces 4 dados
+    d4. La suma de cada tirada de los 4 dados d4 se mostrar\xE1 ante t\xED como los
+    valores definitivos del personaje sin asignar.\n\nCon los Valores asignados,
+    podremos conocer los Bonos de Valor del personaje.  Estos bonos sirven para modificar
+    el n\xFAmero conseguido en cada tirada del personaje y nos permite adecuar su
+    habilidad a las acciones ejecutadas."
 --- !u!222 &1944614175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49866,8 +49850,8 @@ MonoBehaviour:
   m_Text: "A continuaci\xF3n se te mostrar\xE1 un men\xFA con todas las razas a elegir.\n\nAl
     darle a una de las razas, se te mostrar\xE1 informaci\xF3n de esa raza como caracter\xEDsticas
     f\xEDsicas, relaciones entre el resto de razas y los Valores propios que augmentan
-    la raza en particular.\nSi decides elegir esa raza, entonces tendr\xE1s que elegir
-    los Valores opcionales que quieres augmentar para finalizar la selecci\xF3n de
+    la raza en particular.\nSi decides elegir esa raza, entonces tendr\xE1s que seleccionar
+    los Valores opcionales que quieres aumentar para finalizar la selecci\xF3n de
     raza."
 --- !u!222 &2048293872
 CanvasRenderer:
@@ -50398,7 +50382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
+  m_Color: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

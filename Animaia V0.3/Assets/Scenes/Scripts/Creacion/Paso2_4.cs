@@ -395,6 +395,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         Confirmacion.SetActive(true);
         ProcesoPost.SetActive(false);
         ProcesoSelecc.SetActive(true);
+        continuar2_4GO.SetActive(false);
         ReiniciarPersonaje();
     }
 

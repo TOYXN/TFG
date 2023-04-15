@@ -16,6 +16,11 @@ public class ValoresCuerpo
     public int bono_agilidad;
     public int bono_velocidad;
 
+    public int fuerzaAct;
+    public int resistAct;
+    public int agilidadAct;
+    public int velocidadAct;
+
     public int cuerpo_act;
     public int cuerpo_max;
     public float cuerpo_hora;
@@ -28,15 +33,19 @@ public class ValoresCuerpo
         this.resist = resist;
         this.agilidad = agilidad;
         this.velocidad = velocidad;
+        this.fuerzaAct = fuerza;
+        this.resistAct = resist;
+        this.agilidadAct = agilidad;
+        this.velocidadAct = velocidad;
 
-        if (fuerza >= 8) { this.bono_fuerza = (fuerza - 8) / 2; }
-        else { this.bono_fuerza = (fuerza - 9) / 2; }
-        if (resist >= 8) { this.bono_resist = (resist - 8) / 2; }
-        else { this.bono_resist = (resist - 9) / 2; }
-        if (agilidad >= 8) { this.bono_agilidad = (agilidad - 8) / 2; }
-        else { this.bono_agilidad = (agilidad - 9) / 2; }
-        if (velocidad >= 8) { this.bono_velocidad = (velocidad - 8) / 2; }
-        else { this.bono_velocidad = (velocidad - 9) / 2; }
+        if (fuerzaAct >= 8) { this.bono_fuerza = (fuerzaAct - 8) / 2; }
+        else { this.bono_fuerza = (fuerzaAct - 9) / 2; }
+        if (resistAct >= 8) { this.bono_resist = (resistAct - 8) / 2; }
+        else { this.bono_resist = (resistAct - 9) / 2; }
+        if (agilidadAct >= 8) { this.bono_agilidad = (agilidadAct - 8) / 2; }
+        else { this.bono_agilidad = (agilidadAct - 9) / 2; }
+        if (velocidadAct >= 8) { this.bono_velocidad = (velocidadAct - 8) / 2; }
+        else { this.bono_velocidad = (velocidadAct - 9) / 2; }
 
         this.cuerpo_max = 20 + (bono_resist * 2);
         this.cuerpo_act = cuerpo_max;
@@ -50,15 +59,19 @@ public class ValoresCuerpo
         this.resist = resist;
         this.agilidad = agilidad;
         this.velocidad = velocidad;
+        this.fuerzaAct = fuerza;
+        this.resistAct = resist;
+        this.agilidadAct = agilidad;
+        this.velocidadAct = velocidad;
 
-        if (fuerza >= 8) { this.bono_fuerza = (fuerza - 8) / 2; }
-        else { this.bono_fuerza = (fuerza - 9) / 2; }
-        if (resist >= 8) { this.bono_resist = (resist - 8) / 2; }
-        else { this.bono_resist = (resist - 9) / 2; }
-        if (agilidad >= 8) { this.bono_agilidad = (agilidad - 8) / 2; }
-        else { this.bono_agilidad = (agilidad - 9) / 2; }
-        if (velocidad >= 8) { this.bono_velocidad = (velocidad - 8) / 2; }
-        else { this.bono_velocidad = (velocidad - 9) / 2; }
+        if (fuerzaAct >= 8) { this.bono_fuerza = (fuerzaAct - 8) / 2; }
+        else { this.bono_fuerza = (fuerzaAct - 9) / 2; }
+        if (resistAct >= 8) { this.bono_resist = (resistAct - 8) / 2; }
+        else { this.bono_resist = (resistAct - 9) / 2; }
+        if (agilidadAct >= 8) { this.bono_agilidad = (agilidadAct - 8) / 2; }
+        else { this.bono_agilidad = (agilidadAct - 9) / 2; }
+        if (velocidadAct >= 8) { this.bono_velocidad = (velocidadAct - 8) / 2; }
+        else { this.bono_velocidad = (velocidadAct - 9) / 2; }
 
         this.cuerpo_max = 20 + (bono_resist * 2) + extra_vida;
         this.cuerpo_act = cuerpo_max;
@@ -68,14 +81,24 @@ public class ValoresCuerpo
     public void ActFuerza(int numero)
     {
         fuerza = fuerza + numero;
-        if (fuerza >= 8) { bono_fuerza = (fuerza - 8) / 2; }
-        else { bono_fuerza = (fuerza - 9) / 2; }
+        fuerzaAct = fuerzaAct + numero;
+        if (fuerzaAct >= 8) { bono_fuerza = (fuerzaAct - 8) / 2; }
+        else { bono_fuerza = (fuerzaAct - 9) / 2; }
     }
+
+    public void ActFuerzaBuff(int numero)
+    {
+        fuerzaAct = fuerzaAct + numero;
+        if (fuerzaAct >= 8) { bono_fuerza = (fuerzaAct - 8) / 2; }
+        else { bono_fuerza = (fuerzaAct - 9) / 2; }
+    }
+
     public void ActResis(int numero)
     {
         resist = resist + numero;
-        if (resist >= 8) { bono_resist = (resist - 8) / 2; }
-        else { bono_resist = (resist - 9) / 2; }
+        resistAct = resistAct + numero;
+        if (resistAct >= 8) { bono_resist = (resistAct - 8) / 2; }
+        else { bono_resist = (resistAct - 9) / 2; }
         cuerpo_max = 20 + (bono_resist * 2) + extra_vida;
         cuerpo_act = cuerpo_max;
         cuerpo_hora = (cuerpo_max * 10.0f) / 100.0f;
@@ -83,22 +106,56 @@ public class ValoresCuerpo
 
     public void ActResisBuff(int numero)
     {
-        resist = resist + numero;
-        if (resist >= 8) { bono_resist = (resist - 8) / 2; }
-        else { bono_resist = (resist - 9) / 2; }
+        resistAct = resistAct + numero;
+        if (resistAct >= 8) { bono_resist = (resistAct - 8) / 2; }
+        else { bono_resist = (resistAct - 9) / 2; }
     }
 
     public void ActAgil(int numero)
     {
         agilidad = agilidad + numero;
-        if (agilidad >= 8) { bono_agilidad = (agilidad - 8) / 2; }
-        else { bono_agilidad = (agilidad - 9) / 2; }
+        agilidadAct = agilidadAct + numero;
+        if (agilidadAct >= 8) { bono_agilidad = (agilidadAct - 8) / 2; }
+        else { bono_agilidad = (agilidadAct - 9) / 2; }
     }
+
+    public void ActAgilBuff(int numero)
+    {
+        agilidadAct = agilidadAct + numero;
+        if (agilidadAct >= 8) { bono_agilidad = (agilidadAct - 8) / 2; }
+        else { bono_agilidad = (agilidadAct - 9) / 2; }
+    }
+
     public void ActVel(int numero)
     {
         velocidad = velocidad + numero;
-        if (velocidad >= 8) { bono_velocidad = (velocidad - 8) / 2; }
-        else { bono_velocidad = (velocidad - 9) / 2; }
+        velocidadAct = velocidadAct + numero;
+        if (velocidadAct >= 8) { bono_velocidad = (velocidadAct - 8) / 2; }
+        else { bono_velocidad = (velocidadAct - 9) / 2; }
+    }
+
+    public void ActVelBuff(int numero)
+    {
+        velocidadAct = velocidadAct + numero;
+        if (velocidadAct >= 8) { bono_velocidad = (velocidadAct - 8) / 2; }
+        else { bono_velocidad = (velocidadAct - 9) / 2; }
+    }
+
+    public void ReiniciarValoresCuerpo()
+    {
+        fuerzaAct = fuerza;
+        resistAct = resist;
+        agilidadAct = agilidad;
+        velocidadAct = velocidad;
+
+        if (fuerzaAct >= 8) { this.bono_fuerza = (fuerzaAct - 8) / 2; }
+        else { this.bono_fuerza = (fuerzaAct - 9) / 2; }
+        if (resistAct >= 8) { this.bono_resist = (resistAct - 8) / 2; }
+        else { this.bono_resist = (resistAct - 9) / 2; }
+        if (agilidadAct >= 8) { this.bono_agilidad = (agilidadAct - 8) / 2; }
+        else { this.bono_agilidad = (agilidadAct - 9) / 2; }
+        if (velocidadAct >= 8) { this.bono_velocidad = (velocidadAct - 8) / 2; }
+        else { this.bono_velocidad = (velocidadAct - 9) / 2; }
     }
 }
 
@@ -110,6 +167,11 @@ public class ValoresAlma
     public int memoria;
     public int persona;
     public int extra_mana = 0;
+
+    public int poderAct;
+    public int sentidosAct;
+    public int memoriaAct;
+    public int personaAct;
 
     public int bono_poder;
     public int bono_sentidos;
@@ -129,15 +191,19 @@ public class ValoresAlma
         this.sentidos = sentidos;
         this.memoria = memoria;
         this.persona = persona;
+        this.poderAct = poder;
+        this.sentidosAct = sentidos;
+        this.memoriaAct = memoria;
+        this.personaAct = persona;
 
-        if (poder >= 8) { this.bono_poder = (poder - 8) / 2; }
-        else { this.bono_poder = (poder - 9) / 2; }
-        if (sentidos >= 8) { this.bono_sentidos = (sentidos - 8) / 2; }
-        else { this.bono_sentidos = (sentidos - 9) / 2; }
-        if (memoria >= 8) { this.bono_memoria = (memoria - 8) / 2; }
-        else { this.bono_memoria = (memoria - 9) / 2; }
-        if (persona >= 8) { this.bono_persona = (persona - 8) / 2; }
-        else { this.bono_persona = (persona - 9) / 2; }
+        if (poderAct >= 8) { this.bono_poder = (poderAct - 8) / 2; }
+        else { this.bono_poder = (poderAct - 9) / 2; }
+        if (sentidosAct >= 8) { this.bono_sentidos = (sentidosAct - 8) / 2; }
+        else { this.bono_sentidos = (sentidosAct - 9) / 2; }
+        if (memoriaAct >= 8) { this.bono_memoria = (memoriaAct - 8) / 2; }
+        else { this.bono_memoria = (memoriaAct - 9) / 2; }
+        if (personaAct >= 8) { this.bono_persona = (personaAct - 8) / 2; }
+        else { this.bono_persona = (personaAct - 9) / 2; }
 
         this.alma_max = 30 + (bono_poder * 2);
         this.alma_act = alma_max;
@@ -151,15 +217,19 @@ public class ValoresAlma
         this.sentidos = sentidos;
         this.memoria = memoria;
         this.persona = persona;
+        this.poderAct = poder;
+        this.sentidosAct = sentidos;
+        this.memoriaAct = memoria;
+        this.personaAct = persona;
 
-        if (poder >= 8) { this.bono_poder = (poder - 8) / 2; }
-        else { this.bono_poder = (poder - 9) / 2; }
-        if (sentidos >= 8) { this.bono_sentidos = (sentidos - 8) / 2; }
-        else { this.bono_sentidos = (sentidos - 9) / 2; }
-        if (memoria >= 8) { this.bono_memoria = (memoria - 8) / 2; }
-        else { this.bono_memoria = (memoria - 9) / 2; }
-        if (persona >= 8) { this.bono_persona = (persona - 8) / 2; }
-        else { this.bono_persona = (persona - 9) / 2; }
+        if (poderAct >= 8) { this.bono_poder = (poderAct - 8) / 2; }
+        else { this.bono_poder = (poderAct - 9) / 2; }
+        if (sentidosAct >= 8) { this.bono_sentidos = (sentidosAct - 8) / 2; }
+        else { this.bono_sentidos = (sentidosAct - 9) / 2; }
+        if (memoriaAct >= 8) { this.bono_memoria = (memoriaAct - 8) / 2; }
+        else { this.bono_memoria = (memoriaAct - 9) / 2; }
+        if (personaAct >= 8) { this.bono_persona = (personaAct - 8) / 2; }
+        else { this.bono_persona = (personaAct - 9) / 2; }
 
         this.alma_max = 30 + (bono_poder * 2) + extra_mana;
         this.alma_act = alma_max;
@@ -169,8 +239,9 @@ public class ValoresAlma
     public void ActPoder(int numero)
     {
         poder = poder + numero;
-        if (poder >= 8) { bono_poder = (poder - 8) / 2; }
-        else { bono_poder = (poder - 9) / 2; }
+        poderAct = poderAct + numero;
+        if (poderAct >= 8) { bono_poder = (poderAct - 8) / 2; }
+        else { bono_poder = (poderAct - 9) / 2; }
         alma_max = 30 + (bono_poder * 2) + extra_mana;
         alma_act = alma_max;
         alma_hora = (alma_max * 10.0f) / 100.0f;
@@ -178,29 +249,73 @@ public class ValoresAlma
 
     public void ActPoderBuff(int numero)
     {
-        poder = poder + numero;
-        if (poder >= 8) { bono_poder = (poder - 8) / 2; }
-        else { bono_poder = (poder - 9) / 2; }
+        poderAct = poderAct + numero;
+        if (poderAct >= 8) { bono_poder = (poderAct - 8) / 2; }
+        else { bono_poder = (poderAct - 9) / 2; }
     }
 
     public void ActSent(int numero)
     {
         sentidos = sentidos + numero;
-        if (sentidos >= 8) { bono_sentidos = (sentidos - 8) / 2; }
-        else { bono_sentidos = (sentidos - 9) / 2; }
+        sentidosAct = sentidosAct + numero;
+        if (sentidosAct >= 8) { bono_sentidos = (sentidosAct - 8) / 2; }
+        else { bono_sentidos = (sentidosAct - 9) / 2; }
     }
+
+    public void ActSentBuff(int numero)
+    {
+        sentidosAct = sentidosAct + numero;
+        if (sentidosAct >= 8) { bono_sentidos = (sentidosAct - 8) / 2; }
+        else { bono_sentidos = (sentidosAct - 9) / 2; }
+    }
+
     public void ActMemo(int numero)
     {
         memoria = memoria + numero;
-        if (memoria >= 8) { bono_memoria = (memoria - 8) / 2; }
-        else { bono_memoria = (memoria - 9) / 2; }
+        memoriaAct = memoriaAct + numero;
+        if (memoriaAct >= 8) { bono_memoria = (memoriaAct - 8) / 2; }
+        else { bono_memoria = (memoriaAct - 9) / 2; }
     }
+
+    public void ActMemoBuff(int numero)
+    {
+        memoriaAct = memoriaAct + numero;
+        if (memoriaAct >= 8) { bono_memoria = (memoriaAct - 8) / 2; }
+        else { bono_memoria = (memoriaAct - 9) / 2; }
+    }
+
     public void ActPers(int numero)
     {
         persona = persona + numero;
-        if (persona >= 8) { bono_persona = (persona - 8) / 2; }
-        else { bono_persona = (persona - 9) / 2; }
+        personaAct = personaAct + numero;
+        if (personaAct >= 8) { bono_persona = (personaAct - 8) / 2; }
+        else { bono_persona = (personaAct - 9) / 2; }
     }
+
+    public void ActPersBuff(int numero)
+    {
+        personaAct = personaAct + numero;
+        if (personaAct >= 8) { bono_persona = (personaAct - 8) / 2; }
+        else { bono_persona = (personaAct - 9) / 2; }
+    }
+
+    public void ReiniciarValoresAlma()
+    {
+        this.poderAct = poder;
+        this.sentidosAct = sentidos;
+        this.memoriaAct = memoria;
+        this.personaAct = persona;
+
+        if (poderAct >= 8) { this.bono_poder = (poderAct - 8) / 2; }
+        else { this.bono_poder = (poderAct - 9) / 2; }
+        if (sentidosAct >= 8) { this.bono_sentidos = (sentidosAct - 8) / 2; }
+        else { this.bono_sentidos = (sentidosAct - 9) / 2; }
+        if (memoriaAct >= 8) { this.bono_memoria = (memoriaAct - 8) / 2; }
+        else { this.bono_memoria = (memoriaAct - 9) / 2; }
+        if (personaAct >= 8) { this.bono_persona = (personaAct - 8) / 2; }
+        else { this.bono_persona = (personaAct - 9) / 2; }
+    }
+
 }
 
 [System.Serializable]
@@ -399,7 +514,7 @@ public class Personaje
         this._cuerpo = new ValoresCuerpo(8, 8, 8, 8);
         this._alma = new ValoresAlma(8, 8, 8, 8);
         this._otros = new OtrosValores();
-        this._monedero = new Monedero(0, 0, 0, 0);
+        this._monedero = new Monedero(0, 1, 0, 0);
         this._otros.numDados = 1 + (nivel / 2);
         this._otros.apt = 2 + (_cuerpo.bono_velocidad / 2);
         this._otros.estado = "ESTABLE";
@@ -441,15 +556,21 @@ public class Personaje
 
     public void ActualizarValorBuff(string nombreValor, int numero)
     {
-        if (nombreValor == "FUERZA") { _cuerpo.ActFuerza(numero); }
+        if (nombreValor == "FUERZA") { _cuerpo.ActFuerzaBuff(numero); }
         else if (nombreValor == "RESISTENCIA") { _cuerpo.ActResisBuff(numero); }
-        else if (nombreValor == "AGILIDAD") { _cuerpo.ActAgil(numero); }
-        else if (nombreValor == "VELOCIDAD") { _cuerpo.ActVel(numero); _otros.apt = 2 + (_cuerpo.bono_velocidad / 2); }
+        else if (nombreValor == "AGILIDAD") { _cuerpo.ActAgilBuff(numero); }
+        else if (nombreValor == "VELOCIDAD") { _cuerpo.ActVelBuff(numero); _otros.apt = 2 + (_cuerpo.bono_velocidad / 2); }
 
         else if (nombreValor == "PODER") { _alma.ActPoderBuff(numero); }
-        else if (nombreValor == "SENTIDOS") { _alma.ActSent(numero); }
-        else if (nombreValor == "MEMORIA") { _alma.ActMemo(numero); }
-        else if (nombreValor == "PERSONALIDAD") { _alma.ActPers(numero); }
+        else if (nombreValor == "SENTIDOS") { _alma.ActSentBuff(numero); }
+        else if (nombreValor == "MEMORIA") { _alma.ActMemoBuff(numero); }
+        else if (nombreValor == "PERSONALIDAD") { _alma.ActPersBuff(numero); }
+    }
+
+    public void ReiniciarBuffs()
+    {
+        _cuerpo.ReiniciarValoresCuerpo();
+        _alma.ReiniciarValoresAlma();
     }
 
     public void ActualizarEstado(string estado)
@@ -460,9 +581,9 @@ public class Personaje
     public void SubirNivel()
     {
         _cuerpo.extra_vida = 8 * nivel;
-        _cuerpo.ActResis(0);
         _alma.extra_mana = 8 * nivel;
-        _alma.ActPoder(0);
+        _cuerpo.ActValoresCuerpo(_cuerpo.fuerza, _cuerpo.resist, _cuerpo.agilidad, _cuerpo.velocidad);
+        _alma.ActValoresAlma(_alma.poder, _alma.sentidos, _alma.memoria, _alma.persona);
         nivel++;
         _otros.numDados = 1 + (nivel / 2);
     }
@@ -470,15 +591,15 @@ public class Personaje
     public int Valor(string nombreValor)
     {
         int res = 0;
-        if      (nombreValor == "FUERZA") { res = _cuerpo.fuerza; }
-        else if (nombreValor == "RESISTENCIA") { res = _cuerpo.resist; }
-        else if (nombreValor == "AGILIDAD") { res = _cuerpo.agilidad; }
-        else if (nombreValor == "VELOCIDAD") { res = _cuerpo.velocidad; }
+        if      (nombreValor == "FUERZA") { res = _cuerpo.fuerzaAct; }
+        else if (nombreValor == "RESISTENCIA") { res = _cuerpo.resistAct; }
+        else if (nombreValor == "AGILIDAD") { res = _cuerpo.agilidadAct; }
+        else if (nombreValor == "VELOCIDAD") { res = _cuerpo.velocidadAct; }
 
-        else if (nombreValor == "PODER") { res = _alma.poder; }
-        else if (nombreValor == "SENTIDOS") { res = _alma.sentidos; }
-        else if (nombreValor == "MEMORIA") { res = _alma.memoria; }
-        else if (nombreValor == "PERSONALIDAD") { res = _alma.persona; }
+        else if (nombreValor == "PODER") { res = _alma.poderAct; }
+        else if (nombreValor == "SENTIDOS") { res = _alma.sentidosAct; }
+        else if (nombreValor == "MEMORIA") { res = _alma.memoriaAct; }
+        else if (nombreValor == "PERSONALIDAD") { res = _alma.personaAct; }
 
         else if (nombreValor == "CUERPOACT") { res = _cuerpo.cuerpo_act; }
         else if (nombreValor == "CUERPOMAX") { res = _cuerpo.cuerpo_max; }

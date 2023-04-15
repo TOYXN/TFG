@@ -78,7 +78,7 @@ public class MonederoFunc : MonoBehaviour, IDataPersistance
     void MenuPlatino()
     {
         TituloMon.text = "PLATINO";
-        DescMon.text = "Moneda de gran valor, usada mayoritariamente para grandes transaciones. Una sola moneda puede considerarse una pequeña fortuna. Una moneda de Platino equivale a 10 de Oro.";
+        DescMon.text = "Moneda de gran valor, usada mayoritariamente para grandes transacciones. Una sola moneda puede considerarse una pequeña fortuna. Una moneda de Platino equivale a 10 de Oro.";
         MonAct.text = "Cantidad Actual: " + Platino;
         menuMoneda.SetActive(true);
     }
