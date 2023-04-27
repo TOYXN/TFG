@@ -50,7 +50,6 @@ public class Paso3 : MonoBehaviour, IDataPersistance
     public Text bonoValor2;
 
     public Text ExplicacionPaso;
-    public Text ExplicacionPasoSombra;
     public Text descPaso;
     public GameObject ExplicacionPasoGO;
     public Personaje Personaje;
@@ -150,7 +149,6 @@ public class Paso3 : MonoBehaviour, IDataPersistance
         CerrarRaza();
         menuRazas.SetActive(false);
         ExplicacionPaso.text = "Raza seleccionada:\n\n " + NombreRaza.text;
-        ExplicacionPasoSombra.text = "Raza seleccionada:\n\n " + NombreRaza.text;
         MenuValoresSelecNormal.SetActive(false);
         ExplicacionPasoGO.SetActive(true);
         continuar3GO.SetActive(true);

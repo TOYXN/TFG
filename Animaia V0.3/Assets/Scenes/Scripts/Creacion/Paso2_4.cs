@@ -159,7 +159,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num1Text.text;
         numSelecBoton = num1GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass2()
@@ -167,7 +167,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num2Text.text;
         numSelecBoton = num2GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass3()
@@ -175,7 +175,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num3Text.text;
         numSelecBoton = num3GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass4()
@@ -183,7 +183,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num4Text.text;
         numSelecBoton = num4GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass5()
@@ -191,7 +191,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num5Text.text;
         numSelecBoton = num5GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass6()
@@ -199,7 +199,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num6Text.text;
         numSelecBoton = num6GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass7()
@@ -207,7 +207,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num7Text.text;
         numSelecBoton = num7GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
     void Bypass8()
@@ -215,7 +215,7 @@ public class Paso2_4 : MonoBehaviour, IDataPersistance
         string numero = num8Text.text;
         numSelecBoton = num8GO;
         int.TryParse(numero, out num);
-        numValorAct.text = "¿Cual valor asignar " + numero + "?";
+        numValorAct.text = "¿Cuál valor asignar " + numero + "?";
         MenuSelecValor.SetActive(true);
     }
 

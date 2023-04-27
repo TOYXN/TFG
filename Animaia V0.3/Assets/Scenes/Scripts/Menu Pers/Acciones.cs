@@ -73,6 +73,7 @@ public class Acciones : MonoBehaviour, IDataPersistance
     public Text tituloAccion;
     public Text descAccion;
     public Text bonoNum;
+    public AudioSource audioData;
 
     public void CargarData(Personaje pers)
     {
@@ -507,6 +508,7 @@ public class Acciones : MonoBehaviour, IDataPersistance
         int bonoActual;
         int.TryParse(bonoNum.text, out bonoActual);
         int result = bonoActual + numDadoTirada;
+        audioData.Play(0);
         if (numDadoTirada == 1)
         {
             resultado.text = "¡Pifia! Acción Fallida";

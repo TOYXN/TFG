@@ -62,6 +62,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
 
 
     public Personaje Personaje;
+    public AudioSource audioData;
 
     public void CargarData(Personaje pers)
     {
@@ -249,6 +250,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int max = dado + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor("PODER");
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
@@ -267,6 +269,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
@@ -295,6 +298,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int max = dado + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor("PODER");
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
@@ -316,6 +320,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados + 4; i++)
         {
@@ -344,6 +349,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int a = 0; a < 2; a++)
         {
@@ -397,6 +403,7 @@ public class FuncHechizos : MonoBehaviour, IDataPersistance
         int numVecesAtaque;
         int numDadoBono;
         int result = 0;
+        audioData.Play(0);
         int bonoPoder = Personaje.BonoValor("PODER");
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         numVecesAtaque = Random.Range(minTimes, maxTimes);

@@ -45,6 +45,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
 
     public Text BotonDesplegable;
     public Personaje Personaje;
+    public AudioSource audioData;
 
     public void CargarData(Personaje pers)
     {
@@ -90,6 +91,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
         int max = Personaje.ArmaEquipada.dadoArma + 1;
         int numDadoTirada;
         int result = 0;
+        audioData.Play(0);
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         for (int i = 0; i < Personaje._otros.numDados; i++)
         {
@@ -124,6 +126,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
         int numDadoTirada = Random.Range(min, max);
         int bonoActual = Personaje.BonoValor("AGILIDAD");
         int result;
+        audioData.Play(0);
         if (numDadoTirada == 1)
         {
             resultadoTiradaEsquiva.text = "¡Pifia!";
@@ -155,6 +158,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
         int numDadoTirada = Random.Range(min, max);
         int bonoActual = Personaje.BonoValor(Personaje.ArmaEquipada.tipoArma);
         int result;
+        audioData.Play(0);
         if (numDadoTirada == 1)
         {
             resultadoTiradaBloqueo.text = "¡Pifia!";

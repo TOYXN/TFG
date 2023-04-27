@@ -47,6 +47,7 @@ public class TiradasValores : MonoBehaviour, IDataPersistance
 
     public GameObject ObjetoMenuResultado;
     public Personaje Personaje;
+    public AudioSource audioData;
 
     public Text resultadoTirada;
     public Text desgloseTirada;
@@ -225,6 +226,7 @@ public class TiradasValores : MonoBehaviour, IDataPersistance
         int numDadoTirada = Random.Range(min, max);
         int bonoActual;
         int.TryParse(bono, out bonoActual);
+        audioData.Play(0);
         int result = bonoActual + numDadoTirada;
         if (numDadoTirada == 1)
         {

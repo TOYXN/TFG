@@ -47,7 +47,8 @@ public class DesbloqHechiz : MonoBehaviour, IDataPersistance
         int memoPers = Personaje.Valor("MEMORIA");
         Debug.Log(memoPers);
         int hechiActPers = Personaje.hechizosGuard;
-        if(memoPers >= 6)
+        Debug.Log(hechiActPers);
+        if (memoPers >= 6)
         {
             bannerBloqueo1.SetActive(false);
             if (hechiActPers == 0)

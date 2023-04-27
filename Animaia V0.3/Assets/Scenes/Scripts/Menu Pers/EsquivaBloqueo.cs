@@ -17,6 +17,7 @@ public class EsquivaBloqueo : MonoBehaviour, IDataPersistance
     public Button botonCerrarBloqueo;
 
     public Personaje Personaje;
+    public AudioSource audioData;
 
     public void CargarData(Personaje pers)
     {
@@ -42,6 +43,7 @@ public class EsquivaBloqueo : MonoBehaviour, IDataPersistance
         int max = 21;
         int numDadoTirada = Random.Range(min, max);
         int bonoActual = Personaje.BonoValor("AGILIDAD");
+        audioData.Play(0);
         int result;
         if (numDadoTirada == 1)
         {
@@ -70,6 +72,7 @@ public class EsquivaBloqueo : MonoBehaviour, IDataPersistance
         int max = 21;
         int numDadoTirada = Random.Range(min, max);
         int bonoActual = Personaje.BonoValor("RESISTENCIA");
+        audioData.Play(0);
         int result;
         if (numDadoTirada == 1)
         {
@@ -100,11 +103,5 @@ public class EsquivaBloqueo : MonoBehaviour, IDataPersistance
     void CerrarBloqueo()
     {
         MenuBloqueoAtaque.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

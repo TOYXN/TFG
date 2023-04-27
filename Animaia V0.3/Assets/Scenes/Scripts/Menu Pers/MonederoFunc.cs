@@ -70,7 +70,7 @@ public class MonederoFunc : MonoBehaviour, IDataPersistance
     void MenuPaladio()
     {
         TituloMon.text = "PALADIO";
-        DescMon.text = "La moneda mas valiosa de todas. Su uso se reserva para transacciones de propiedades de altísimo valor. Una moneda de Paladio equivale a 10 de Platino";
+        DescMon.text = "La moneda mas valiosa de todas. Su uso se reserva para transacciones de propiedades de altísimo valor. Una moneda de Paladio equivale a 10 de Platino.";
         MonAct.text = "Cantidad Actual: " + Paladio;
         menuMoneda.SetActive(true);
     }   
