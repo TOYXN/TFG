@@ -53,7 +53,6 @@ public class SelValorHuman : MonoBehaviour, IDataPersistance
     public Text NombreRaza;
     public Text DescRaza;
     public Text ExplicacionPaso;
-    public Text ExplicacionPasoSombra;
     public GameObject ExplicacionPasoGO;
     public GameObject MenuRazaSelec;
     public GameObject menuRazas;
@@ -208,7 +207,6 @@ public class SelValorHuman : MonoBehaviour, IDataPersistance
         MenuRazaSelec.SetActive(false);
         menuRazas.SetActive(false);
         ExplicacionPaso.text = "Raza seleccionada:\n\n " + NombreRaza.text;
-        ExplicacionPasoSombra.text = "Raza seleccionada:\n\n " + NombreRaza.text;
         MenuValores.SetActive(false);
         ExplicacionPasoGO.SetActive(true);
         continuar3GO.SetActive(true);

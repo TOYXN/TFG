@@ -16423,7 +16423,6 @@ MonoBehaviour:
   numeroValor2: {fileID: 1308635600}
   bonoValor2: {fileID: 883355095}
   ExplicacionPaso: {fileID: 2121227436}
-  ExplicacionPasoSombra: {fileID: 0}
   descPaso: {fileID: 435362799}
   ExplicacionPasoGO: {fileID: 1018790703}
   Personaje:
@@ -16639,7 +16638,6 @@ MonoBehaviour:
   NombreRaza: {fileID: 1687051364}
   DescRaza: {fileID: 1937972723}
   ExplicacionPaso: {fileID: 2121227436}
-  ExplicacionPasoSombra: {fileID: 0}
   ExplicacionPasoGO: {fileID: 1018790703}
   MenuRazaSelec: {fileID: 1550404669}
   menuRazas: {fileID: 1067417611}
@@ -17022,7 +17020,6 @@ MonoBehaviour:
   BotonSeleccionarClase: {fileID: 2146035781}
   CerrarMenuClase: {fileID: 594781253}
   TextoFinal: {fileID: 1013474750}
-  TextoFinalSombra: {fileID: 0}
   TextoFinalGO: {fileID: 190573762}
   ContinuarGO: {fileID: 825810564}
   Personaje:
@@ -17402,7 +17399,6 @@ MonoBehaviour:
   BotonSeleccionarArma: {fileID: 1853395221}
   CerrarMenuArma: {fileID: 804259121}
   TextoFinal: {fileID: 1971362631}
-  TextoFinalSombra: {fileID: 0}
   TextoFinalGO: {fileID: 299390217}
   ContinuarGO: {fileID: 57375657}
   Personaje:
@@ -42511,7 +42507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -46896,7 +46892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.32941177, g: 0.32941177, b: 0.32941177, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

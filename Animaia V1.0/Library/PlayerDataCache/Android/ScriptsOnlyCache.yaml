@@ -732,7 +732,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 1ac99bad916d62a6983e582d733962b4
+      Hash: c4c8009412cfd03cf4a61bd88ffc8668
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SelValorHuman
@@ -1239,4 +1239,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main Screen.unity
   - Assets/Scenes/Character.unity
   - Assets/Scenes/Creation.unity
-  playerPath: C:/Users/Usuario/Desktop/Ejecutable/AnimaiaApp.apk
+  playerPath: C:/Users/Usuari/Desktop/AnimaiaApp.apk
