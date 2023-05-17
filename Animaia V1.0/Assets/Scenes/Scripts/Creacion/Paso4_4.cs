@@ -279,17 +279,17 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
 
     Hechizo CrearBala()
     {
-        return new Hechizo("Bala", "Concentra una pequeña parte de su alma en un punto y la dispara a alta velocidad para infringir daño a un enemigo.",
+        return new Hechizo("Bala", "Concentra una pequeña parte de su alma en un punto y la dispara a alta velocidad para infligir daño a un enemigo.",
                             6, 6, "Magia");
     }
     Hechizo CrearPulso()
     {
-        return new Hechizo("Pulso", "Lanza una parte de su alma a un enemigo para infringir daño.",
+        return new Hechizo("Pulso", "Lanza una parte de su alma a un enemigo para infligir daño.",
                             10, 10, "Magia");
     }
     Hechizo CrearLaser()
     {
-        return new Hechizo("Láser", "Crea un haz con su alma dirigido a todos los enemigos y hace un barrido para infringir daño.",
+        return new Hechizo("Láser", "Crea un haz con su alma dirigido a todos los enemigos y hace un barrido para infligir daño.",
                             10, 6, "Magia");
     }
     Hechizo CrearArtema()

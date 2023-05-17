@@ -197,7 +197,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             else
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalEsquiva.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalEsquiva.text = "Infliges " + dmgTotal + " de daño";
             }
         }
         else if (resultadoEsquivaEnemiga.text == "Milagro")
@@ -205,7 +205,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             if (esquivaAtacante == "Milagro")
             {
                 dmgTotal = resultadoAtaqueArma;
-                resultadoFinalEsquiva.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalEsquiva.text = "Infliges " + dmgTotal + " de daño";
             }
             else
             {
@@ -221,7 +221,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             else if (esquivaAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalEsquiva.text = "¡Golpe Crítico! Infringes " + dmgTotal + " de daño";
+                resultadoFinalEsquiva.text = "¡Golpe Crítico! Infliges " + dmgTotal + " de daño";
                 Personaje.oculto = false;
             }
             else
@@ -235,7 +235,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
                 else
                 {
                     dmgTotal = resultadoAtaqueArma;
-                    resultadoFinalEsquiva.text = "Infringes " + dmgTotal + " de daño";
+                    resultadoFinalEsquiva.text = "Infliges " + dmgTotal + " de daño";
                 }
             }
         }
@@ -256,7 +256,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             else
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalBloqueo.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalBloqueo.text = "Infliges " + dmgTotal + " de daño";
             }
         }
         else if (resultadoBloqueoEnemigo.text == "Milagro")
@@ -264,7 +264,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             if (bloqueoAtacante == "Milagro")
             {
                 dmgTotal = resultadoAtaqueArma;
-                resultadoFinalBloqueo.text = "Infringes " + dmgTotal + " de daño";
+                resultadoFinalBloqueo.text = "Infliges " + dmgTotal + " de daño";
             }
             else
             {
@@ -280,7 +280,7 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
             else if (bloqueoAtacante == "Milagro" || Personaje.oculto)
             {
                 dmgTotal = resultadoAtaqueArma * 2;
-                resultadoFinalBloqueo.text = "¡Golpe Crítico! Infringes " + dmgTotal + " de daño";
+                resultadoFinalBloqueo.text = "¡Golpe Crítico! Infliges " + dmgTotal + " de daño";
                 Personaje.oculto = false;
             }
             else
@@ -297,14 +297,14 @@ public class CombatAttacks : MonoBehaviour, IDataPersistance
                     }
                     else
                     {
-                        resultadoFinalBloqueo.text = "¡El enemigo se defendió! Infringes " + dmgTotal + " de daño";
+                        resultadoFinalBloqueo.text = "¡El enemigo se defendió! Infliges " + dmgTotal + " de daño";
                     }
                     
                 }
                 else
                 {
                     dmgTotal = resultadoAtaqueArma;
-                    resultadoFinalBloqueo.text = "Infringes " + dmgTotal + " de daño";
+                    resultadoFinalBloqueo.text = "Infliges " + dmgTotal + " de daño";
                 }
             }
         }
