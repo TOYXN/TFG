@@ -73,7 +73,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Aniquilador";
         ValorClase.text = "Valor Vinculado: +2 a la Fuerza";
-        MagiasClase.text = "Magias disponibles: Bala, Carga, Atq. Expansivo, Obliteración, Enfurecer, Aterrar, Grito de Guerra, Aligerar.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Carga, Atq. Expansivo, Obliteración, Enfurecer, Aterrar, Grito de Guerra, Aligerar.";
         ArmasClase.text = "Armas disponibles: Cuerpo, Espada recta, Espadón, Alabarda, Hacha, Gran Hacha.";
         DescClase.text = "Viven por y para el combate cuerpo a cuerpo. Su extraordinaria fuerza y agresividad les permite destrozar a sus oponentes en devastadores ataques que diezman sus defensas. No hay protección posible ante un aniquilador.";
         MenuClaseSelec.SetActive(true);
@@ -83,7 +83,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Protector";
         ValorClase.text = "Valor Vinculado: +2 a la Resistencia";
-        MagiasClase.text = "Magias disponibles: Barrera, Cura, Furia, Grito de Guerra, Aterrar, Inamovible, Atraer, Repeler.";
+        MagiasClase.text = "Habilidades disponibles: Barrera, Cura, Furia, Grito de Guerra, Aterrar, Inamovible, Atraer, Repeler.";
         ArmasClase.text = "Armas disponibles: Espada recta, Espada curva, Espadón, Hacha, Lanza, Bastón.";
         DescClase.text = "Gracias a su vitalidad y resistencia física los convierte en los personajes idóneos para hacer las funciones de muro en combate, absorbiendo todos los golpes de los enemigos mientras que sus compañeros terminan con ellos. Los hay que prefieren usar sus conocimientos de medicina, sus cuerpos entrenados y sus habilidades de manipular su propia alma para aplicar hechizos curativos en combate.";
         MenuClaseSelec.SetActive(true);
@@ -93,7 +93,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Cazador";
         ValorClase.text = "Valor Vinculado: +2 a la Agilidad";
-        MagiasClase.text = "Magias disponibles: Bala, Carga, Terataque, Acercamiento, Aligerar, Enfurecer, Entorpecer, Mimetizar.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Carga, Terataque, Acercamiento, Aligerar, Enfurecer, Entorpecer, Mimetizar.";
         ArmasClase.text = "Armas disponibles: Espada curva, Estoque, Lanza, Arco, Daga, Bastón.";
         DescClase.text = "Cuando tienen un objetivo, este solo está condenado a ser capturado, ya sea un objeto, un ser vivo o un elemento metafórico. Hacen uso de su increíble agilidad y destreza con las manos para atacar y moverse entre las filas enemigas grácilmente. Todos sus movimientos son óptimos, y eso los hacen perfectos para el subterfugio y el sigilo.";
         MenuClaseSelec.SetActive(true);
@@ -103,7 +103,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Sombra";
         ValorClase.text = "Valor Vinculado: +2 a la Velocidad";
-        MagiasClase.text = "Magias disponibles: Bala, Aligerar, Entorpecer, Enfurecer, Acercamiento, Separación, Terataque, Combo.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Aligerar, Entorpecer, Enfurecer, Acercamiento, Separación, Terataque, Combo.";
         ArmasClase.text = "Armas disponibles: Cuerpo, Estoque, Espada curva, Hacha, Bastón, Daga.";
         DescClase.text = "Usan su extremadamente alta velocidad para arremeter contra el enemigo en un parpadeo sin posibilidad de respuesta o para someterlos con un torrente de ataques. Su rapidez deja a sus enemigos sin escapatoria.";
         MenuClaseSelec.SetActive(true);
@@ -113,7 +113,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Animatec";
         ValorClase.text = "Valor Vinculado: +2 al Poder";
-        MagiasClase.text = "Magias disponibles: Bala, Pulso, Láser, Artema, Cura, Barrera, Imbuír, Desalmar.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Pulso, Láser, Artema, Cura, Barrera, Imbuír, Desalmar.";
         ArmasClase.text = "Armas disponibles: Cuerpo, Espada recta, Estoque, Gran Hacha, Bastón, Daga.";
         DescClase.text = "Conocedores absolutos sobre la manipulación almática, ya sea por genética o riguroso estudio, han perfeccionado su uso a tal punto que pueden usar la forma más pura y eficiente de su alma para proyectar hechizos. Solo así se consigue proyectar los hechizos más poderosos conocidos actualmente.";
         MenuClaseSelec.SetActive(true);
@@ -123,7 +123,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Centinela";
         ValorClase.text = "Valor Vinculado: +2 a los Sentidos";
-        MagiasClase.text = "Magias disponibles: Bala, Barrera, Separación, Atq. Expansivo, Aclarar, Ofuscar, Entorpecer, Más Allá.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Barrera, Separación, Atq. Expansivo, Aclarar, Ofuscar, Entorpecer, Más Allá.";
         ArmasClase.text = "Armas disponibles: Espada recta, Espadón, Espada curva, Alabarda, Lanza, Arco.";
         DescClase.text = "Aclamados por sus capacidades a la hora de encontrar cualquier cosa gracias a sus agudizados sentidos, suelen dedicarse a ser los vigías de cualquier grupo. Suelen adelantarse a los acontecimientos porque se han percatado mucho antes gracias a esos increíbles sentidos.";
         MenuClaseSelec.SetActive(true);
@@ -133,7 +133,7 @@ public class Paso4_4 : MonoBehaviour, IDataPersistance
     {
         NombreClase.text = "Sabio";
         ValorClase.text = "Valor Vinculado: +2 a la Memoria";
-        MagiasClase.text = "Magias disponibles: Bala, Láser, Fortalecer, Debilitar, Apoderar, Comprometer, Cura, Desalmar.";
+        MagiasClase.text = "Habilidades disponibles: Bala, Láser, Fortalecer, Debilitar, Apoderar, Comprometer, Cura, Desalmar.";
         ArmasClase.text = "Armas disponibles: Cuerpo, Espada recta, Lanza, Alabarda, Hacha, Gran hacha.";
         DescClase.text = "Años de estudios les han convertido en enciclopedias andantes de conocimientos. Puede que conozcan muchas cosas sobre una gran variedad de sujetos o que hayan dedicado sus vidas a desentrañar los misterios sobre algo en específico. No hay rama del conocimiento que les detenga para recopilar información e investigar sobre ellas.";
         MenuClaseSelec.SetActive(true);
